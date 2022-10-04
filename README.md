@@ -1,23 +1,23 @@
-# TÍTULO DO PROJETO
+# Q Receita
 
-`CURSO`
+`TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS'
 
-`DISCIPLINA`
+`DISCIPLINA - PROJETO`
 
-`SEMESTRE`
+`2/2022`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O propósito do projeto é desenvolvimento de um Site que permita aos usuários fazerem buscas de receitas a partir de ingredientes que eles tenham disponíveis em casa.
 
 ## Integrantes
 
+* Kevin Issamu Muramoto 
+* Odair Cordeiro Marra
+* Paula Elizabeth Bessa Lucio Martins
 * Thais Menezes Alves de Souza 
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
 
 ## Orientador
 
-* Nome completo do professor 1
+* Sandra Maria Silveira 
 
 ## Instruções de utilização
 
