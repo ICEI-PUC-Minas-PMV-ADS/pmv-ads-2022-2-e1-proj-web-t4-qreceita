@@ -2,25 +2,17 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foi consolidada com a participação dos usuários em um trabalho de imersão feita pelos membros da equipe a partir da observação dos usuários em seu local natural e por meio de entrevistas. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+As personas levantadas durante o processo de entendimento do problema são apresentadas na Figuras que se seguem.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Larissa Cunha tem 21 anos, é graduanda em Psicologia e atualmente faz estágio em uma clínica no centro da cidade de Belo Horizonte. Suas principais motivações são: ter uma alimentação que lhe traga uma vida mais saudável e gastar menos dinheiro com fast food. Como frustrações, ela não tem criatividade para cozinhar e acaba comendo fast food, o que não é saudável e ainda a faz gastar muito dinheiro diariamente com comida. Uma outra frustração apontada por ela é a dependência do auxílio de outras pessoas para o preparo de refeições. Larissa tem como Hobbies ver filmes, ler e andar de bike. Os aplicativos que ela mais utiliza são: Instagram, Pinterest, Twitter.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Vinicius Tadashi tem 41 anos, é professor universitário e atualmente trabalha em dois turnos e vive com suas duas filhas, uma de 10 e outra de 8 anos. Suas motivações são: fornecer uma alimentação saudável para a família e aproveitar alimentos esquecidos na geladeira para evitar desperdícios e assim promovendo economia financeira. Sua frustração é a falta de criatividade no preparo das refeições para suas filhas. Como Hobbies ele gosta de praticar tênis e passear com as filhas. Seus aplicativos mais usados são: Facebook, LinkedIn e Youtube.
+
+Samanta Mendes tem 29 anos, é formada em Gastronomia, faz estágio em um restaurante de renome da sua cidade. Em seu tempo livre, grava vídeos curtos no TikTok com receitas descomplicadas e simples de fazer (ou, descomplicando receitas mais elaboradas que prepara no seu trabalho). Suas motivações sao: Compartilhar seus conhecimentos adquiridos na Universidade e em seu Estágio com o público e mostrar que é possível adaptar receitas “chiques” com alimentos simples que se tem em casa. Como frustrações ela diz não ter amigos/familiares que apreciem culinária como ela. Seus Hobbies são: ler, testar novas receitas e gravar vídeos para redes sociais.
 
 ## Histórias de Usuários
 
