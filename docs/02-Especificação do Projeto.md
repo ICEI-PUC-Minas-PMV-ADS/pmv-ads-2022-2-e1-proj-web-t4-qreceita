@@ -62,29 +62,16 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-------------------------------------------|----|
-|RF-01 | O site deve permitir que o usuário        | Média |
-|      | realize o cadastro no sistema             |       | 
-|RF-02 | O site deve permitir o filtro de receitas | Média |
-|      | pelo grau de dificuldade                  |       | 
-|RF-03 | O site deve apresentar uma lista de opções| Média |
-|      | de receitas que contenham ao menos parte  |       | 
-|      | dos ingredientes informados               |       | 
-|RF-04 | O site deve permitir o usuário favoritar  | Baixa |
-|      | as receitas que mais gosta                |       |                
-|RF-05 | O site deve permitir realizar a busca de  | Alta  |
-|      | receitas a partir de ingredientes         |       | 
-|      | informados                                |       | 
-|RF-06 | O site deve permitir a inclusão e a       | Baixa |
-|      | exposição de comentários sobre as receitas|       | 
-|      | sugeridas                                 |       | 
-|RF-07 | O site deve apresentar um ranqueamento das| Baixa |
-|      | receitas mais bem avaliadas               |       | 
-|RF-08 | O site deve permitir a inclusão de        | Média |
-|      | receitas pelos usuários.                  |       | 
-|RF-09 | O site deve conter uma opção de avaliação | Baixa |
-|      | de 0 a 5 estrelas das receitas            |       | 
-|RF-10 | O site deve disponibilizar o              | Média |
-|      | compartilhamento de receitas              |       | 
+|RF-01 | O site deve permitir que o usuário realize o cadastro no sistema | Média |
+|RF-02 | O site deve permitir o filtro de receitas pelo grau de dificuldade | Média |
+|RF-03 | O site deve apresentar uma lista de opções de receitas que contenham ao menos parte dos ingredientes informados| Média |
+|RF-04 | O site deve permitir o usuário favoritar as receitas que mais gosta | Baixa |            
+|RF-05 | O site deve permitir realizar a busca de receitas a partir de ingredientes informados| Alta  |
+|RF-06 | O site deve permitir a inclusão e a exposição de comentários sobre as receitas sugeridas | Baixa |
+|RF-07 | O site deve apresentar um ranqueamento das receitas mais bem avaliadas | Baixa |
+|RF-08 | O site deve permitir a inclusão de receitas pelos usuários | Média |
+|RF-09 | O site deve conter uma opção de avaliação de 0 a 5 estrelas das receitas | Baixa |
+|RF-10 | O site deve disponibilizar o compartilhamento de receitas | Média |
 
 ### Requisitos não Funcionais
 
