@@ -22,21 +22,35 @@ A partir da compreensão do dia a dia das pessoas identificadas para o projeto, 
 |--------------------|------------------------------------|----------------------------------------|
 |Larissa Cunha       | ter acesso a receitas disponíveis  | para facilitar minha alimentação no    |
 |                    | com base nos ingredientes que      | dia-a-dia                              |
-|                    | possuo (RF-03, RF-05)              |                                        |
+|                    | possuo (RF-03, RF-05)              |                                        | 
+|                    |                                    |                                        |     
+|Samanta Mendes      | ter acesso a um mecanismo de       | para dar um feedback das receitas que  |
+|                    | avaliação de receitas (RF-07,RF-09)| recebi e acompanhar as receitas mais   |
+|                    | possuo (RF-03, RF-05)              | bem avaliadas.                         |
 |                    |                                    |                                        |
-|Larissa Cunha       | ter acesso a receitas disponíveis  | para facilitar minha alimentação no    |
-|                    | com base nos ingredientes que      | dia-a-dia                              |
-|                    | possuo (RF-03, RF-05)              |                                        |
-|Larissa Cunha       | ter acesso a receitas disponíveis  | para facilitar minha alimentação no    |
-|                    | com base nos ingredientes que      | dia-a-dia                              |
-|                    | possuo (RF-03, RF-05)              |                                        |
+|Samanta Mendes      | incluir novas receitas (RF-08)     | para compartilhar meus conhecimentos   |
+|                    |                                    | gastronômicos                          |
 |                    |                                    |                                        |
-|Larissa Cunha       | ter acesso a receitas disponíveis  | para facilitar minha alimentação no    |
-|                    | com base nos ingredientes que      | dia-a-dia                              |
-|                    | possuo (RF-03, RF-05)              |                                        |
-
-
-
+|Larissa Cunha       | manter um registro de receitas     | visualizar depois e manter um histórico|
+|                    | favoritas (RF-04).                 | das receitas salvas para acessar       |
+|                    |                                    | posteriormente                         |
+|                    |                                    |                                        |
+|Vinicius Tadashi    | fazer comentários em receitas de   | para trocar experiências com outras    |
+|                    | terceiros. (RF-06)                 | pessoas.                               |
+|                    |                                    |                                        |    
+|Larissa Cunha       | poder aplicar um filtro quanto a   | adaptar minhas pesquisas de acordo com |
+|                    | dificuldade da elaboração das      | o nível da minha experiência           |
+|                    | receitas (RF-02)                   |                                        |
+|                    |                                    |                                        |
+|Larissa Cunha       | ter um link de compartilhamento de | compartilhar externamente as minhas    |
+|                    | receitas (RF-10)                   | receitas favoritas com outras pessoas  |
+|                    |                                    |                                        |
+|Vinicius Tadashi    | ter acesso a sugestões de receitas | ter mais opções de receitas além das   |
+|                    | com todos ou parte dos ingredientes| que envolvem apenas os ingredientes    |
+|                    | informados na busca (RF-03)        | informados                             |
+|                    |                                    |                                        |
+|Samanta Mendes      | acessar o sistema com o meu login  | ter um registro e acesso mais completo |
+|                    | (RF-01)                            | no site                                |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
