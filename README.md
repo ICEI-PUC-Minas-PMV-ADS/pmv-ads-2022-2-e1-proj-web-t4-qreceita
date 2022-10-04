@@ -6,7 +6,7 @@
 
 `2/2022`
 
-O propósito do projeto é desenvolvimento de um Site que permita aos usuários fazerem buscas de receitas a partir de ingredientes que eles tenham disponíveis em casa.
+O propósito do projeto é o desenvolvimento de um Site que permita aos usuários fazerem buscas de receitas a partir de ingredientes que eles tenham disponíveis em casa.
 
 ## Integrantes
 
