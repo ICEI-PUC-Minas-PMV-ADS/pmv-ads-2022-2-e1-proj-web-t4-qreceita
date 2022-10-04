@@ -20,37 +20,15 @@ A partir da compreensão do dia a dia das pessoas identificadas para o projeto, 
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Larissa Cunha       | ter acesso a receitas disponíveis  | para facilitar minha alimentação no    |
-|                    | com base nos ingredientes que      | dia-a-dia                              |
-|                    | possuo (RF-03, RF-05)              |                                        | 
-|                    |                                    |                                        |     
-|Samanta Mendes      | ter acesso a um mecanismo de       | para dar um feedback das receitas que  |
-|                    | avaliação de receitas (RF-07,RF-09)| recebi e acompanhar as receitas mais   |
-|                    | possuo (RF-03, RF-05)              | bem avaliadas.                         |
-|                    |                                    |                                        |
-|Samanta Mendes      | incluir novas receitas (RF-08)     | para compartilhar meus conhecimentos   |
-|                    |                                    | gastronômicos                          |
-|                    |                                    |                                        |
-|Larissa Cunha       | manter um registro de receitas     | visualizar depois e manter um histórico|
-|                    | favoritas (RF-04).                 | das receitas salvas para acessar       |
-|                    |                                    | posteriormente                         |
-|                    |                                    |                                        |
-|Vinicius Tadashi    | fazer comentários em receitas de   | para trocar experiências com outras    |
-|                    | terceiros. (RF-06)                 | pessoas.                               |
-|                    |                                    |                                        |    
-|Larissa Cunha       | poder aplicar um filtro quanto a   | adaptar minhas pesquisas de acordo com |
-|                    | dificuldade da elaboração das      | o nível da minha experiência           |
-|                    | receitas (RF-02)                   |                                        |
-|                    |                                    |                                        |
-|Larissa Cunha       | ter um link de compartilhamento de | compartilhar externamente as minhas    |
-|                    | receitas (RF-10)                   | receitas favoritas com outras pessoas  |
-|                    |                                    |                                        |
-|Vinicius Tadashi    | ter acesso a sugestões de receitas | ter mais opções de receitas além das   |
-|                    | com todos ou parte dos ingredientes| que envolvem apenas os ingredientes    |
-|                    | informados na busca (RF-03)        | informados                             |
-|                    |                                    |                                        |
-|Samanta Mendes      | acessar o sistema com o meu login  | ter um registro e acesso mais completo |
-|                    | (RF-01)                            | no site                                |
+|Larissa Cunha       | ter acesso a receitas disponíveis com base nos ingredientes que possuo (RF-03, RF-05)  | para facilitar minha alimentação no dia-a-dia    |   
+|Samanta Mendes      | ter acesso a um mecanismo de avaliação de receitas (RF-07, RF-09)| para dar um feedback das receitas que recebi e acompanhar as receitas mais bem avaliadas  |
+|Samanta Mendes      | incluir novas receitas (RF-08)| para compartilhar meus conhecimentos gastronômicos  |
+|Larissa Cunha       | manter um registro de receitas favoritas (RF-04) | visualizar depois e manter um histórico das receitas salvas para acessar posteriormente|
+|Vinicius Tadashi    | fazer comentários em receitas de terceiros. (RF-06)   | para trocar experiências com outras pessoas  | 
+|Larissa Cunha       | poder aplicar um filtro quanto a dificuldade da elaboração das receitas (RF-02) | adaptar minhas pesquisas de acordo com o nível da minha experiência|
+|Larissa Cunha       | ter um link de compartilhamento de receitas (RF-10) | compartilhar externamente as minhas receitas favoritas com outras pessoas |
+|Vinicius Tadashi    | ter acesso a sugestões de receitas com todos ou parte dos ingredientes informados na busca (RF-03) | ter mais opções de receitas além das que envolvem apenas os ingredientes informados |
+|Samanta Mendes      | acessar o sistema com o meu login (RF-01) | ter um registro e acesso mais completo no site |
 
 ## Requisitos
 
