@@ -23,36 +23,17 @@ A partir da compreensão do dia a dia das pessoas identificadas para o projeto, 
 |Larissa Cunha       | ter acesso a receitas disponíveis  | para facilitar minha alimentação no    |
 |                    | com base nos ingredientes que      | dia-a-dia                              |
 |                    | possuo (RF-03, RF-05)              |                                        |
-|--------------------|------------------------------------|----------------------------------------|-
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
+|                    |                                    |                                        |
+|Larissa Cunha       | ter acesso a receitas disponíveis  | para facilitar minha alimentação no    |
+|                    | com base nos ingredientes que      | dia-a-dia                              |
+|                    | possuo (RF-03, RF-05)              |                                        |
+|Larissa Cunha       | ter acesso a receitas disponíveis  | para facilitar minha alimentação no    |
+|                    | com base nos ingredientes que      | dia-a-dia                              |
+|                    | possuo (RF-03, RF-05)              |                                        |
+|                    |                                    |                                        |
+|Larissa Cunha       | ter acesso a receitas disponíveis  | para facilitar minha alimentação no    |
+|                    | com base nos ingredientes que      | dia-a-dia                              |
+|                    | possuo (RF-03, RF-05)              |                                        |
 
 
 
