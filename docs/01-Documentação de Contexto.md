@@ -1,46 +1,33 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Atualmente uma parcela significativa da população não prepara suas refeições, seja por falta de tempo, habilidade ou mesmo por não saber o que pode ser preparado com os alimentos que se tem disponível em casa.
+ 
+Na correria diária e com a facilidade de se pedir comida por aplicativos tem deixado os jovens cada vez mais distante da cozinha. Estudos mostram que os Millennials (pessoas nascidas entre as décadas de 80 e meados dos anos 90) não se identificam muito com a culinária, sendo que mais 70% dessas pessoas não sabem preparar uma omelete ou um simples ovo mexido, conforme publicado pela Revista Exame (2018). Porém, são altamente conectados e pesquisa em sites é uma constante.
+
+Em uma outra pesquisa, publicada pelo Laboratório Applied Physiology & Nutrition Research Group, ligado à USP de acordo com CNN Brasil (2021), com a pandemia da COVID-19, surgiram os chamados “Chefs da quarentena”. Este estudo revelou que o hábito de cozinhar em casa cresceu 28% desde o início da pandemia, sendo a internet a grande fonte na busca por receitas. 
+
+Diante disso, ter uma ferramenta que permita ter acesso a ideias de receitas a partir da informação dos ingredientes que se tem disponível em casa, torna-se uma ótima alternativa de se fazer economia e até mesmo estimular o hábito de se preparar refeições em casa.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Conforme contextualizado, o problema que se busca resolver com este projeto é a falta de criatividade e conhecimento necessário para preparar receitas com os ingredientes disponíveis.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+O objetivo geral deste trabalho é o desenvolvimento de um portal que forneça ideias de receitas a serem preparadas a partir da inclusão dos ingredientes que estejam disponíveis em casa.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Como objetivos específicos, podemos ressaltar:
+
+●  	Facilitar a tarefa de quem procura receitas na internet tomando como referência os alimentos disponíveis em casa, fazendo com que a pesquisa seja objetiva e promova a economia e uma alimentação mais saudável.
+
+●  	Permitir que chefs ou mesmo usuários possam contribuir com dicas de receitas, ampliando as possibilidades de resultado da pesquisa;
+
+●  	Possibilitar que os usuários possam interagir e avaliar as receitas, criando um ranking para as mais bem avaliadas.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Conforme apontado pela pesquisa do Laboratório Applied Physiology & Nutrition Research Group (CNN Brasil at al; 2021), tem crescido substancialmente a procura por receitas de refeições na internet. Porém o que percebemos é que grande parte dos sites trazem receitas não restritas aos ingredientes disponíveis, o que torna o trabalho de pesquisa mais demorado e de certa forma até mesmo frustrante. Desta maneira, um site focado nos ingredientes disponíveis pode ser de grande utilidade pública.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Embora todas as pessoas possam se beneficiar deste portal, o foco são pessoas que não têm o hábito de cozinhar em casa, seja pela falta de tempo, mas principalmente por não saber o que se pode preparar com os ingredientes que estão disponíveis em casa.
