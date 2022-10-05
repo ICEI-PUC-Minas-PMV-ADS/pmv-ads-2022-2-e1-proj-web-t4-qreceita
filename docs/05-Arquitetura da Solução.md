@@ -2,28 +2,27 @@
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+Nesta seção são apresentados os detalhes técnicos da solução criada pela equipe, tratando dos componentes que fazem parte da solução e do ambiente de hospedagem da solução.
 
 ## Diagrama de componentes
 
-Diagrama que permite a modelagem física de um sistema, através da visão dos seus componentes e relacionamentos entre os mesmos.
+Os componentes que fazem parte da solução são apresentados na Figura que se segue.
 
 Exemplo: 
 
-Os componentes que fazem parte da solução são apresentados na Figura XX.
+Os componentes que fazem parte da solução são apresentados na Figura 15.
 
 ![Diagrama de Componentes](img/componentes.png)
-<center>Figura XX - Arquitetura da Solução</center>
+<center>Figura 15 - Arquitetura da Solução</center>
 
 A solução implementada conta com os seguintes módulos:
-- **Navegador** - Interface básica do sistema  
-  - **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
-   - **Local Storage** - armazenamento mantido no Navegador, onde são implementados bancos de dados baseados em JSON. São eles: 
-     - **Canais** - seções de notícias apresentadas 
-     - **Comentários** - registro de opiniões dos usuários sobre as notícias
-     - **Preferidas** - lista de notícias mantidas para leitura e acesso posterior
- - **News API** - plataforma que permite o acesso às notícias exibidas no site.
- - **Hospedagem** - local na Internet onde as páginas são mantidas e acessadas pelo navegador. 
+●  	Navegador - Interface básica do sistema
+○  	Páginas Web - Conjunto de arquivos HTML, CSS, JavaScript, imagens e gifs que implementam e compõem as funcionalidades do sistema.
+○  	Local Storage - armazenamento mantido no diretório da aplicação, onde são implementados bancos de dados baseados em JSON. São eles:
+■  	Usuários - registro de informações (ID, nome, e-mail, senha, receitas favoritas, receitas postadas, redes sociais inseridas e informações adicionais) sobre os usuários cadastrados
+■  	Comentários - registro de opiniões dos usuários sobre as receitas
+■  	receitas - lista de receitas e informações associadas (ingredientes, modo de preparo, avaliações, porções, imagem, tempo de preparo e usuário)
+●  	Hospedagem - local na Internet onde as páginas são mantidas e acessadas pelo navegador.
 
 > **Links Úteis**:
 >
@@ -67,7 +66,8 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+O site utiliza a plataforma do Heroku como ambiente de hospedagem do site do projeto. O site é mantido no ambiente da URL: https://link_exemplo.herokuapp.com
+
 
 > **Links Úteis**:
 >
