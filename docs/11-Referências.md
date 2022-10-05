@@ -1,7 +1,7 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+BARBOSA, Daniela. Millennials: a geração que menos entende de culinária. 2018. Disponível em: https://exame.com/casual/millennials-a-geracao-que-menos-entende-de-culinaria/. Acesso em: 14 set. 2022
 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+CENTOFANTI, Marcela. Como a pandemia e o isolamento influenciam os hábitos alimentares do brasileiro. 2021. Disponível em: https://www.cnnbrasil.com.br/saude/como-a-pandemia-e-o-isolamento-influenciam-os-habitos-alimentares-do-brasileiro/. Acesso em: 14 set. 2022
+
+
