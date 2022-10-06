@@ -47,3 +47,4 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
  
 O quadro kanban do grupo desenvolvido na ferramenta de gerenciamento de projetos está disponível através da Trello e é apresentado, no estado atual, na Figura 1.
 
+![Exemplo de UserFlow](img/userflow.jpg)
