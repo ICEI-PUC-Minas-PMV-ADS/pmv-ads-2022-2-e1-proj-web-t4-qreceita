@@ -5,13 +5,13 @@
 
 A metodologia contempla as definições de ferramentas utilizadas pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
-## Relação de Ambientes de Trabalho
+### Relação de Ambientes de Trabalho
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
 
 
-## Gerenciamento do Projeto
+### Gerenciamento do Projeto
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
 
@@ -27,6 +27,7 @@ A equipe está organizada da seguinte maneira:
 
 ●  	Equipe de Design: Odair Marra
  
+ 
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello estruturado com as seguintes listas:
  
 ●  	Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista.
@@ -38,6 +39,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 ●  	Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para serem entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
  
 O quadro kanban do grupo desenvolvido na ferramenta de gerenciamento de projetos está disponível através da Trello e é apresentado, no estado atual, na Figura 1.
+
 
 
 > **Links Úteis**:
