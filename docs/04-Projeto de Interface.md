@@ -6,7 +6,7 @@ Dentre as preocupações para a montagem da interface do sistema, estamos estabe
 
 O diagrama apresentado na Figura 2 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o <a href="https://marvelapp.com/project/6437467">Ambiente MarvelApp do projeto</a>
 
-![UserFlow](img/UserFlow.jpg)
+![UserFlow](img/userflow.jpg)
 
 <p align="center">Figura 2 - Fluxo de telas do usuário</p>
 
@@ -21,7 +21,7 @@ Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do si
   ● Conteúdo - apresenta o conteúdo da tela em questão;
 
 <div align="center">
-  <img src="img/Wireframes-QReceita.jpg">
+  <img src="img/Wireframes_QReceita.jpg">
 </div>
 
 <p align="center">Figura 3 - Estrutura padrão do site</p>
@@ -78,7 +78,7 @@ Ao selecionar a Receita apresentada pela pesquisa o site abrirá esta página co
 
 Nessa tela o usuário tem 5 opções de compartilhamento da receita, sendo via Whatsapp, Instagram, Facebook, Twitter e Gmail. Esta tela é exibida na forma de uma janela modal. Deve-se copiar o link informado e selecionar umas das plataformas para compartilhamento.
 
-![CompartilhamentoDeReceita](img/Compartilhamento_de_Receita.jpg)
+![CompartilhamentoDeReceita](img/Compartilhament_de_Receita.jpg)
 
 <p align="center">Figura 8 - Tela de compartilhamento de receitas</p>
 
