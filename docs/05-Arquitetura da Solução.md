@@ -15,14 +15,18 @@ Os componentes que fazem parte da solução são apresentados na Figura que se s
 
 A solução implementada conta com os seguintes módulos:
 ● Navegador - Interface básica do sistema
-  ○ Páginas Web - Conjunto de arquivos HTML, CSS, JavaScript, imagens e gifs que implementam e compõem as funcionalidades do sistema.
-  ○ Local Storage - armazenamento mantido no diretório da aplicação, onde são implementados bancos de dados baseados em JSON. São eles:
-    ■ Usuários - registro de informações (ID, nome, e-mail, senha, receitas favoritas, receitas postadas, redes sociais inseridas e informações adicionais) sobre os       usuários cadastrados
-    ■ Comentários - registro de opiniões dos usuários sobre as receitas
-    ■ Receitas - lista de receitas e informações associadas (ingredientes, modo de preparo, avaliações, porções, imagem, tempo de preparo e usuário)
-● Hospedagem - local na Internet onde as páginas são mantidas e acessadas pelo navegador.
 
-Inclua um diagrama da solução e descreva os módulos e as tecnologias que fazem parte da solução. Discorra sobre o diagrama.
+  ○ Páginas Web - Conjunto de arquivos HTML, CSS, JavaScript, imagens e gifs que implementam e compõem as funcionalidades do sistema.
+  
+  ○ Local Storage - armazenamento mantido no diretório da aplicação, onde são implementados bancos de dados baseados em JSON. São eles:
+  
+    ■ Usuários - registro de informações (ID, nome, e-mail, senha, receitas favoritas, receitas postadas, redes sociais inseridas e informações adicionais) sobre os       usuários cadastrados
+    
+    ■ Comentários - registro de opiniões dos usuários sobre as receitas
+    
+    ■ Receitas - lista de receitas e informações associadas (ingredientes, modo de preparo, avaliações, porções, imagem, tempo de preparo e usuário)
+    
+● Hospedagem - local na Internet onde as páginas são mantidas e acessadas pelo navegador.
 
 ## Tecnologias Utilizadas
 
