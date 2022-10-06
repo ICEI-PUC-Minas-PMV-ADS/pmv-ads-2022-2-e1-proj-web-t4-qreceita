@@ -12,9 +12,10 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 |Ambiente| Plataforma|Link de Acesso                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Repositório de Código Fonte | ter acesso a receitas disponíveis com base nos ingredientes que possuo (RF-03, RF-05)  | para facilitar minha alimentação no dia-a-dia    |   
-|Projeto de Interface e Wireframes | ter acesso a um mecanismo de avaliação de receitas (RF-07, RF-09)| para dar um feedback das receitas que recebi e acompanhar as receitas mais bem avaliadas  |
-|Gerenciamento do Projeto  | incluir novas receitas (RF-08)| para compartilhar meus conhecimentos gastronômicos  |
+|Repositório de Código Fonte | GitHub  | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-qreceita |
+|Documentos do Projeto | Google Drive |  https://docs.google.com/document/d/1F72R13i_gHCGo0da6U-IYfqREpw-XwJuciUmZfAD4lk/edit#
+|Projeto de Interface e Wireframes | MarvelApp| https://marvelapp.com/project/6437467  |
+|Gerenciamento do Projeto  | Trello | https://trello.com/b/6ivzp1p6/qreceita  |
 
 
 ### Gerenciamento do Projeto
