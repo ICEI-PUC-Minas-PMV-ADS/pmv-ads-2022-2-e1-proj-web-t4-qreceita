@@ -1,37 +1,131 @@
-
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-SEGUNDO TESTE
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+Dentre as preocupações para a montagem da interface do sistema, estamos estabelecendo foco em questões como agilidade, acessibilidade e usabilidade. Desta forma, o projeto tem uma identidade visual padronizada em todas as telas que são projetadas para funcionamento em desktops e dispositivos móveis.
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+O diagrama apresentado na Figura 2 mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o <a href="https://marvelapp.com/project/6437467">Ambiente MarvelApp do projeto</a>
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+![UserFlow](img/UserFlow.jpg)
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
+<p align="center">Figura 2 - Fluxo de telas do usuário</p>
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do sistema são apresentadas em detalhes nos itens que se seguem. As telas do sistema apresentam uma estrutura comum que é apresentada na Figura 3. Nesta estrutura, existem 3 grandes blocos, descritos a seguir. São eles:
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+  ● Cabeçalho - local onde são dispostos elementos fixos de identidade (logo), barra de pesquisa geral e botões de Login e Cadastre-se;
+
+  ● Menu - neste bloco estão dispostos a estrutura de navegação principal do site (menu da aplicação);
+
+  ● Conteúdo - apresenta o conteúdo da tela em questão;
+
+<div align="center">
+  <img src="img/Wireframes-QReceita.jpg">
+</div>
+
+<p align="center">Figura 3 - Estrutura padrão do site</p>
+
+### Tela - Página Inicial
+
+A tela de Página Inicial traz uma barra de pesquisa geral por nome de Receita ou Ingrediente no seu cabeçalho, dando alternativa ao usuário caso ele queira pesquisar algo específico a qualquer momento da sua navegação sem precisar retornar à Tela Inicial. Ao lado da barra de pesquisa são disponibilizados os botões Login (para usuários já cadastrados) e Cadastre-se (para usuários que desejam se cadastrar).
+Com base na estrutura padrão, o bloco Menu traz os atalhos para acesso à Página Inicial e ao Meu Perfil que permite ao usuário uma maior agilidade na navegação. 
+Por sua vez, o bloco de Conteúdo mostra uma mensagem de destaque dando ênfase na proposta do site e na sequência traz os campos dos ingredientes a serem informados pelo usuário para que a pesquisa seja realizada no Sistema. 
+
+![PaginaInicial](img/Tela_Inicial_QReceita.jpg)
+
+<p align="center">Figura 4 - Página Inicial</p>
+
+### Tela - Lista de Receitas Encontradas
+
+A tela de Lista de Receitas Encontradas traz no Bloco de Conteúdo as receitas,  priorizando aquelas que compreendem todos os ingredientes inseridos na pesquisa e na sequência aquelas que têm parte dos ingredientes. 
+
+![ListaReceitasEncontradas](img/Lista_de_Receitas_Encontradas.jpg)
+
+<p align="center">Figura 5 - Lista de Receitas Encontradas</p>
+
+### Tela - Ranqueamento de receitas encontradas
+
+Ao clicar no ícone de filtragem, aparecerão as opções de classificação das receitas Mais bem avaliadas e por aquelas Menos avaliadas.
+
+![ListaReceitasEncontradas](img/Ranqueamento_de_Receitas_Encontradas.jpg)
+
+<p align="center">Figura 6 - Ranqueamento de receitas encontradas</p>
+
+### Tela - Receita Escolhida
+
+Ao selecionar a Receita apresentada pela pesquisa o site abrirá esta página com o detalhamento dessa Receita, trazendo:
+
+  ● medida dos ingredientes;
+  
+  ● modo e tempo de preparo;
+  
+  ● serve quantas pessoas;
+  
+  ● uma imagem do prato;
+  
+  ● possibilidade de atribuir uma avaliação da receita;
+  
+  ● possibilidade de incluir comentários;
+  
+  ● possibilidade de compartilhar a receita;
+  
+![ReceitaEscolhida](img/Receita_Escolhida.jpg)
+
+<p align="center">Figura 7 - Tela de Receita Escolhida</p>
+
+### Tela - Compartilhamento da Receita
+
+Nessa tela o usuário tem 5 opções de compartilhamento da receita, sendo via Whatsapp, Instagram, Facebook, Twitter e Gmail. Esta tela é exibida na forma de uma janela modal. Deve-se copiar o link informado e selecionar umas das plataformas para compartilhamento.
+
+![CompartilhamentoDeReceita](img/Compartilhamento_de_Receita.jpg)
+
+<p align="center">Figura 8 - Tela de compartilhamento de receitas</p>
+
+### Tela - Fazer Login
+
+Uma vez que usuário queira Avaliar ou Comentar a Receita, o site pedirá que ele faça o Login como usuário cadastrado.
+
+![Login](img/Login.jpg)
+
+<p align="center">Figura 9 - Tela de Fazer Login</p>
+
+### Tela - Cadastre-se
+
+Caso o usuário ainda não tenha realizado o seu cadastro, abrirá uma nova página no qual ele fará de forma simples o seu registro de usuário, contendo: nome, e-mail, a criação e validação de uma senha.
+
+![Cadastrar](img/Cadastre-se.jpg)
+
+<p align="center">Figura 10 - Tela de Cadastre-se</p>
+
+### Tela - Pesquisa por usuário Logado
+
+A tela de pesquisa com o usuário logado, segue a mesma estrutura do site, porém apresenta no canto superior à direita é apresentada uma foto desse usuário (caso tenha inserido no seu perfil) e o seu username. Já no bloco de Conteúdo a frase “Receitas com base nos ingredientes que você tem na geladeira” dá lugar a “Qual será a receita de hoje, (Username)? dando um caráter mais interativo com esse usuário.
+
+![PesquisaUsuarioLogado](img/Pesquisa_por_Usuário_Logado.jpg)
+
+<p align="center">Figura 11 - Tela do usuário após o cadastro</p>
+
+### Tela - Perfil do Usuário
+
+A Tela de Perfil do Usuário apresenta a opção de alteração ou adição de informações pessoais. Nela, ele informa seu Nome, sua Profissão, adiciona alguma informação complementar sobre ele e seu perfil no Facebook, Twitter e no Instagram. Além disso, o Usuário tem a opção de adicionar uma foto no pequeno menu da lateral direita que ficará visível durante toda sua experiência na plataforma no canto superior direito como opção de retorno a tela de Perfil.
+
+![PerfilUsuario](img/Pefil_do_Usuário.jpg)
+
+<p align="center">Figura 12 - Tela de Perfil do Usuário</p>
+
+### Tela - Incluir Receitas
+
+A tela de Incluir Receitas apresenta uma barra de texto para que o usuário possa inserir o nome da receita. Logo abaixo, existe a opção de adicionar uma fotografia do prato preparado, e na lateral uma opção para inserir a quantidade de porções que a receita serve e também uma opção de informar o tempo de preparo. Na informação Medida dos Ingredientes e Modo de Preparo, a cada novo ingrediente/modo, é necessário o usuário clicar no ícone +, ao lado, para que uma nova barra de digitação seja inserida abaixo da anterior.
+
+![IncluirReceita](img/Inclusão_de_Receitas.jpg)
+
+<p align="center">Figura 13 - Tela de Inclusão de Receitas</p>
+
+### Tela - Minhas Receitas
+
+A tela de Minhas Receitas apresenta no seu Bloco de Conteúdo a listagem das Receitas Salvas/Favoritadas e aquelas que foram incluídas pelo usuário, mantendo-se assim um cadastro pessoal dentro do seu perfil.
+
+![MinhasReceitas](img/Minhas_Receitas.jpg)
+
+<p align="center">Figura 14 - Tela de Minhas Receitas</p>
