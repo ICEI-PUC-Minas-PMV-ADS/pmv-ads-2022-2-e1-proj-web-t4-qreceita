@@ -18,9 +18,13 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 ### Divisão de Papéis
 
 A equipe está organizada da seguinte maneira:
+
 ●  	Scrum Master: Thais Menezes
+
 ●  	Product Owner: Paula Martins
+
 ●  	Equipe de Desenvolvimento: Kevin Muramoto
+
 ●  	Equipe de Design: Odair Marra
  
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Trello estruturado com as seguintes listas:
