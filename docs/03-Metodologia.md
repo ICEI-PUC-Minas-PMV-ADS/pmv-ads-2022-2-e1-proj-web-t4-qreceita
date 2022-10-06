@@ -10,6 +10,14 @@ A metodologia contempla as definições de ferramentas utilizadas pela equipe ta
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
 
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|Larissa Cunha       | ter acesso a receitas disponíveis com base nos ingredientes que possuo (RF-03, RF-05)  | para facilitar minha alimentação no dia-a-dia    |   
+|Samanta Mendes      | ter acesso a um mecanismo de avaliação de receitas (RF-07, RF-09)| para dar um feedback das receitas que recebi e acompanhar as receitas mais bem avaliadas  |
+|Samanta Mendes      | incluir novas receitas (RF-08)| para compartilhar meus conhecimentos gastronômicos  |
+|Larissa Cunha       | manter um registro de receitas favoritas (RF-04) | visualizar depois e manter um histórico das receitas salvas para acessar posteriormente|
+|Vinicius Tadashi    | fazer comentários em receitas de terceiros. (RF-06)   | para trocar experiências com outras pessoas  | 
+|Larissa Cunha       | poder aplicar um filtro quanto a dificuldade da elaboração das receitas (RF-02) | adaptar minhas pesquisas de acordo com o nível da minha experiência|
 
 ### Gerenciamento do Projeto
 
