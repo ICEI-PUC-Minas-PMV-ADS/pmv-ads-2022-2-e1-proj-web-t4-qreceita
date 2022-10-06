@@ -14,6 +14,7 @@ Os componentes que fazem parte da solução são apresentados na Figura que se s
 <p align="center">Figura 15 - Arquitetura da Solução</p>
 
 A solução implementada conta com os seguintes módulos:
+
 ● Navegador - Interface básica do sistema
 
   ○ Páginas Web - Conjunto de arquivos HTML, CSS, JavaScript, imagens e gifs que implementam e compõem as funcionalidades do sistema.
