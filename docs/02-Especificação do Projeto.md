@@ -64,7 +64,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 |RNF-05 | O site deve apresentar na página principal imagens de alimentos com ótima aparência formada em grupos com o resultado de uma possível receita com cores vivas que atraiam o público | Baixa | 
 |RNF-06 | O site deve apresentar as informações de contato do mantenedor do site | Média | 
 
-## Restrições
+## Descrições
 
 As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
