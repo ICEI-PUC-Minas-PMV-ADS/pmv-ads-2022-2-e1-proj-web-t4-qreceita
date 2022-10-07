@@ -42,7 +42,7 @@ Por sua vez, o bloco de Conteúdo mostra uma mensagem de destaque dando ênfase 
 
 A tela de Lista de Receitas Encontradas traz no Bloco de Conteúdo as receitas,  priorizando aquelas que compreendem todos os ingredientes inseridos na pesquisa e na sequência aquelas que têm parte dos ingredientes. Apresenta também a classificação da receita, de acordo com a quantidade de estrelas e o nível de dificuldade de cada uma classificadas em fácil, médio ou difícil. 
 
-![ListaReceitasEncontradas](img/Lista_de_Receitas_Encontradas.jpg)
+![ListaReceitasEncontradas](img/Lista_Receitas_Encontradas.jpg)
 
 <p align="center">Figura 5 - Lista de Receitas Encontradas</p>
 
@@ -50,7 +50,7 @@ A tela de Lista de Receitas Encontradas traz no Bloco de Conteúdo as receitas, 
 
 Ao clicar no ícone de filtragem, aparecerão as opções de classificação das receitas Mais bem avaliadas, Menos avaliadas, de Maior dificuldade e Menor dificuldade. O Usuário poderá escolher até duas opções no filtro, por exemplo, receitas mais bem avaliadas e com menor nível de dificuldade.
 
-![ListaReceitasEncontradas](img/Ranqueamento_de_Receitas_Encontradas.jpg)
+![ListaReceitasEncontradas](img/Ranqueamento_Receitas_Encontradas.jpg)
 
 <p align="center">Figura 6 - Ranqueamento de receitas encontradas</p>
 
@@ -74,7 +74,7 @@ Ao selecionar a Receita apresentada pela pesquisa o site abrirá esta página co
   
   ● possibilidade de compartilhar a receita;
   
-![ReceitaEscolhida](img/Receita_Escolhida.jpg)
+![ReceitaEscolhida](img/Receita_Selecionada.jpg)
 
 <p align="center">Figura 7 - Tela de Receita Escolhida</p>
 
@@ -122,7 +122,7 @@ A Tela de Perfil do Usuário apresenta a opção de alteração ou adição de i
 
 A tela de Incluir Receitas apresenta uma barra de texto para que o usuário possa inserir o nome da receita. Logo abaixo, existe a opção de adicionar uma fotografia do prato preparado, e na lateral uma opção para inserir a quantidade de porções que a receita serve, uma opção de informar o tempo de preparo e também a opção de classificar a receita pelo grau de dificuldade: Fácil, Médio ou Difícil. Na informação Medida dos Ingredientes e Modo de Preparo, a cada novo ingrediente/modo, é necessário o usuário clicar no ícone +, ao lado, para que uma nova barra de digitação seja inserida abaixo da anterior.
 
-![IncluirReceita](img/Inclusão_de_Receitas.jpg)
+![IncluirReceita](img/Incluir_Receitas.jpg)
 
 <p align="center">Figura 13 - Tela de Inclusão de Receitas</p>
 
