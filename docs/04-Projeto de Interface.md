@@ -8,6 +8,10 @@ O diagrama apresentado na Figura 2 mostra o fluxo de interação do usuário pel
 
 ![UserFlow](img/UserFlow.jpg)
 
+<div align="center">
+  <img src="img/UserFlow.jpg">
+</div>
+
 <p align="center">Figura 2 - Fluxo de telas do usuário</p>
 
 ## Wireframes
