@@ -84,7 +84,7 @@ Nessa tela o usuário tem 5 opções de compartilhamento da receita, sendo via W
 
 ![CompartilhamentoDeReceita](img/Compartilhament_de_Receita.jpg)
 
-<p align="center">Figura 8 - Tela de compartilhamento de receitas</p>
+<p align="center">Figura 8 - Tela de compartilhamento da receitas</p>
 
 ### Tela - Fazer Login
 
