@@ -1,0 +1,68 @@
+
+.top-site {
+    position: fixed;
+    width: 100%;
+}
+.site-content {
+    display: flex;
+    height: 800px;
+    flex-direction: column;
+}
+.main-text {
+    display: flex;
+    height: 16%;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-top: 4%;
+
+}
+.search-form2 {
+    width: 100%;
+    height: 50%;
+    background-color: #DED7B1;
+    box-shadow: 2px 2px 2px 4px rgb(0 0 0 / 8%), 2px 2px 4px 12px rgb(0 0 0 / 8%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.top-text {
+    font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -.05rem;
+}
+#text2 {
+    padding-top: 1%;
+}
+.input-ingrediente-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 220px;
+    justify-content: center;
+}
+.input-ingrediente {
+    height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    border: 0;
+    margin: 1rem;
+    outline: none;
+    font-size: 16px;
+    color: #5c5959;
+
+}
+.list-ul-inputs {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.list-inputs {
+    white-space: nowrap;
+    list-style: none;
+}
