@@ -6,20 +6,26 @@
 .site-content {
     display: flex;
     height: 800px;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 .main-text {
+    justify-content: center;
     display: flex;
-    height: 16%;
+    height: 250px;
     width: 100%;
     flex-direction: column;
     padding-left: 5%;
-    padding-top: 4%;
+    padding-left: 5%;
 
+}
+#space {
+    height: 225px;
 }
 .search-form2 {
     width: 100%;
-    height: 50%;
+    height: 500px;
     background-color: #DED7B1;
     box-shadow: 2px 2px 2px 4px rgb(0 0 0 / 8%), 2px 2px 4px 12px rgb(0 0 0 / 8%);
     display: flex;
