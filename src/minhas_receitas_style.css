@@ -1,0 +1,27 @@
+
+.foto-perfil-logado {
+    margin-top: 8px;
+    margin-left: 30px ;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-left: 180px;
+    padding-left: 30px;
+}
+
+.recipe-listElt-listEltSided {
+    padding: 30px;
+    background-color: rgb(228, 224, 218);
+}
+
+aside {
+    height: 1;
+    background-color:rgb(249, 244, 244);
+    width: 10vw;
+    margin-right: 180px;
+    align-content: center;
+}
+
