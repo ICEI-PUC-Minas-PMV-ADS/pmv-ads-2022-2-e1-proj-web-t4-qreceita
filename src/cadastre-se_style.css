@@ -1,21 +1,13 @@
 
-
-main {
-    padding: 80px;
-}
-
 .cadastro {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 80px;
     
 }
 
-.cadastro-form {
-  
-}
-
-.flex_container {
+.flex_container2 {
     min-height: 550px;
     width: 400px;
     background-color: #9dab86;
@@ -27,7 +19,7 @@ main {
 
 }
 
-input {
+.cadastro_input {
     outline: none;
     height: 20px;
     width: 240px;
@@ -41,4 +33,3 @@ input {
     margin-top: 11px;
     margin-bottom: 11px;
 }
-

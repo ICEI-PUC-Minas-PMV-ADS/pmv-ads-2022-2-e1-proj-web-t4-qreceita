@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="content_style.css">
         <link rel="stylesheet" href="footer_style.css">
         <link rel="stylesheet" href="login_style.css">
+        <link rel="stylesheet" href="cadastre-se_style.css">
     </head>
     
     <body>
@@ -20,14 +21,12 @@
                     </h1>
                 </div>
                 <div class="search-form">
-                    <form name="form-search" class="main-form" action="" onsubmit="return validadeform()" method="get">
-                        <input class="main-input" type="text" aria-invalid="false" name="q"
+                    <form id="form-search2" name="form-search" class="main-form" onsubmit="valid_search()" action="" method="get">
+                        <input id="search-top" class="main-input" type="text" aria-invalid="false" name="q"
                             placeholder="Pesquise por qualquer receita, ingrediente..." autocomplete="off" value=""
                             role="combobox" aria-autocomplete="both" aria-haspopup="true" aria-expanded="false" required>
-                        <button type="submit" id="search-dbfake" class="search-button" onclick="">
-                            <a href="">
-                                <img id="lupa" src="img/Lupa2.svg" alt="">
-                            </a>
+                        <button onclick="valid_search()" type="submit" id="search-dbfake" class="search-button" onclick="">
+                                <img id="lupa" src="imgs\Lupa2.svg" alt="">
                         </button>
                     </form>
                 </div>
@@ -36,7 +35,7 @@
                 <div id="button-login" class="login">
                     <button onclick="func_login()" class="login2">Login</button>
                 </div>
-                <div id="button-sign" class="login">
+                <div onclick="func_cadastro()" id="button-sign" class="login">
                     <button class="login2">Cadastre-se</button>
                 </div>
             </div>
