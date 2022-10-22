@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QReceita</title>
+        <link rel="stylesheet" href="header_style.css">
+        <link rel="stylesheet" href="content_style.css">
+        <link rel="stylesheet" href="footer_style.css">
+        <link rel="stylesheet" href="login_style.css">
+        <link rel="stylesheet" href="cadastre-se_style.css">
+    </head>
+    
+    <body>
+        <header id="cabecalho">
+            <div class="flex-container">
+                <div class="title">
+                    <h1 id="logo" style="color: black;">Q<spam style="color: white;">Receita</spam>
+                    </h1>
+                </div>
+                <div class="search-form">
+                    <form id="form-search2" name="form-search" class="main-form" onsubmit="valid_search()" action="" method="get">
+                        <input id="search-top" class="main-input" type="text" aria-invalid="false" name="q"
+                            placeholder="Pesquise por qualquer receita, ingrediente..." autocomplete="off" value=""
+                            role="combobox" aria-autocomplete="both" aria-haspopup="true" aria-expanded="false" required>
+                        <button onclick="valid_search()" type="submit" id="search-dbfake" class="search-button" onclick="">
+                                <img id="lupa" src="imgs\Lupa2.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+                <div id="space">
+                </div>
+                <div id="button-login" class="login">
+                    <button onclick="func_login()" class="login2">Login</button>
+                </div>
+                <div onclick="func_cadastro()" id="button-sign" class="login">
+                    <button class="login2">Cadastre-se</button>
+                </div>
+            </div>
+            <nav class="nav-bar">
+                <ul class="list-navs">
+                    <li id="first-nav" class="navs">
+                        <a class="nav-links" href="">
+                            Página Inicial
+                        </a>
+    
+                    </li>
+                    <li class="navs">
+                        <a class="nav-links" href="">
+                            Meu Perfil
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="site-content22" class="site-content">
+            <div id="main-text-id" class="main-text">
+                <h1 id="text1" class="top-text">
+                    Receitas com base nos ingredientes que você tem na geladeira
+                </h1>
+                <h3 id="text2" class="top-text">
+                    Digite os ingredientes que você tem em casa e nós selecionaremos para você as receitas que mais se
+                    enquadram
+                    na sua busca.
+                </h3>
+            </div>
+            <div id="search-form-id" class="search-form2">
+                <div class="input-ingrediente-box">
+                    <ul class="list-ul-inputs">
+                        <li class="list-inputs"><input class="input-ingrediente" type="text"
+                                placeholder="Inclua o ingrediente">
+                        </li>
+                        <li class="list-inputs"><input class="input-ingrediente" type="text"
+                                placeholder="Inclua o ingrediente">
+                        </li>
+                        <li class="list-inputs"><input class="input-ingrediente" type="text"
+                                placeholder="Inclua o ingrediente">
+                        </li>
+                        <li class="list-inputs"><input class="input-ingrediente" type="text"
+                                placeholder="Inclua o ingrediente">
+                        </li>
+                        <li class="list-inputs"><input class="input-ingrediente" type="text"
+                                placeholder="Inclua o ingrediente">
+                        </li>
+                    </ul>
+                </div>
+                <div class="input-ingrediente-box">
+                    <ul class="list-ul-inputs">
+                        <li class="list-inputs"><input class="input-ingrediente" type="text"
+                                placeholder="Inclua o ingrediente">
+                        </li>
+                        <li class="list-inputs"><input class="input-ingrediente" type="text"
+                                placeholder="Inclua o ingrediente">
+                        </li>
+                        <li class="list-inputs"><input class="input-ingrediente" type="text"
+                                placeholder="Inclua o ingrediente">
+                        </li>
+                        <li class="list-inputs"><input class="input-ingrediente" type="text"
+                                placeholder="Inclua o ingrediente">
+                        </li>
+                        <li class="list-inputs"><input class="input-ingrediente" type="text"
+                                placeholder="Inclua o ingrediente">
+                        </li>
+                    </ul>
+                </div>
+                <div class="input-ingrediente-box">
+                    <button class="login2">
+                        <a style="color: white;" href="resultado_pesquisa.html">Buscar</a>
+                    </button>
+                </div>
+            </div>
+            <div id="space"></div>
+        </main>
+        <script src="dbfake_search.js"></script>
+    </body>
+    <hr>
+    <footer>
+        <div>
+            <h4>Entre em contato conosco:</h4>
+            <p>Site QReceita</p>
+            <p>Fone: (31) 3333-1111</p>
+            <p>WhatsApp: (31) 99999-1111</p>
+            <p>E-mail: contato@qreceita.com.br</p>
+        </div>
+    </footer>
+</html>
