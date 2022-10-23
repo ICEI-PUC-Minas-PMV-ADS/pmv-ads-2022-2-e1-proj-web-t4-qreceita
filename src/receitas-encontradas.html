@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QReceita</title>
+    <link rel="stylesheet" href="header_style.css">
+    <link rel="stylesheet" href="content_style.css">
+    <link rel="stylesheet" href="footer_style.css">
+    <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="cadastre-se_style.css">
+    <link rel="stylesheet" href="receitas-encontradas.css">
+
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="flex-container">
+            <div class="title">
+                <h1 id="logo" style="color: black;">Q<spam style="color: white;">Receita</spam>
+                </h1>
+            </div>
+            <div class="search-form">
+                <form id="form-search2" name="form-search" class="main-form" onsubmit="valid_search()" action=""
+                    method="get">
+                    <input id="search-top" class="main-input" type="text" aria-invalid="false" name="q"
+                        placeholder="Pesquise por qualquer receita, ingrediente..." autocomplete="off" value=""
+                        role="combobox" aria-autocomplete="both" aria-haspopup="true" aria-expanded="false" required>
+                    <button onclick="valid_search()" type="submit" id="search-dbfake" class="search-button" onclick="">
+                        <img id="lupa" src="imgs\Lupa2.svg" alt="">
+                    </button>
+                </form>
+            </div>
+            <div id="space">
+            </div>
+            <div id="button-login" class="login">
+                <button onclick="func_login()" class="login2">Login</button>
+            </div>
+            <div onclick="func_cadastro()" id="button-sign" class="login">
+                <button class="login2">Cadastre-se</button>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="list-navs">
+                <li id="first-nav" class="navs">
+                    <a class="nav-links" href="">
+                        Página Inicial
+                    </a>
+
+                </li>
+                <li class="navs">
+                    <a class="nav-links" href="">
+                        Meu Perfil
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Início entrada de dados Odair/Paula-->
+
+    <section id="main-receitas-encontradas">
+
+
+        <article id="quant-receita-encotrada">
+            <h2>
+                "Encontramos 3 resultados de receitas que se enquadram na sua busca por arroz, bacon, mussarela."
+                <!--Aqui teremos o retorno do schema.org aguardar JS-->
+            </h2>
+            <br>
+            <hr>
+            <div class="listCont-recipeList-recipeListFull">
+
+                <div class="recipe-listElt-listEltSided" itemprop="itemListElement" itemscope=""
+                    itemtype="https://schema.org/Recipe">
+                    <a href="/receita-59642-arroz-a-carbonara.htm" itemprop="url">
+                        <h3 itemprop="name">Arroz à carbonara</h3>
+                        <img src="/media/1391754_753882694621843_1924127993_n-610x300_crop.jpg/tsp/arroz-a-carbonara.jpg"
+                            alt="Arroz à carbonara" class="visual" width="130" height="130" itemprop="image">
+                    </a>
+                    <p class="by">
+                        Pospado por: <span itemprop="author">Gi Pimenta</span></p>
+                    <br>
+                    <p itemprop="description">Descrição básica da receita.</p>
+                    <div class="listSideInfos recipeInfos">
+                        <ul class="desktopHidden">
+                            <br>
+                            <h2>Medida dos Ingredientes:</h2>
+                            <li itemprop="recipeIngredient">5 xícaras de arroz branco cozido</li>
+                            <li itemprop="recipeIngredient">500 g de bacon em cubos</li>
+                            <li itemprop="recipeIngredient">300 g de linguiça calabresa em cubos</li>
+                            <li itemprop="recipeIngredient">1 cebola picada</li>
+                            <li itemprop="recipeIngredient">1 dente de alho picado</li>
+                            <li itemprop="recipeIngredient">1 lata de milho</li>
+                            <li itemprop="recipeIngredient">Azeitona a gosto</li>
+                            <li itemprop="recipeIngredient">1 lata de molho de tomate</li>
+                            <li itemprop="recipeIngredient">1 xícara de água</li>
+                            <li itemprop="recipeIngredient">1 envelope de tempero pronto</li>
+                            <li itemprop="recipeIngredient">Sal e pimenta-do-reino a gosto</li>
+                            <li itemprop="recipeIngredient">3 ovos</li>
+                            <li itemprop="recipeIngredient">1 e 1/2 xícara de leite</li>
+                            <li itemprop="recipeIngredient">400 g de mussarela ralada</li>
+                            <li itemprop="recipeIngredient">50 g de queijo parmesão ralado</li>
+                            <li itemprop="recipeIngredient">Margarina para untar</li>
+                            <li itemprop="recipeIngredient">Salsinha e ovos cozidos para decorar</li>
+                        </ul>
+                        <br>
+                        <ul id="modo-de-preparo">
+                            <h2>Modo de Preparo</h2>
+                            <li itemprop="recipeIngredient">10min.</li>
+                            <li itemprop="recipeIngredient">Faça aquilo.</li>
+                            <li itemprop="recipeIngredient">Aguarde</li>
+                            <li itemprop="recipeIngredient">Sirva.</li>
+                        </ul>
+                        <br>
+                        <span class="note note_3" itemprop="aggregateRating" itemscope=""
+                            itemtype="https://schema.org/AggregateRating">
+                            <meta itemprop="worstRating" content="1">
+                            <span itemprop="ratingValue">3</span>/<span itemprop="bestRating">5</span>
+                            (<span itemprop="ratingCount">317</span> Votos)
+                        </span>
+                        <div class="grau-de-dificuldade"
+                            <ul id="grau-de-dificuldade">
+                                <li>Receitas mais fáceis></li>
+                                <li>Receitas mais difíceis></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <hr>
+
+                <div class="recipe listElt listEltSided" itemprop="itemListElement" itemscope=""
+                    itemtype="https://schema.org/Recipe">
+                    <a href="/receita-60715-arroz-expresso.htm" itemprop="url">
+                        <h3 itemprop="name">Arroz expresso</h3>
+                        <img src="/media/dsc06968_crop.jpg/tsp/arroz-expresso.jpg" alt="Arroz expresso" class="visual"
+                            width="130" height="130" itemprop="image">
+                    </a>
+                    <p class="by">
+                        Por <span itemprop="author">Amir</span> </p>
+                    <p itemprop="description">Arroz expresso prato rapido e facil</p>
+                    <meta itemprop="keywords"
+                        content="arroz, alho, bacon, legumes, micro-ondas, milho verde, frango desfiado com arroz, brócolis, pimenta, cebola, tomate cereja, arroz cozido, caldo de legumes, mussarela, entrada, Minas, queijo de minas, ervilha, arroz e risottos">
+
+                    <div class="listSideInfos recipeInfos">
+
+                        <ul class="medida-dos-ingredientes">
+                            <br>
+                            <h2>Medida dos Ingredientes:</h2>
+                            <li itemprop="recipeIngredient">1 xicara de chá de Bacon em cubos.</li>
+                            <li itemprop="recipeIngredient">1 cebola ralada.</li>
+                            <li itemprop="recipeIngredient">2 dentes de alho espremidos.</li>
+                            <li itemprop="recipeIngredient">1 xicara de chá de milho verde congelados.</li>
+                            <li itemprop="recipeIngredient">1 e ½ de brócolis em buquês.</li>
+                            <li itemprop="recipeIngredient">1 xicara chá de ervilhas congeladas.</li>
+                            <li itemprop="recipeIngredient">2 xicaras chá de frango cozido e desfiado.</li>
+                            <li itemprop="recipeIngredient">Sal e pimenta-do-reino a gosto.</li>
+                            <li itemprop="recipeIngredient">4 xicaras chá de arroz cozido.</li>
+                            <li itemprop="recipeIngredient">1 xicara de chá de tomate cereja cortado ao meio.</li>
+                            <li itemprop="recipeIngredient">1 e ½ xicara de queijo de minas padrão em cubos.</li>
+                            <li itemprop="recipeIngredient">4 colheres sopa de manteiga.</li>
+                            <li itemprop="recipeIngredient">1 cubo de caldo de legumes.</li>
+                            <li itemprop="recipeIngredient">1 xicara chá de agua quente.</li>
+                            <li itemprop="recipeIngredient">2 xicaras chá de queijo Mussarela ralado.</li>
+                        </ul>
+                        <br>
+                        <ul id="modo-de-preparo">
+                            <h2>Modo de Preparo</h2>
+                            <ul id="modo-de-preparo">
+                                <li itemprop="recipeIngredient">10min.</li>
+                                <li itemprop="recipeIngredient">Faça aquilo.</li>
+                                <li itemprop="recipeIngredient">Aguarde</li>
+                                <li itemprop="recipeIngredient">Sirva.</li>
+                            </ul>
+                            <br>
+                            <span class="note note_3" itemprop="aggregateRating" itemscope=""
+                                itemtype="https://schema.org/AggregateRating">
+                                <meta itemprop="worstRating" content="1">
+                                <span itemprop="ratingValue">3</span>/<span itemprop="bestRating">5</span>
+                                (<span itemprop="ratingCount">317</span> Votos)
+                            </span>
+                            <div class="grau-de-dificuldade"
+                            <ul id="grau-de-dificuldade">
+                                <li>Receitas mais fáceis></li>
+                                <li>Receitas mais difíceis></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <aside>
+            <!--test botton ODAIR-->
+            <div id="botton-filtro">
+                <button select type="botton-filtro">
+                    <a href="botton-filtro">
+                        <img id="botton-filtro" src="imgs/filtro2.png" alt="">
+                    </a>
+                    <select>
+                        <option value="Selecione um dos filtros abaixo" placeholder:Selecione:></option>
+                        <option value="Receitas mais bem avaliadas">Receitas mais bem avaliadas</option>
+                        <option value="Receitas menos avaliadas">Receitas menos avaliadas</option>
+                        <option value="Receitas mais fáceis">Receitas mais fáceis</option>
+                        <option value="Receitas mais difíceis">Receitas mais difíceis</option>
+                    </select>
+                </button>
+            </div>
+            </div>
+        </aside>
+    </section>
+
+    <!--Fim entrada de dados Odair-->
+</body>
+<hr>
+<footer>
+    <div>
+        <h4>Entre em contato conosco:</h4>
+        <p>Site QReceita</p>
+        <p>Fone: (31) 3333-1111</p>
+        <p>WhatsApp: (31) 99999-1111</p>
+        <p>E-mail: contato@qreceita.com.br</p>
+    </div>
+</footer>
+
+</html>
