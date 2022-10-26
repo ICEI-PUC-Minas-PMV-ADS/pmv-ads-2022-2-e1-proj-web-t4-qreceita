@@ -1,0 +1,43 @@
+
+.foto-perfil-logado {
+    margin-top: 8px;
+    margin-left: 30px ;  
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-left: 180px;
+    padding-left: 30px;
+}
+section {
+    display: flex;
+    height: auto;
+    margin-left: 180px;
+    padding-left: 30px;
+    margin-right: 300px;
+    margin-bottom: 30px;
+}
+
+article {
+    padding: 30px;
+    background-color: #DED7B1;
+    margin-right: 15px;
+}
+
+aside {
+    height: 1;
+    background-color:rgb(249, 244, 244);
+    width: 10vw;
+    margin-right: 180px;
+    align-content: center;
+    display: flex;
+    height: auto;
+}
+
+#identificacao-origem {
+    text-align: right;
+    margin-right: 18px;
+    font-size: small;
+}
