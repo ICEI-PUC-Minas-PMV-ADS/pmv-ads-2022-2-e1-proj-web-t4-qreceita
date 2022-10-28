@@ -1,0 +1,35 @@
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    
+}
+
+.flex_container2 {
+    min-height: 550px;
+    width: 400px;
+    background-color: #9dab86;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 18px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.cadastro_input {
+    outline: none;
+    height: 20px;
+    width: 240px;
+    margin-top: 10px;
+    padding: 10px;  
+    border: 1px solid #b2b2b2;
+    border-radius: 8px;
+}
+
+.Cadastre-se {
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
