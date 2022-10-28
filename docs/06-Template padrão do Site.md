@@ -3,7 +3,7 @@
 O padrão de layout a ser utilizado pelo site tem correspondência ao projeto de Interface elaborado anteriormente, conforme Figura 3.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/Wireframes_QReceita.jpg">
 </div>
 
 <p align="center">Template Padrão do Site</p>
@@ -21,7 +21,7 @@ O template criado está disponível no site https://github.com/ICEI-PUC-Minas-PM
 Tela que abrange todas as visualizações iniciais do site e as barras de opções para que o usuário possa acrescentar os ingredientes que desejar.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/img_etapa3/index.png">
 </div>
 
 <p align="center">Tela Página Inicial</p>
