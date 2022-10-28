@@ -19,9 +19,13 @@ A tela principal do sistema apresenta as barras de pesquisa para que o usuário 
 ### Artefatos da funcionalidade
 
 •	index.html
+
 •	dbfake_search.js
+
 •	footer_style.css
+
 •	header_style.css
+
 •	content_style.css
 
 ### Instruções de Acesso
