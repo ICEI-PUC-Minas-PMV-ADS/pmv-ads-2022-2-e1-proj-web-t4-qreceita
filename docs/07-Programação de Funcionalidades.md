@@ -34,6 +34,7 @@ A tela principal do sistema apresenta as barras de pesquisa para que o usuário 
 2. Após, clique em buscar.
 3. Para buscas de receitas mais abrangentes, utilize a barra de pesquisa disposta no cabeçalho da Página Inicial e pesquisar, clicando no botão de Lupa ao lado esquerdo.
 
+
 ## Fazer Cadastro (RF-01)
 
 A tela de efetuar cadastro permite ao usuário se cadastrar no site para que possa ter acesso a outras funcionalidades como salvar suas receitas favoritas, incluir receitas e etc.
@@ -59,11 +60,17 @@ A tela de efetuar cadastro permite ao usuário se cadastrar no site para que pos
 ### Estrutura de Dados
 
 {usuarios: [{
+
 		“id”: 1,
+		
     		"login": "admin",
+		
 	 	"senha": "123",
+		
     		"nome": "Administrador do Sistema",
+		
     		"email": "admin@abc.com"
+		
     	}]}
  
  ### Instruções de acesso
@@ -72,6 +79,56 @@ A tela de efetuar cadastro permite ao usuário se cadastrar no site para que pos
 2. Preencha as informações de acordo com o solicitado pelo site (Nome, Email, Senha e Confirme Senha)
 3. Clique em Cadastre-se
 
+
+## Fazer Login (RF-01)
+
+A tela de login permite ao usuário já cadastrado ter acesso a suas informações pessoais e a funcionalidades do site disponíveis apenas para os que já possuam login.
+
+<div align="center">
+  <img src="img/UserFlow.jpg">
+</div>
+
+<p align="center">Template Padrão do Site</p>
+
+### Requisitos atendidos
+
+●  	RF-01
+
+### Artefatos da funcionalidade
+
+●  	login.html
+
+●  	forms-val.js
+
+●  	login_style.css
+
+## Instruções de acesso
+
+1. Clique no botão no canto superior direito da tela indicado como Login;
+2. Preencha as informações de acordo com o solicitado pelo site (Email e Senha);
+3. Clique em Fazer login.
+
+
+## Receitas Encontradas e Filtro de Receitas (RF-02, RF-03 e RF-07)
+
+Após efetuar a busca na Página inicial o usuário será redirecionado para a Tela de Receitas Encontradas. Nela, ficará disponível todas as receitas localizadas pelo site de acordo com os ingredientes informados pelo usuário. Logo ao lado da primeira opção informada há um filtro, no qual ele poderá restringir suas opções de visualização de acordo com as opções: Receitas mais fáceis, Receitas mais difíceis, Receitas mais avaliadas e Receitas menos avaliadas.
+
+<div align="center">
+  <img src="img/UserFlow.jpg">
+</div>
+
+<p align="center">Template Padrão do Site</p>
+
+## Requisitos atendidos
+
+●  	RF-02,  RF-03 e RF-07
+ 
+
+## Artefatos da funcionalidade
+
+●  	receitas_encontradas.html
+
+●  	receitas_encontradas.css
 
 
 
