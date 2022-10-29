@@ -158,11 +158,12 @@ Na tela Receita Escolhida, o usuário irá visualizar informações relevantes c
 
 ### Artefatos da funcionalidade
 
-receita-escolhida.html
 
-receita-escolhida.css
+●  	receita-escolhida.html
 
-forms-val.js
+●  	forms-val.js
+
+●  	receita-escolhida.css
 
 ### Estrutura de Dados
  
@@ -175,6 +176,155 @@ forms-val.js
 3. Para compartilhar a receita o usuário deverá clicar no ícone de compartilhamento.
 4. Para enviar e/ou ler comentários o usuário deverá descer até o rodapé da página onde fica localizado uma caixa de texto para comentários e os comentários anteriores.
 5. Para avaliar a receita, o usuário deverá contar com o sistema de estrelas, clicando em cada uma de acordo com o favoritismo por ela.
+
+
+## Compartilhamento de Receitas (RF-10)
+
+Desejando o usuário compartilhar a receita escolhida, deverá clicar no ícone de compartilhamento localizado na tela da receita. O mesmo será redirecionado a uma nova tela, onde deverá copiar o link do site e selecionar uma das redes sociais informadas para finalizar o compartilhamento.
+
+<div align="center">
+  <img src="img/UserFlow.jpg">
+</div>
+
+<p align="center">Template Padrão do Site</p>
+
+### Requisitos atendidos
+
+●  	RF-10
+
+
+### Artefatos da funcionalidade
+
+
+●  	compartilhamento-da-receita.html
+
+
+●  	compartilhamento-da-receita.css
+
+### Estrutura de Dados
+ 
+
+ 
+### Instruções de acesso
+
+1. Após clicar no botão de compartilhamento da Receita Escolhida, clicar no botão Copiar para a url da página ser selecionada;
+2. Clicar no ícone de uma das redes sociais para ser redirecionado para a mesma e compartilhar o link.
+
+
+## Tela do Usuário logado (RF-03)
+
+Ao efetuar o cadastro, o usuário deixará de visualizar a Tela Inicial original e passará a ter sua tela personalizada com sua foto no canto superior direito e seu nome logo acima das barras de pesquisa.
+
+<div align="center">
+  <img src="img/UserFlow.jpg">
+</div>
+
+<p align="center">Template Padrão do Site</p>
+
+### Requisitos atendidos
+
+●  	RF-03
+
+### Artefatos da funcionalidade
+
+●  	user-logado.html
+●  	user-logado.css
+
+
+Estrutura de Dados
+{usuarios: [{
+
+		“id”: 1,
+		
+    		"login": "admin",
+		
+	 	"senha": "123",
+		
+    		"nome": "Administrador do Sistema",
+		
+    		"email": "admin@abc.com"
+		
+    	}]}
+
+ 
+### Instruções de acesso
+
+1. Insira nas barras de pesquisas os ingredientes que estiverem disponíveis;
+2. Após, clique em buscar.
+3. Para buscas de receitas mais abrangentes, utilize a barra de pesquisa disposta no cabeçalho da Página Inicial e pesquisar, clicando no botão de Lupa ao lado esquerdo.
+4. Para sair da área logada, clicar no ícone de sair, ao lado da foto, no canto superior direito.
+
+
+## Tela do Usuário - Meu Perfil (RF-01)
+
+Na barra de navegação da Tela Inicial, a opção Perfil leva o usuário a uma tela com informações pessoais a serem preenchidas por ele como nome, sua profissão, informações relevantes e suas redes sociais.
+
+<div align="center">
+  <img src="img/UserFlow.jpg">
+</div>
+
+<p align="center">Template Padrão do Site</p>
+
+
+### Requisitos atendidos
+
+●  	RF-01
+
+### Artefatos da funcionalidade
+
+●  	meu_perfil.html
+
+●  	meu_perfil-style.css
+
+
+### Estrutura de Dados
+ 
+
+ 
+### Instruções de acesso
+
+1. Na barra de navegação clicar na opção Meu Perfil;
+2. No menu Meu perfil, preencher as informações solicitadas;
+3. Clicar em salvar.
+
+## Tela de Inclusão de Receitas (RF-08)
+
+Logado ao site, o usuário poderá efetuar a inclusão de novas receitas, aumentando o banco de receitas da plataforma. Essa opção, fica disponível no Meu perfil na barra lateral direita.
+
+<div align="center">
+  <img src="img/UserFlow.jpg">
+</div>
+
+<p align="center">Template Padrão do Site</p>
+
+
+### Requisitos atendidos
+
+●  	RF-08
+
+
+### Artefatos da funcionalidade
+
+●  	enviar_receitas.html
+
+●  	enviar_receitas-style.css
+
+
+### Estrutura de Dados
+ 
+
+ 
+### Instruções de acesso
+
+1. Após abrir o Meu perfil, clicar na opção Incluir Receita na barra lateral direita;
+2. Preencher todas as informações sobre os ingredientes, o modo de preparo, a quantidade de porções, o nível de dificuldade e o tempo de preparo;
+3. A cada novo ingrediente/modo de preparo, clicar no ícone de + ao lado da barra de digitação para adicionar um novo campo abaixo do primeiro.
+4. Clicar na área em branco para adicionar uma foto do prato.
+5. Ao finalizar, clicar em salvar.
+
+
+
+
 
 
 
