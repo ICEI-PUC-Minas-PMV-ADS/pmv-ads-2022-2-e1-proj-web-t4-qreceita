@@ -322,6 +322,37 @@ Logado ao site, o usuário poderá efetuar a inclusão de novas receitas, aument
 4. Clicar na área em branco para adicionar uma foto do prato.
 5. Ao finalizar, clicar em salvar.
 
+## Tela de Receitas Favoritas (RF-04)
+
+Logado ao site, o usuário poderá salvar suas receitas favoritas. Essa receitas ficaram disponíveis dentro do Perfil na opção Minhas Receitas.
+
+<div align="center">
+  <img src="img/UserFlow.jpg">
+</div>
+
+<p align="center">Template Padrão do Site</p>
+
+### Requisitos atendidos
+
+●  	RF-04
+
+
+### Artefatos da funcionalidade
+
+●  	minhas_receitas.html
+
+●  	minhas_receitas-style.css
+
+### Estrutura de Dados
+ 
+
+ 
+### Instruções de acesso
+
+1. Após abrir o Meu perfil, clicar na opção Minhas Receitas na barra lateral direita;
+2. Uma nova página será aberta com todas as receitas salvas pelo usuário;
+3. Para visualizar uma delas basta clicar em cima de uma das opções.
+
 
 
 
