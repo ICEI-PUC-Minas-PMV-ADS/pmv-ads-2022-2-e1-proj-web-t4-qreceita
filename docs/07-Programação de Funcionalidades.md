@@ -183,7 +183,7 @@ Na tela Receita Escolhida, o usuário irá visualizar informações relevantes c
 Desejando o usuário compartilhar a receita escolhida, deverá clicar no ícone de compartilhamento localizado na tela da receita. O mesmo será redirecionado a uma nova tela, onde deverá copiar o link do site e selecionar uma das redes sociais informadas para finalizar o compartilhamento.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/img_etapa3/compartilhamento-da-receita.jng">
 </div>
 
 <p align="center">Template Padrão do Site</p>
@@ -292,7 +292,7 @@ Na barra de navegação da Tela Inicial, a opção Perfil leva o usuário a uma 
 Logado ao site, o usuário poderá efetuar a inclusão de novas receitas, aumentando o banco de receitas da plataforma. Essa opção, fica disponível no Meu perfil na barra lateral direita.
 
 <div align="center">
-  <img src="img_etapa3/enviar_receitas.png">
+  <img src="img/img_etapa3/enviar_receitas.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
