@@ -7,7 +7,7 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 A tela principal do sistema apresenta as barras de pesquisa para que o usuário possa informar quais os ingredientes tem disponível. A tela possui também a opção de login, para usuários já cadastrados, e cadastro, para usuários que ainda não estejam cadastrados. As receitas são armazenadas no LocalStorage com estruturas de dados baseada em JSON. Um exemplo da tela é apresentada na Figura 16.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/img_etapa3/index.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
@@ -40,7 +40,7 @@ A tela principal do sistema apresenta as barras de pesquisa para que o usuário 
 A tela de efetuar cadastro permite ao usuário se cadastrar no site para que possa ter acesso a outras funcionalidades como salvar suas receitas favoritas, incluir receitas e etc.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/img_etapa3/cadastre-se.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
@@ -85,7 +85,7 @@ A tela de efetuar cadastro permite ao usuário se cadastrar no site para que pos
 A tela de login permite ao usuário já cadastrado ter acesso a suas informações pessoais e a funcionalidades do site disponíveis apenas para os que já possuam login.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/img_etapa3/login.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
@@ -114,7 +114,7 @@ A tela de login permite ao usuário já cadastrado ter acesso a suas informaçõ
 Após efetuar a busca na Página inicial o usuário será redirecionado para a Tela de Receitas Encontradas. Nela, ficará disponível todas as receitas localizadas pelo site de acordo com os ingredientes informados pelo usuário. Logo ao lado da primeira opção informada há um filtro, no qual ele poderá restringir suas opções de visualização de acordo com as opções: Receitas mais fáceis, Receitas mais difíceis, Receitas mais avaliadas e Receitas menos avaliadas.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/img_etapa3/receitas-encontradas.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
@@ -146,7 +146,7 @@ Após efetuar a busca na Página inicial o usuário será redirecionado para a T
 Na tela Receita Escolhida, o usuário irá visualizar informações relevantes como o número de porções, tempo de preparo, grau de dificuldade e o detalhamento da receita escolhida, com ingredientes e o modo de preparo. Há também um ícone para o compartilhamento da receita, avaliá-la utilizando os ícones de estrelas e a opção de adicionar um comentário além de visualizar comentários de outros usuários.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/img_etapa3/receita-escolhida.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
@@ -216,7 +216,7 @@ Desejando o usuário compartilhar a receita escolhida, deverá clicar no ícone 
 Ao efetuar o cadastro, o usuário deixará de visualizar a Tela Inicial original e passará a ter sua tela personalizada com sua foto no canto superior direito e seu nome logo acima das barras de pesquisa.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/img_etapa3/user-logado.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
@@ -260,7 +260,7 @@ Estrutura de Dados
 Na barra de navegação da Tela Inicial, a opção Perfil leva o usuário a uma tela com informações pessoais a serem preenchidas por ele como nome, sua profissão, informações relevantes e suas redes sociais.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/img_etapa3/meu_perfil.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
@@ -292,7 +292,7 @@ Na barra de navegação da Tela Inicial, a opção Perfil leva o usuário a uma 
 Logado ao site, o usuário poderá efetuar a inclusão de novas receitas, aumentando o banco de receitas da plataforma. Essa opção, fica disponível no Meu perfil na barra lateral direita.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img_etapa3/enviar_receitas.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
@@ -327,7 +327,7 @@ Logado ao site, o usuário poderá efetuar a inclusão de novas receitas, aument
 Logado ao site, o usuário poderá salvar suas receitas favoritas. Essa receitas ficaram disponíveis dentro do Perfil na opção Minhas Receitas.
 
 <div align="center">
-  <img src="img/UserFlow.jpg">
+  <img src="img/img_etapa3/minhas-receitas.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
