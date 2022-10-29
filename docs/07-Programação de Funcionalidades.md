@@ -183,7 +183,7 @@ Na tela Receita Escolhida, o usuário irá visualizar informações relevantes c
 Desejando o usuário compartilhar a receita escolhida, deverá clicar no ícone de compartilhamento localizado na tela da receita. O mesmo será redirecionado a uma nova tela, onde deverá copiar o link do site e selecionar uma das redes sociais informadas para finalizar o compartilhamento.
 
 <div align="center">
-  <img src="img/img_etapa3/compartilhamento-da-receita.jng">
+  <img src="img/img_etapa3/compartilhamento-da-receita.png">
 </div>
 
 <p align="center">Template Padrão do Site</p>
