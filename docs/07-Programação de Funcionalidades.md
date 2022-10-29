@@ -263,7 +263,7 @@ Na barra de navegação da Tela Inicial, a opção Perfil leva o usuário a uma 
   <img src="img/img_etapa3/meu_perfil.png">
 </div>
 
-<p align="center">Figura 23: Meu Perfil</p>
+<p align="center">Figura 24: Meu Perfil</p>
 
 
 ### Requisitos atendidos
