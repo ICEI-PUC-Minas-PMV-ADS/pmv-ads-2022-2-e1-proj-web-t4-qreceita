@@ -1,0 +1,77 @@
+main {
+    text-align: center;
+    background-color: #d9e4c7;
+    margin-left: 3cm;
+    margin-right: 3cm;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+h2 {
+ font-size: x-large;
+ font-family: Arial;
+ color: black;
+}
+
+img {
+width: 50px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+ .url-copiar{
+    text-align: center;
+}
+
+.copiar2 {
+    width: 90px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #9dab86;
+    border-color: #9dab86;
+}
+
+input {
+    width: 10cm;
+    height: 1cm;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: large;
+}
+
+.container1 {
+    display: inline-block;
+}
+
+.container2 {
+    display: inline-block;
+}
+
+.container3 {
+    display: inline-block;
+}
+
+.container4 {
+    display: inline-block;
+}
+
+.container5 {
+    display: inline-block;
+}
+
+.container6 {
+    display: inline-block;
+}
+
+.container7 {
+    display: inline-block;
+    padding: 3px;
+}
+
+#botao-copiar {
+    border: 1cm;
+    border-radius: 1cm;
+}
+

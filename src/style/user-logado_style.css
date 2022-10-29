@@ -1,0 +1,31 @@
+
+#username {
+    margin-left: -5px;
+    
+}
+.nome_usuario_logado {
+    width: 100%;
+    
+}
+
+#foto-perfil-logado {
+    border-radius: 50%;
+    width: 60px;
+    height: 100%;
+    margin-left: 20px;
+    border: none;
+    padding: px;
+}
+
+#button-out {
+    width: 25px;
+    height: 100%;
+    background-color: #9dab86;
+    margin: 0;
+    border: none;
+    padding: 5px;
+}
+
+.button-out {
+    padding-right: 20px;
+}
