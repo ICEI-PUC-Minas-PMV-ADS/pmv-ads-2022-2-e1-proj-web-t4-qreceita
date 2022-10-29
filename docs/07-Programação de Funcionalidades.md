@@ -119,16 +119,70 @@ Após efetuar a busca na Página inicial o usuário será redirecionado para a T
 
 <p align="center">Template Padrão do Site</p>
 
-## Requisitos atendidos
+### Requisitos atendidos
 
 ●  	RF-02,  RF-03 e RF-07
  
 
-## Artefatos da funcionalidade
+### Artefatos da funcionalidade
 
 ●  	receitas_encontradas.html
 
 ●  	receitas_encontradas.css
+
+### Estrutura de Dados
+
+
+
+### Instruções de acesso
+
+1. Clique em uma das receitas encontradas 
+2. Caso deseje filtrar as opções, clicar no botão ao lado da primeira receita informada e selecionar um dos filtros.
+3. A página será recarregada de acordo com a opção de filtragem escolhida.
+
+
+## Receita Escolhida (RF-06 e RF-09)
+
+Na tela Receita Escolhida, o usuário irá visualizar informações relevantes como o número de porções, tempo de preparo, grau de dificuldade e o detalhamento da receita escolhida, com ingredientes e o modo de preparo. Há também um ícone para o compartilhamento da receita, avaliá-la utilizando os ícones de estrelas e a opção de adicionar um comentário além de visualizar comentários de outros usuários.
+
+<div align="center">
+  <img src="img/UserFlow.jpg">
+</div>
+
+<p align="center">Template Padrão do Site</p>
+
+### Requisitos atendidos
+
+●  	RF-06 e RF-09
+
+
+### Artefatos da funcionalidade
+
+receita-escolhida.html
+
+receita-escolhida.css
+
+forms-val.js
+
+### Estrutura de Dados
+ 
+
+ 
+### Instruções de acesso
+
+1. Clicar na receita escolhida na página anterior;
+2. Abrirá uma nova página com todo o detalhamento da receita;
+3. Para compartilhar a receita o usuário deverá clicar no ícone de compartilhamento.
+4. Para enviar e/ou ler comentários o usuário deverá descer até o rodapé da página onde fica localizado uma caixa de texto para comentários e os comentários anteriores.
+5. Para avaliar a receita, o usuário deverá contar com o sistema de estrelas, clicando em cada uma de acordo com o favoritismo por ela.
+
+
+
+
+
+
+
+
 
 
 
