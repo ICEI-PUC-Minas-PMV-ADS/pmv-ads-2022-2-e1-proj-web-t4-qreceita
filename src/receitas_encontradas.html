@@ -129,21 +129,20 @@
     </main>
         
         <br>
-        <aside id="botton-filtro">
-            <!--test botton ODAIR-->
-                <div id="botton-filtro">
-                    <button select type="botton-filtro">
-                        <a href="botton-filtro">
-                            <img id="botton-filtro" src="imgs/filtro2.png" alt="">
-                        </a>
-                    <select>
-                        <option value="Selecione um dos filtros abaixo" placeholder: Selecione:></option>
-                        <option value="Receitas mais bem avaliadas">Receitas mais bem avaliadas</option>
-                        <option value="Receitas menos avaliadas">Receitas menos avaliadas</option>
-                        <option value="Receitas mais fáceis">Receitas mais fáceis</option>
-                        <option value="Receitas mais difíceis">Receitas mais difíceis</option>
-                    </select>
-                </button>
+        <aside id="button-filtro">
+        <!--test button ODAIR-->
+            <div id="button-filtro">
+                <form action="">    
+                    <button class="login2">Filtrar</button>
+                        <div class="form-group col-md">
+                            <select id="classificacao-da-receita" class="form-control" name="list" multiple>
+                                <option value="1">Mais bem avaliadas</option>
+                                <option value="2">Menos avaliadas</option>
+                                <option value="3">Mais fáceis</option>
+                                <option value="4">Mais difíceis</option>
+                            </select>
+                        </div>  
+                </form>
             </div>
         </aside>
     </section>
