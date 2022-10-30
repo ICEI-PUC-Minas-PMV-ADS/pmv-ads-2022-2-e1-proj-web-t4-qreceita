@@ -1,6 +1,25 @@
 
 document.getElementById('button_login1').addEventListener('click', func_login);
 document.getElementById('button_sign1').addEventListener('click', func_cadastro);
+document.getElementById('my_profile_login').addEventListener('click', (e) => {
+
+    e.preventDefault();
+
+    if(document.getElementsByClassName('navs')[1].id === 'my_profile_login'){
+        func_login();
+    }else {
+        cria_myprofile();
+    }
+
+});
+document.getElementById('first-nav').addEventListener('click', (e) => {
+
+    if(document.getElementsByClassName('navs')[0].id === 'page_log') {
+        e.preventDefault();
+        cria_logado();
+    }
+
+})
 
 let db_usuarios = {usuarios: [
     { "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com"},
@@ -111,7 +130,14 @@ function func_login() {
 
 function cria_logado(){
 
-    const main = document.getElementById("site-content22")
+    const main = document.getElementById("site-content22");
+
+    if(document.getElementsByClassName('navs')[1].id === 'my_profile_login'){
+        let = myprofile = document.getElementById("my_profile_login");
+        myprofile.id = "my_profile";
+        let = myprofile1 = document.getElementById("first-nav");
+        myprofile1.id = "page_log"
+    }
 
     main.innerHTML = ` <div id="main-text-id" class="main-text">
     <h1 id="text1" class="top-text">
@@ -306,3 +332,84 @@ function data_validation(string) {
     return flag
 }
 
+function cria_myprofile(){
+
+    let main = document.getElementById('site-content22');
+    main.remove();
+    let main2 = document.createElement('main')
+
+    let body = document.getElementsByTagName('body')[0];
+    body.insertAdjacentElement('beforebegin', main2)
+    let section2 = document.createElement('section');
+    section2.id = 'section_profile';
+    body.insertAdjacentElement('afterend', section2);
+    
+    section2.innerHTML = `<article class="grid">
+
+    <div id="cabecalho-menu-perfil">
+        <br>
+        <h2> Perfil </h2></br>
+        <p> Altere ou adicione informações sobre você</p>
+    </div>
+
+
+    <div id="grid1-foto-de-perfil">
+
+        <img id="avatar" src="/docs/img/fotoLarissa.png" alt="">
+        <input type="image" value="Alterar foto">
+
+    </div>
+
+    <div id="grid2-username">
+        <label>Nome de usuário: <input id="username" type="text" placeholder="Username"></label>
+
+    </div>
+
+    <div id="grid3-profissao">
+
+        <label>Profissão: <input id="profissao" type="text" placeholder="Profissão"></label>
+
+    </div>
+
+    <div id="grid4-sobre-voce">
+
+        <label>Sobre você:</label><br><textarea class="msg" cols="35" rows="8"
+            placeholder="O que eu mais gosto de fazer é... :)"></textarea><br>
+
+
+    </div>
+
+    <div id="grid5-links">
+
+        <input id="Linkedin" type="link" placeholder="Linkedin">
+        <input id="Instagram" type="text" placeholder="Instagram">
+        <input id="Twitter" type="text" placeholder="Twitter">
+    </div>
+
+
+    <div id="grid-botao-enviar">
+        <button class="login2">
+            <a style="color: white;" href="">Salvar</a>
+        </button>
+    </div>
+
+</article>
+
+<aside id="aside_my_prof">
+    <div class="wrapper_aside">
+        <div class="foto-perfil-logado">
+            <img id="foto-perfil-logado" src="imgs/larissa_cunha.jpg" alt="">
+            <h4 id="username">Larissa Cunha</h4>
+            <br>
+        </div>
+        <div id="opcoes">
+            <a class="perfil-user" href="">Perfil</a></p>
+            <br>
+            <a class="enviar_receitas" href="">Enviar Receitas</a></p>
+            <br>
+            <a class="minhas_receitas" href="">Minhas Receitas</a></p>
+        </div>
+    </div>
+</aside>`
+
+}
