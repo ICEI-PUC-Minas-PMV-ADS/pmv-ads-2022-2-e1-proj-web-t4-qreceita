@@ -13,10 +13,13 @@ article {
     margin-right: 15px;
 }
 
-#botton-filtro {
-    background-color: white;
-    margin-right: 10px;
-    width: 30px;   
+aside {
+    position: relative;
+    top: rigth;
+    width: 200px;
 }
 
- 
+#button-filtro {
+margin-top: 10px;
+margin-left: 15px;
+}
