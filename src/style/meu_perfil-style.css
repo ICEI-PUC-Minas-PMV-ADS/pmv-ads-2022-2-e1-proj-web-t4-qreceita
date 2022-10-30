@@ -12,13 +12,13 @@
 }
 
 
-section{
+#section_profile{
     margin: 0;
     padding: 0;
 }
 
-aside {
-    max-height: 18cm;
+#aside_my_prof {
+    height: 900px;
     background-color:rgb(249, 244, 244);
     align-content: center;
     border: 1px solid #9DAB86;
@@ -38,8 +38,7 @@ div.foto-perfil-logado{
 }
 
 .grid{
-    
-    margin-bottom: 5cm;
+    height: 100%;
     display: grid;
     border: 1px solid #9DAB86;
     padding: 3%;
@@ -77,12 +76,7 @@ div.foto-perfil-logado{
 
 }
 
-#grid-botao-enviar{
-    
-}
-
-
-img{
+#avatar{
     width: 200px;
   }
 
@@ -100,4 +94,10 @@ img{
 .minhas_receitas:hover{
     color: brown;
     text-decoration: underline;
+}
+
+#main_content_my_prof {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
 }

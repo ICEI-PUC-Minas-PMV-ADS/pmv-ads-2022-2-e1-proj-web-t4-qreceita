@@ -112,6 +112,11 @@ body {
 #first-nav {
     padding-left: 175px;
 }
+
+#page_log {
+    padding-left: 175px;
+}
+
 a {
     display: flex;
     width: 100%;
