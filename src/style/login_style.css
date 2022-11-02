@@ -36,3 +36,11 @@
     border: 1px solid #b2b2b2;
     border-radius: 8px;
 }
+
+.site-content.login_sign {
+    display: flex;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

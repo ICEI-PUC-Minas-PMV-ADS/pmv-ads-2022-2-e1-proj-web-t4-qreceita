@@ -50,12 +50,14 @@ function func_login() {
 
     //Cria a tela de login no DOM
     const main = document.getElementById("site-content22")
+    remove_class_list(main)
     let main_child = main.firstElementChild;
     while (main_child) {
         main.removeChild(main_child);
         main_child = main.firstElementChild;
     }
 
+    main.classList.add('login_sign')
     const main_div = document.createElement("div");
     const div_sec = document.createElement("div");
     const div_ter = document.createElement("div");
@@ -115,10 +117,8 @@ function func_login() {
         db_usuarios = JSON.parse(usuariosJSON);    
     }
 
-    let a = interacao(input_email.value, input_password.value);
-
     //renderiza a tela inicial com usuário logado
-    if(a){
+    if(input_email.value === usuarioCorrente.email && input_password.value === usuarioCorrente.senha){
         cria_logado();
     } else{
         alert('usuário não cadastrado')
@@ -131,6 +131,7 @@ function func_login() {
 function cria_logado(){
 
     const main = document.getElementById("site-content22");
+    remove_class_list(main)
 
     if(document.getElementsByClassName('navs')[1].id === 'my_profile_login'){
         let = myprofile = document.getElementById("my_profile_login");
@@ -189,8 +190,8 @@ function cria_logado(){
         </ul>
     </div>
     <div class="input-ingrediente-box">
-        <button class="login2">
-            <a style="color: white;" href="resultado_pesquisa.html">Buscar</a>
+        <button id="recipes_search_login2" class="login2">
+            <a style="color: white;">Buscar</a>
         </button>
     </div>
 </div>
@@ -221,45 +222,70 @@ function cria_logado(){
         location.assign('index.html')
 
     })
+    //repetido - trabalhar OO
+    document.getElementById("recipes_search_login2").addEventListener('click', (e) => {
 
-}
-
-//verifica se o email e senha inseridos estão no localstorage
-function interacao(email, senha){
-
-    let flag = false
-
-    for (var i = 0; i < db_usuarios.usuarios.length; i++) {
-        var usuario = db_usuarios.usuarios[i];
-
-        if (email == usuario.email && senha == usuario.senha) {
-
-            usuarioCorrente.nome = usuario.nome;
-            usuarioCorrente.email = usuario.email;
-            usuarioCorrente.senha = usuario.senha;
-
-            sessionStorage.setItem('usuarioCorrente', JSON.stringify(usuarioCorrente));
-
-            flag = true
-            break
-
+        e.preventDefault();
+        let inputs_recipe = document.getElementsByClassName('input-ingrediente')
+        let inputs = []
+        //array com itens pesquisados
+        for(let c = 0; c < 10; c++){
+            if(inputs_recipe[c].value.trim() != "") inputs.push(inputs_recipe[c].value.trim().toLowerCase())
         }
+    
+        clear_content("site-content22")
+    
+        const j = JSON.parse(xhr.responseText);
+    
+        main_content_search.classList.add('show-recipe')
+    
+        let h2 = document.createElement('h2')
+        h2.id = 'result_count'
+        main_content_search.appendChild(h2)
+        //contador de receitas encontradas
+        countRecipe = 0
+    
+        let countIngredients = 0
+        for(let c in j)
+        {
+            for(e in inputs)
+            {
+                //Se a conteúdo da receita conter a palavra inserida pelo usuário na barra de pesquisa, adiciona uma unidade ao contador 2
+                if(j[c].secao[0].conteudo.filter(retur => retur.indexOf(inputs[e]) >= 0).length > 0) countIngredients += 1
+    
+            }
+            if(countIngredients >= 3 && inputs.length > 3 || inputs.length === countIngredients)
+                {
+                    //carrega os dados no DOM
+                    let article = document.createElement('article')
+                    article.className = "result_recipe"
+                    article.innerHTML = '<h3>' + j[c].nome + '</h3>'
+                    document.getElementById('result_count').insertAdjacentElement('afterend', article)
+                    countRecipe += 1
+                }
+            countIngredients = 0
+        }
+        let ingredients = ""
+        inputs.forEach(el => {
+            ingredients += `${el} `
+        }); 
+    
+        h2.innerText = `Encontramos ${countRecipe} resultados de receitas que se enquadram na sua busca por: ${ingredients}.`
+    })
 
-    }
-
-    return flag
 }
-
 
 function func_cadastro() {
 
     const main = document.getElementById("site-content22")
+    remove_class_list(main)
+
     let main_child = main.firstElementChild;
     while (main_child) {
         main.removeChild(main_child);
         main_child = main.firstElementChild;
     }
-
+    main.classList.add('login_sign')
     const main_div = document.createElement("div");
     const main_form = document.createElement("form");
     const name = document.createElement("input");
@@ -267,13 +293,46 @@ function func_cadastro() {
     const input_password = document.createElement("input");
     const confirm_password = document.createElement("input");
     const div_sec = document.createElement("div");
+    const div_modal_container = document.createElement("div")
+
+    div_modal_container.id = "modal_container"
+    div_modal_container.className = "modal-container"
+    div_modal_container.innerHTML = `<div class="modal">
+    <h1>Termos de Uso</h1>
+    <h4>1 Do aceite dos termos de uso</h4>
+        <p>A sua utilização desta plataforma implica na sua aceitação integral e plena do presente Termos de Uso. Por isso, sua leitura atenciosa é imprescindível.
+        O uso da nossa plataforma também lhe submete aos demais termos, regulamentos, políticas, avisos que são disponibilizados ao usuário, assim como a atualização destes documentos.</p> 
+        <h4>2 Condições de acesso</h4>
+        <p>Essa plataforma está disponível para ser acessada gratuitamente a todos os usuários, mas pode conter serviços e produtos próprios ou de terceiros que podem ser cobrados. Inicialmente não se faz necessário nenhum cadastro para acessar a nossa plataforma, por isso são considerados serviços abertos, já para os que exigem uma inscrição, cadastros etc. são considerados serviços fechados.</p>
+        
+        
+        <p>Para a devida utilização dos denominados serviços fechados, o usuário deve apresentar dados e este declara desde já que todas as informações apresentadas são verdadeiras e corretas e declara estar ciente que responderá pelas falsas ou erros e informações apresentados.</p> 
+        <p>Caso o usuário for menor de idade, deve abster-se de utilizar a nossa plataforma e pedir aos seus pais ou responsáveis para utilizarem a plataforma, serviços ou produtos.</p> 
+        <p>O usuário declara que concorda e compromete-se a usar a nossa plataforma, serviços ou produtos somente para os fins permitidos e de acordo com os termos constantes neste instrumento e que é o responsável integral pelo uso em desacordo com nossos Termos de Uso e Serviços, devendo assumir todas as consequências dessa atitude, reconhecendo que o Site QReceita não tem nenhuma responsabilidade por esses atos perante ele ou a terceiros. Responde ainda por todo e qualquer prejuízo causado a Guia da Culinária.</p> 
+        <p>O acesso a nossa plataforma não lhe permite utilizar, copiar, reproduzir, modificar etc qualquer conteúdo, serviço ou produto. Fica permitido o compartilhamento junto às redes sociais, no entanto, o usuário que fizer isso está sujeito aos termos de uso e serviços e política de privacidade destes sites.</p> 
+        <h4>3 Política de privacidade</h4> 
+        <p>Todas as informações inerentes sobre a proteção de privacidade dos usuários encontram-se na Política de Privacidade do Site QReceita.</p> 
+        <h4>4 Responsabilidades</h4>    
+        <p>O Site QReceita sempre busca oferecer o acesso a plataforma, serviços e produtos com a maior qualidade possível, por isso, pode haver casos que esta prestação pode ser momentaneamente interrompida para que sejam realizadas reparações técnicas e operacionais (marcadas ou não). Caso enfrente algum problema em nossa plataforma, entre em contato conosco o mais rápido possível.</p>
+        <p>Nossa plataforma pode aceitar expor banner, botões, backlinks, ferramentas etc. de terceiros, com isso, o usuário deve estar ciente que ao clicar neles, serão redirecionados para outros locais fora da nossa responsabilidade, devendo buscar ler e aceitar os termos de uso e serviços desses terceiros.</p> 
+        <p>Nas páginas da nossa plataforma podem haver espaços para comentário dos usuários, esses declaram que todo e qualquer conteúdo publicado será apenas de sua responsabilidade, respondendo sobre perdas e danos causados ao QReceita ou a terceiros. Caso veja algo ofensivo ou de alguma forma prejudicial, entre em contato conosco imediatamente.</p> 
+        <h4>6 Denúncia de violação aos termos de uso</h4>
+        <p>Em seu comunicado, o usuário deve apresentar com a maior riqueza de detalhes possível o que lhe levou a reportar tal situação.</p>
+        <h4>8 Legislação aplicável<h4>
+        
+        <p>Este Termo de Uso é regido dentro das legislações vigentes na República Federativa do Brasil.</p> 
+        <h4>Fale conosco</h4>
+        <p>Você pode falar com o site QReceita por meio do WhatSapp (31) 9999-1111 ou no e-mail: contatos@qreceita.com.br, sempre que tiver alguma dúvida ou alguma necessidade de contatar nossa equipe.
+        É importante estar atento(a) e verificar se os Termos de Uso é a versão mais atualizada, ao navegar pela nossa plataforma.</p> 
+    <button id="close">Fechar</button>
+</div>`
 
     main_div.className = "flex_container2";
     main_div.innerHTML = `<h1 class="cadastro_title">Cadastro</h1>
                         <p>Inscreva-se e comece a preparar sua receita</p>`;
 
     main_form.className = "cadastro-form";
-    main_form.innerHTML = '<p>Ao se increver, você concorda com nossos Termos de Uso e Privacidade</p>';
+    main_form.innerHTML = '<p>Ao se increver, você concorda com nossos Termos de Uso e Privacidade<button id="leia">Leia</button></p>';
     div_sec.className = "Cadastre-se";
     div_sec.innerHTML = '<button class="login2">Cadastre-se</button>';
 
@@ -301,6 +360,22 @@ function func_cadastro() {
     main_form.insertAdjacentElement("beforeend", input_password);
     main_form.insertAdjacentElement("beforeend", confirm_password);
     main_form.insertAdjacentElement("beforeend", div_sec);
+    main_form.insertAdjacentElement("beforeend", div_modal_container);
+
+    const open1 = document.getElementById('leia')
+    const modal_container = document.getElementById('modal_container')
+    const close1 = document.getElementById('close')
+
+
+    open1.addEventListener('click', (e) => {
+        e.preventDefault()
+        modal_container.classList.add('show');
+    })
+
+    close1.addEventListener('click', (e) => {
+        e.preventDefault()
+        modal_container.classList.remove('show');
+    })
 
     main_form.addEventListener('submit', (e) => {
 
@@ -412,4 +487,16 @@ function cria_myprofile(){
     </div>
 </aside>`
 
+}
+
+//verifica se um elemento possui classlist
+
+function remove_class_list(elem) {
+
+    let ecl = elem.classList
+    if(ecl.length > 1) {
+        for(let c = 1; c <= ecl.length; c++){
+            ecl.remove(ecl.item(c))
+        }
+    }
 }

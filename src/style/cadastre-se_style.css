@@ -29,11 +29,10 @@
     border-radius: 8px;
 }
 
-.cadastre-se {
+.Cadastre-se {
     margin-top: 11px;
     margin-bottom: 11px;
 }
-
 
 .modal-container {
     background-color: rgba(0, 0, 0, 0.3);
@@ -61,6 +60,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 30px 50px;
     width: 600px;
+    height: 90%;
     max-width: 100%;
     text-align: center;
 }
@@ -70,7 +70,7 @@
 }
 
 .modal p {
-    font-size: 16px;
+    font-size: 12px;
     opacity: 0.7;
     text-align: justify;
 }

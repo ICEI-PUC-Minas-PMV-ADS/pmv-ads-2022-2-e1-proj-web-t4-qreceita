@@ -3,18 +3,17 @@
     margin-left: -5px;
     
 }
-.nome_usuario_logado {
-    width: 100%;
-    
-}
 
 #foto-perfil-logado {
     border-radius: 50%;
     width: 60px;
-    height: 100%;
-    margin-left: 20px;
+    height: 65px;
+    margin-left: 10px;
+    margin-right: 10px;
     border: none;
-    padding: px;
+}
+.foto-perfil-logado{
+    text-align: center;
 }
 
 #button-out {
