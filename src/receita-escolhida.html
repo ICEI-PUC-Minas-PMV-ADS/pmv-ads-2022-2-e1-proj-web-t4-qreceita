@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>QReceita</title>
-    <!--Inclusão do script/dbfake_finder.jd-->
+        <!--Inclusão do script/dbfake_finder.jd-->
         <script src="scripts/dbfake_finded.js"></script>
         <link rel="stylesheet" href="style/header_style.css">
         <link rel="stylesheet" href="style/content_style.css">
@@ -24,12 +24,13 @@
                     </h1>
                 </div>
                 <div class="search-form">
-                    <form id="form-search2" name="form-search" class="main-form" onsubmit="valid_search()" action="" method="get">
+                    <form id="form-search2" name="form-search" class="main-form" onsubmit="valid_search()" action=""
+                        method="get">
                         <input id="search-top" class="main-input" type="text" aria-invalid="false" name="q"
                             placeholder="Pesquise por qualquer receita, ingrediente..." autocomplete="off" value=""
                             role="combobox" aria-autocomplete="both" aria-haspopup="true" aria-expanded="false" required>
                         <button onclick="valid_search()" type="submit" id="search-dbfake" class="search-button" onclick="">
-                                <img id="lupa" src="imgs\Lupa2.svg" alt="">
+                            <img id="lupa" src="imgs\Lupa2.svg" alt="">
                         </button>
                     </form>
                 </div>
@@ -58,108 +59,68 @@
                 </ul>
             </nav>
         </header>
-
+    
         <main id="main">
             <section>
                 <div class="image-receita">
                     <h1 id="recipeName"> Bolo de Cenoura</h1>
-<br>
-                    <img class="bolo" src="imgs/prato.png"alt="bolo de cenoura">
+                    <br>
+                    <img class="bolo" src="imgs/prato.png" alt="bolo de cenoura">
                 </div>
-<br>
+                <br>
                 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
                 <div class="estrelas">
-                  <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
-                  <label for="cm_star-1"><i class="fa"></i></label>
-                  <input type="radio" id="cm_star-1" name="fb" value="1"/>
-                  <label for="cm_star-2"><i class="fa"></i></label>
-                  <input type="radio" id="cm_star-2" name="fb" value="2"/>
-                  <label for="cm_star-3"><i class="fa"></i></label>
-                  <input type="radio" id="cm_star-3" name="fb" value="3"/>
-                  <label for="cm_star-4"><i class="fa"></i></label>
-                  <input type="radio" id="cm_star-4" name="fb" value="4"/>
-                  <label for="cm_star-5"><i class="fa"></i></label>
-                  <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                    <input type="radio" id="cm_star-empty" name="fb" value="" checked />
+                    <label for="cm_star-1"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-1" name="fb" value="1" />
+                    <label for="cm_star-2"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-2" name="fb" value="2" />
+                    <label for="cm_star-3"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-3" name="fb" value="3" />
+                    <label for="cm_star-4"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-4" name="fb" value="4" />
+                    <label for="cm_star-5"><i class="fa"></i></label>
+                    <input type="radio" id="cm_star-5" name="fb" value="5" />
                 </div>
-                <div id="inf_adicionais">               
+                <div id="inf_adicionais">
                     <!--<div id="inf_adicionais">
-                        <p id="dificuldade">Fácil</p>
-                        <p id="tempo_preparo">40 minutos</p>
-                        <p id="serve">8 Porções</p>-->
-                        <a href="http://127.0.0.1:5500/compartilhamento-da-receita.html"target="_blank"><img id= "botao-compartilhar"src="imgs/Very-Basic-Share-icon.png" alt="share-botton"></a>
-                        
-                    </div>
-
+                            <p id="dificuldade">Fácil</p>
+                            <p id="tempo_preparo">40 minutos</p>
+                            <p id="serve">8 Porções</p>-->
+                    <a href="http://127.0.0.1:5500/compartilhamento-da-receita.html" target="_blank"><img
+                            id="botao-compartilhar" src="imgs/Very-Basic-Share-icon.png" alt="share-botton"></a>
+    
+                </div>
+    
             </section>
-        
-        
-<!-- Código das estrelas-->
-
-<div id="det_receita"></div>
-<!--substituição dos dados.-->
-
-
-<!--<div class="container-box1">
-    <h2>Medida dos Ingredientes</h2>
     
-    <h3 id="massa-cobertura">Massa</h3>
-    <ul>
-        <li>1/2 xícara (chá de óleo)</li>
-        <li>3 cenouras médias raladas</li>
-        <li>4 ovos</li>
-        <li>2 xícaras de chá de açucar</li>
-        <li>2 e 1/2 xícaras (chá) de farinha de trigo</li>
-        <li>1 colher (sopa) de fermento em pó</li>
-    </ul>
-
-    <h3 id="massa-cobertura"> Cobertura</h3>
-    <ul>
-        <li>1 colher (sopa) de manteiga</li>
-        <li>3 colheres (sopa) de chocolate em pó</li>
-        <li>1 xícara (chá) de açucar</li>
-        <li>1 xícara (chá) de leite</li>
-    </ul>
-</div>
-
-<div class="container-box2">
-    <h2>Modo de Preparo</h2>
-    <h3 id="massa-cobertura">Massa</h3>
-    <ol class="preparo">
-        <li>Em um liquidificador, adicione a cenoura, os ovos e o óleo, depois misture</li>
-        <li>Acrescente o açucar e bata novamente por 5 minutos</li>
-        <li> Em uma tigela ou na batedeira, adicione a farinha de trigo e depois misture novamente</li>
-        <li>Acrescente o fermento e misture lentamente com uma colher</li>
-        <li>Asse em um forno preaquecido a 180°C por aproximadamente 40 mintos</li>
-    </ol>
+            <!-- Código das estrelas-->
     
-    <h3 id="massa-cobertura">Cobertura</h3>
-    <ol class="fazer cobertura">
-        <li>Despeje em uma tijela a manteiga, o chocolate em pó, o açucar e o leite, depois misture.</li>
-        <li>Leve a mistura ao fogo e continue misturando até obter uma consistencia cremosa, depois despeje no bolo</li>
-    </ol>
-</div>-->
-
-<hr>
-    <section>
-        <div id="container1">   
-            <form>
-                <textarea name="Comentário" id="coment" cols="120" rows="10" placeholder="Digite aqui o seu comentário!"></textarea>
-            </form>
-        </div>
-
-        <div id="botao-enviar" id="container2">
-            <button class="enviar2">Enviar</button>
-        </div>
-    </section>
-</main>
-
-    <footer>
-        <div>
-            <h4>Entre em contato conosco:</h4>
-            <p>Site QReceita</p>
-            <p>Fone: (31) 3333-1111</p>
-            <p>WhatsApp: (31) 99999-1111</p>
-            <p>E-mail: contato@qreceita.com.br</p>
-        </div>
-    </footer>  
-</html>
+            <div id="det_receita"></div>
+            <!--substituição dos dados.-->
+            <hr>
+            <section>
+                <div id="container1">
+                    <form>
+                        <textarea name="Comentário" id="coment" cols="120" rows="10"
+                            placeholder="Digite aqui o seu comentário!"></textarea>
+                    </form>
+                </div>
+    
+                <div id="botao-enviar" id="container2">
+                    <button class="enviar2">Enviar</button>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <div>
+                <h4>Entre em contato conosco:</h4>
+                <p>Site QReceita</p>
+                <p>Fone: (31) 3333-1111</p>
+                <p>WhatsApp: (31) 99999-1111</p>
+                <p>E-mail: contato@qreceita.com.br</p>
+            </div>
+        </footer>
+    
+        </html>

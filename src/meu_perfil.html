@@ -9,15 +9,9 @@
     <link rel="stylesheet" href="style/header_style.css">
     <link rel="stylesheet" href="style/content_style.css">
     <link rel="stylesheet" href="style/footer_style.css">
-    <link rel="stylesheet" href="style/meu_perfil-style.css">
+    <link rel="stylesheet" href="style/myProfile2.css">
     <link rel="stylesheet" href="style/user-logado_style.css">
-    <link rel="stylesheet" href="style/minhas_receitas_style.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Caveat:400,700|Josefin+Sans:700|Lato:400,400i,700,700i|Lobster+Two:400i|Oswald:300,400"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="all" href="/css/all.css?20201021">
-    <link rel="stylesheet" type="text/css" media="print" href="/css/print.css?20191018">
-    <link rel="stylesheet" type="text/css" media="all and (max-width: 1000px)" href="/css/responsive.css?20191030">
+    <link rel="stylesheet" href="style/receitas-encontradas.css">
 </head>
 
 <body>
@@ -28,30 +22,26 @@
                 </h1>
             </div>
             <div class="search-form">
-                <form name="form-search" class="main-form" action="" method="get">
-                    <input class="main-input" type="text" aria-invalid="false" name="q"
-                        placeholder="Pesquise por qualquer receita, ingrediente..." autocomplete="off" value=""
-                        role="combobox" aria-autocomplete="both" aria-haspopup="true" aria-expanded="false" required>
-                    <button type="submit" id="search-dbfake" class="search-button" onclick="">
-                        <a href="">
-                            <img id="lupa" src="/docs/img/Lupa2.svg" alt="">
-                        </a>
+                <form id="form-search2" name="form-search" class="main-form" action="" method="get">
+                    <input id="search-top" class="main-input" type="text" aria-invalid="false" name="q"
+                        placeholder="Pesquise por qualquer receita, ingrediente..." autocomplete="off" value="" role="combobox"
+                        aria-autocomplete="both" aria-haspopup="true" aria-expanded="false" required>
+                    <button type="submit" id="search-dbfake" class="search-button">
+                        <img id="lupa" src="imgs\Lupa2.svg" alt="">
                     </button>
                 </form>
             </div>
-            <div id="space">
-            </div>
-            <div class="foto-perfil-logado">
-                <img id="foto-perfil-logado" src="/src/imgs/larissa_cunha.jpg" alt="">
-                <p>Larissa Cunha</p>
+            <div id="space"></div>
+            <div class="avatar-container">
+                <img class="avatar" src="imgs/avatar-padrao2.jpg" alt="">
+                <p class="userName" id="nome_usuario_logado"></p>
             </div>
             <div class="button-out">
-                <button type="button-out">
-                    <a href="">
-                        <img id="button-out" src="/src/imgs/button-out.png" alt="">
-                    </a>
+                <button id="button_logout_logado" type="button-out">
+                    <img src="imgs/button-out.png" alt="">
                 </button>
             </div>
+            <!--Fim entrada de dados Odair-->
         </div>
         <nav class="nav-bar">
             <ul class="list-navs">
@@ -59,93 +49,61 @@
                     <a class="nav-links" href="">
                         Página Inicial
                     </a>
-
+        
                 </li>
                 <li class="navs">
-                    <a class="nav-links-visited" href="">
+                    <a id="my-profile-nav" class="nav-links" href="">
                         Meu Perfil
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-
-    <main id="main_content_my_prof">
-        <section id="section_profile">
-
-            <article class="grid">
-
+    <main id="site-content22" class="site-content">
+            <div id="profile-left" class="grid">
                 <div id="cabecalho-menu-perfil">
-                    <br>
-                    <h2> Perfil </h2></br>
+                    <h2> Perfil </h2>
                     <p> Altere ou adicione informações sobre você</p>
                 </div>
-
-
-                <div id="grid1-foto-de-perfil">
-
-                    <img id="avatar" src="/docs/img/fotoLarissa.png" alt="">
-                    <input type="image" value="Alterar foto">
-
+                <div id="dynamic" class="dynamic-content">
+                    <div id="input_top" class="inputs-prof">
+                        <input class="input-data-user" id="user_name" type="text" placeholder="Username">
+                        <input class="input-data-user" id="profissao" type="text" placeholder="Profissão">
+                    </div>
+                    <div id="grid4-sobre-voce">
+                        <textarea id="user-info" cols="35" rows="8" placeholder="O que eu mais gosto de fazer é..."></textarea>
+                    </div>
+                    <div id="input_bottom" class="inputs-prof">
+                        <input class="input-data-user" id="Linkedin" type="link" placeholder="Linkedin">
+                        <input class="input-data-user" id="Instagram" type="text" placeholder="Instagram">
+                        <input class="input-data-user" id="Twitter" type="text" placeholder="Twitter">
+                    </div>
+                    <div id="grid-botao-enviar">
+                        <button class="login2">
+                            <a style="color: white;" href="">Salvar</a>
+                        </button>
+                    </div>
                 </div>
-
-                <div id="grid2-username">
-                    <label>Nome de usuário: <input id="username" type="text" placeholder="Username"></label>
-
-                </div>
-
-                <div id="grid3-profissao">
-
-                    <label>Profissão: <input id="profissao" type="text" placeholder="Profissão"></label>
-
-                </div>
-
-                <div id="grid4-sobre-voce">
-
-                    <label>Sobre você:</label><br><textarea class="msg" cols="35" rows="8"
-                        placeholder="O que eu mais gosto de fazer é... :)"></textarea><br>
-
-
-                </div>
-
-                <div id="grid5-links">
-
-                    <input id="Linkedin" type="link" placeholder="Linkedin">
-                    <input id="Instagram" type="text" placeholder="Instagram">
-                    <input id="Twitter" type="text" placeholder="Twitter">
-                </div>
-
-
-                <div id="grid-botao-enviar">
-                    <button class="login2">
-                        <a style="color: white;" href="">Salvar</a>
-                    </button>
-                </div>
-
-            </article>
-
-            <aside id="aside_my_prof">
+            </div>
+            <div id="aside_my_prof" class="grid">
                 <div class="wrapper_aside">
-                    <div class="foto-perfil-logado">
-                        <img id="foto-perfil-logado" src="imgs/larissa_cunha.jpg" alt="">
-                        <h4 id="username">Larissa Cunha</h4>
-                        <br>
+                    <div id="container-perf-log">
+                        <img class="avatar" src="imgs/avatar-padrao2.jpg" alt="">
+                        <h4 class="userName"></h4>
+                        
                     </div>
-                    <div id="opcoes">
-                        <a class="perfil-user" href="">Perfil</a></p>
-                        <br>
-                        <a class="enviar_receitas" href="">Enviar Receitas</a></p>
-                        <br>
-                        <a class="minhas_receitas" href="">Minhas Receitas</a></p>
+                    <div id="options">
+                        <div class="nav-options"><a href="">Perfil</a></div>
+                        <div class="nav-options"><a href="">Enviar Receitas</a></div>
+                        <div class="nav-options"><a href="">Minhas Receitas</a></div>
                     </div>
                 </div>
-            </aside>
-        </section>
+            </div>
     </main>
-
+    <script src="scripts/my_prof.js" type="module"></script>
 </body>
 <footer>
-    <div style="margin-top: 10%;">
+    <div>
         <h4>Entre em contato conosco:</h4>
         <p>Site QReceita</p>
         <p>Fone: (31) 3333-1111</p>

@@ -16,7 +16,7 @@ document.getElementById('first-nav').addEventListener('click', (e) => {
 
     if(document.getElementsByClassName('navs')[0].id === 'page_log') {
         e.preventDefault();
-        cria_logado();
+        location.assign('user-logado.html');
     }
 
 })
@@ -27,7 +27,6 @@ let db_usuarios = {usuarios: [
 ]}
 
 let usuarioCorrente = {}
-
 
 localStorage.setItem('db_usuarios',JSON.stringify(db_usuarios))
 
@@ -68,7 +67,7 @@ function func_login() {
     main_div.innerHTML = `<h1 style="color: white" class="login_title">Login</h1>
                         <p style="color: white">Faça o Login com sua conta QReceita</p>`;
     div_sec.className = "button_login";
-    div_sec.innerHTML = `<button class="login2">Fazer Login</button>`;
+    div_sec.innerHTML = `<button id="login-form" class="login2">Fazer Login</button>`;
     div_ter.className = "esqueceu_sua_senha";
     div_ter.innerHTML = `<a class="login_reset" href="#" style="color: white">Esqueceu sua senha?</a>
                         <p style="color: white">Não tem uma conta?<a class="Cadastre-se" href="#" style="color: white">Cadastre-se</a></p>`;
@@ -95,182 +94,33 @@ function func_login() {
     input_password.maxLength = 14;
 
     //insere o evento submit no form criado
-    main_form.addEventListener('submit', (e) => {
-
-    e.preventDefault();
-    
-    //verifica se há algum usuário corrente no sessionStorage
-        usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
-    if (usuarioCorrenteJSON) {
-        usuarioCorrente = JSON.parse(usuarioCorrenteJSON);
-    }
-    
-    var usuariosJSON = localStorage.getItem('db_usuarios');
-
-    if (!usuariosJSON) {
-        
-        alert('Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.');
-
-    }
-    else  {
-        
-        db_usuarios = JSON.parse(usuariosJSON);    
-    }
-
-    //renderiza a tela inicial com usuário logado
-    if(input_email.value === usuarioCorrente.email && input_password.value === usuarioCorrente.senha){
-        cria_logado();
-    } else{
-        alert('usuário não cadastrado')
-    }
-
-    })
-
-}
-
-function cria_logado(){
-
-    const main = document.getElementById("site-content22");
-    remove_class_list(main)
-
-    if(document.getElementsByClassName('navs')[1].id === 'my_profile_login'){
-        let = myprofile = document.getElementById("my_profile_login");
-        myprofile.id = "my_profile";
-        let = myprofile1 = document.getElementById("first-nav");
-        myprofile1.id = "page_log"
-    }
-
-    main.innerHTML = ` <div id="main-text-id" class="main-text">
-    <h1 id="text1" class="top-text">
-        Receitas com base nos ingredientes que você tem na geladeira
-    </h1>
-    <h3 id="text2" class="top-text">
-        Digite os ingredientes que você tem em casa e nós selecionaremos para você as receitas que mais se
-        enquadram
-        na sua busca.
-    </h3>
-</div>
-<div id="search-form-id" class="search-form2">
-    <div class="input-ingrediente-box">
-        <ul class="list-ul-inputs">
-            <li class="list-inputs"><input class="input-ingrediente" type="text"
-                    placeholder="Inclua o ingrediente">
-            </li>
-            <li class="list-inputs"><input class="input-ingrediente" type="text"
-                    placeholder="Inclua o ingrediente">
-            </li>
-            <li class="list-inputs"><input class="input-ingrediente" type="text"
-                    placeholder="Inclua o ingrediente">
-            </li>
-            <li class="list-inputs"><input class="input-ingrediente" type="text"
-                    placeholder="Inclua o ingrediente">
-            </li>
-            <li class="list-inputs"><input class="input-ingrediente" type="text"
-                    placeholder="Inclua o ingrediente">
-            </li>
-        </ul>
-    </div>
-    <div class="input-ingrediente-box">
-        <ul class="list-ul-inputs">
-            <li class="list-inputs"><input class="input-ingrediente" type="text"
-                    placeholder="Inclua o ingrediente">
-            </li>
-            <li class="list-inputs"><input class="input-ingrediente" type="text"
-                    placeholder="Inclua o ingrediente">
-            </li>
-            <li class="list-inputs"><input class="input-ingrediente" type="text"
-                    placeholder="Inclua o ingrediente">
-            </li>
-            <li class="list-inputs"><input class="input-ingrediente" type="text"
-                    placeholder="Inclua o ingrediente">
-            </li>
-            <li class="list-inputs"><input class="input-ingrediente" type="text"
-                    placeholder="Inclua o ingrediente">
-            </li>
-        </ul>
-    </div>
-    <div class="input-ingrediente-box">
-        <button id="recipes_search_login2" class="login2">
-            <a style="color: white;">Buscar</a>
-        </button>
-    </div>
-</div>
-<div id="space"></div>`
-
-    let div_login = document.getElementById("button-login")
-    let div_login2 = document.getElementById("button-sign")
-    //let button2 = document.getElementById('button_sign1')
-
-    const button_logout = document.createElement('button')
-    button_logout.id = 'button2_logout'
-    button_logout.innerHTML = '<img id="button-out" src="/imgs/button-out.png" alt="">'
-
-    div_login2.removeChild(div_login2.firstElementChild)
-    div_login2.insertAdjacentElement('beforeend', button_logout)
-
-    div_login.className = "foto-perfil-logado"
-    div_login.removeAttribute("id")
-    div_login.innerHTML = `<img id="foto-perfil-logado" src="imgs/larissa_cunha.jpg" alt="">
-                            <p id="nome_usuario_logado">Larissa Cunha</p>`
-    div_login2.className = "button-out"
-    div_login2.removeAttribute("id")
-
-    document.getElementById("nome_usuario_logado").innerText = JSON.parse(sessionStorage.usuarioCorrente).nome;
-
-    document.getElementById("button2_logout").addEventListener('click', () => {
-
-        location.assign('index.html')
-
-    })
-    //repetido - trabalhar OO
-    document.getElementById("recipes_search_login2").addEventListener('click', (e) => {
+    document.getElementById('formLogin').addEventListener('submit', (e) => {
 
         e.preventDefault();
-        let inputs_recipe = document.getElementsByClassName('input-ingrediente')
-        let inputs = []
-        //array com itens pesquisados
-        for(let c = 0; c < 10; c++){
-            if(inputs_recipe[c].value.trim() != "") inputs.push(inputs_recipe[c].value.trim().toLowerCase())
+        //verifica se há algum usuário corrente no sessionStorage
+            usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente');
+        if (usuarioCorrenteJSON) {
+            usuarioCorrente = JSON.parse(usuarioCorrenteJSON);
         }
-    
-        clear_content("site-content22")
-    
-        const j = JSON.parse(xhr.responseText);
-    
-        main_content_search.classList.add('show-recipe')
-    
-        let h2 = document.createElement('h2')
-        h2.id = 'result_count'
-        main_content_search.appendChild(h2)
-        //contador de receitas encontradas
-        countRecipe = 0
-    
-        let countIngredients = 0
-        for(let c in j)
-        {
-            for(e in inputs)
-            {
-                //Se a conteúdo da receita conter a palavra inserida pelo usuário na barra de pesquisa, adiciona uma unidade ao contador 2
-                if(j[c].secao[0].conteudo.filter(retur => retur.indexOf(inputs[e]) >= 0).length > 0) countIngredients += 1
-    
-            }
-            if(countIngredients >= 3 && inputs.length > 3 || inputs.length === countIngredients)
-                {
-                    //carrega os dados no DOM
-                    let article = document.createElement('article')
-                    article.className = "result_recipe"
-                    article.innerHTML = '<h3>' + j[c].nome + '</h3>'
-                    document.getElementById('result_count').insertAdjacentElement('afterend', article)
-                    countRecipe += 1
-                }
-            countIngredients = 0
+        
+        var usuariosJSON = localStorage.getItem('db_usuarios');
+
+        if (!usuariosJSON) {
+            
+            alert('Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.');
+
         }
-        let ingredients = ""
-        inputs.forEach(el => {
-            ingredients += `${el} `
-        }); 
-    
-        h2.innerText = `Encontramos ${countRecipe} resultados de receitas que se enquadram na sua busca por: ${ingredients}.`
+        else  {
+            
+            db_usuarios = JSON.parse(usuariosJSON);    
+        }
+
+        //renderiza a tela inicial com usuário logado
+        if(input_email.value != usuarioCorrente.email || input_password.value != usuarioCorrente.senha){
+            alert('usuário não cadastrado')
+        } else {
+            location.assign('user-logado.html');
+        }
     })
 
 }
@@ -334,7 +184,7 @@ function func_cadastro() {
     main_form.className = "cadastro-form";
     main_form.innerHTML = '<p>Ao se increver, você concorda com nossos Termos de Uso e Privacidade<button id="leia">Leia</button></p>';
     div_sec.className = "Cadastre-se";
-    div_sec.innerHTML = '<button class="login2">Cadastre-se</button>';
+    div_sec.innerHTML = '<button id="cadastro-form" class="login2">Cadastre-se</button>';
 
     name.className = "cadastro_input";
     input_email.className = "cadastro_input";
@@ -387,7 +237,7 @@ function func_cadastro() {
         sessionStorage.usuarioCorrente = JSON.stringify(usuario);
         e.preventDefault();
 
-        cria_logado();
+        location.assign('user-logado.html');
 
     })
 
@@ -405,88 +255,6 @@ function data_validation(string) {
     }
 
     return flag
-}
-
-function cria_myprofile(){
-
-    let main = document.getElementById('site-content22');
-    main.remove();
-    let main2 = document.createElement('main')
-
-    let body = document.getElementsByTagName('body')[0];
-    body.insertAdjacentElement('beforebegin', main2)
-    let section2 = document.createElement('section');
-    section2.id = 'section_profile';
-    body.insertAdjacentElement('afterend', section2);
-    
-    section2.innerHTML = `<article class="grid">
-
-    <div id="cabecalho-menu-perfil">
-        <br>
-        <h2> Perfil </h2></br>
-        <p> Altere ou adicione informações sobre você</p>
-    </div>
-
-
-    <div id="grid1-foto-de-perfil">
-
-        <img id="avatar" src="/docs/img/fotoLarissa.png" alt="">
-        <input type="image" value="Alterar foto">
-
-    </div>
-
-    <div id="grid2-username">
-        <label>Nome de usuário: <input id="username" type="text" placeholder="Username"></label>
-
-    </div>
-
-    <div id="grid3-profissao">
-
-        <label>Profissão: <input id="profissao" type="text" placeholder="Profissão"></label>
-
-    </div>
-
-    <div id="grid4-sobre-voce">
-
-        <label>Sobre você:</label><br><textarea class="msg" cols="35" rows="8"
-            placeholder="O que eu mais gosto de fazer é... :)"></textarea><br>
-
-
-    </div>
-
-    <div id="grid5-links">
-
-        <input id="Linkedin" type="link" placeholder="Linkedin">
-        <input id="Instagram" type="text" placeholder="Instagram">
-        <input id="Twitter" type="text" placeholder="Twitter">
-    </div>
-
-
-    <div id="grid-botao-enviar">
-        <button class="login2">
-            <a style="color: white;" href="">Salvar</a>
-        </button>
-    </div>
-
-</article>
-
-<aside id="aside_my_prof">
-    <div class="wrapper_aside">
-        <div class="foto-perfil-logado">
-            <img id="foto-perfil-logado" src="imgs/larissa_cunha.jpg" alt="">
-            <h4 id="username">Larissa Cunha</h4>
-            <br>
-        </div>
-        <div id="opcoes">
-            <a class="perfil-user" href="">Perfil</a></p>
-            <br>
-            <a class="enviar_receitas" href="">Enviar Receitas</a></p>
-            <br>
-            <a class="minhas_receitas" href="">Minhas Receitas</a></p>
-        </div>
-    </div>
-</aside>`
-
 }
 
 //verifica se um elemento possui classlist

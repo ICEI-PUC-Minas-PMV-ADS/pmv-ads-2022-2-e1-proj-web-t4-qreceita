@@ -1,0 +1,117 @@
+.site-content {
+    display: flex;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#profile-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #8a8a8d;
+}
+
+#dynamic {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aside_my_prof {
+    width: 10%;
+    border-top: 1px solid #8a8a8d;
+    border-bottom: 1px solid #8a8a8d;
+    border-right: 1px solid #8a8a8d;
+}
+
+.grid {
+    height: 750px;
+}
+
+#cabecalho-menu-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid #8a8a8d;
+}
+
+#cabecalho-menu-perfil h2 {
+    color: #E08F62;
+}
+
+.inputs-prof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#input_top {
+    margin-top: 30px;
+}
+
+.input-data-user {
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid #1c1d1f;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 10px;
+    outline: none;
+}
+
+#grid4-sobre-voce {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#user-info {
+    width: 80%;
+    border: 1px solid #1c1d1f;
+    border-radius: 4px;
+    max-height: 200px;
+    min-height: 50px;
+    max-width: 95%;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 10px;
+    outline: none;
+}
+
+#grid-botao-enviar {
+    margin-top: 20px;
+}
+
+#container-perf-log {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(196, 187, 187)
+}
+
+#options {
+    margin-top: 15px;
+}
+
+.nav-options {
+    height: 40px;
+}
+
+.nav-options:hover {
+    background-color: #E08F62;
+}

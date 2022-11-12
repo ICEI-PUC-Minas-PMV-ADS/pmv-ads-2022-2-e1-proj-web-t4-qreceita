@@ -27,10 +27,10 @@
     width: 30px;   
 }
 
-.site-content.show-recipe {
+.show-recipe {
     height: 100%;
-    align-items: flex-start;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .site-content.show-recipe h2 {
