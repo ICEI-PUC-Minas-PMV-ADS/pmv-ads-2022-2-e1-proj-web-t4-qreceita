@@ -9,11 +9,11 @@
 
 .result_recipe {
     display: flex;
-    flex-direction: column;
-    padding: 15px;
+    flex-direction: row;
+    
     background-color:#eee9cc;
     margin-right: 15px;
-    height: 75px;
+    height: 125px;
     width: 800px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
     border-radius: 5px;
@@ -35,4 +35,36 @@
 
 .site-content.show-recipe h2 {
     margin: 50px 0 30px 30px;
+}
+
+.result_recipe div {
+    height: 100%;
+}
+
+.img_div {
+    width: 20%;
+}
+
+.recipe_info {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.hating {
+    width: 20%;
+}
+
+.img_div img {
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    padding-top: 10px;
 }

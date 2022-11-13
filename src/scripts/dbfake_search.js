@@ -13,13 +13,14 @@ const search_obj = {
     search_bar_top:function(main_id, form_id){
 
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
+        //xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
+        xhr.open("GET", "/scripts/json_archives/recetias_bd_json", true);
         xhr.send(null);
-        console.log('xhr')
+        //console.log('xhr')
         const main_content_search = document.getElementById(main_id);
 
         document.getElementById(form_id).addEventListener('submit', (e) => {
-            console.log('addevent')
+            //console.log('addevent')
             const input_user = document.getElementById("search-top")
             e.preventDefault();
 
@@ -43,7 +44,18 @@ const search_obj = {
                     article.className = "result_recipe"
 
                     //Odair: link direto no "article.innerHTML considerando a inclusão da string '+j[c]._id.$oid +'" target="blank"/>' antes do objeto j[c].nome +"                
-                    article.innerHTML = '<h3><a href="./receita-escolhida.html?id=' + j[c]._id.$oid + '" target="_self"/>' + j[c].nome + '</h3>'
+                    //article.innerHTML = '<h1><a href="./receita-escolhida.html?id=' + j[c]._id.$oid + '" target="_self"/>' + j[c].nome + + j[c].link_imagem +'</a></h1>'
+
+                    article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">"Postado por: ${j[c].postado_por}"</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
+
+
+                    
+                    //article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3></div><div class="hating"></div>`
+                    
+                    //article.innerHTML = `<h3><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><div class="img_div"><img src="${j[c].link_imagem}"></div>`
+
+
+
                     //article.innerHTML = '<h3><a href onClick="openRecipe('+j[c]+')"/>' + j[c].nome + '</h3>'
                     document.getElementById('result_count').insertAdjacentElement('afterend', article)
                 }
@@ -58,8 +70,9 @@ const search_obj = {
     search_bars_bottom:function(main_id, buttom_id){
 
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
-        xhr.send(null);
+        //xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
+        xhr.open("GET", "/scripts/json_archives/recetias_bd_json", true);
+            xhr.send(null);
 
         const main_content_search = document.getElementById(main_id);
 
@@ -109,6 +122,9 @@ const search_obj = {
                         //article.innerHTML = '<h3>' + j[c].nome + '</h3>'
                         article.innerHTML = '<h3><a href="./receita-escolhida.html?id=' + j[c]._id.$oid + '" target="_self"/>' + j[c].nome + '</h3>'
                         //article.innerHTML = '<h3><a href onClick="openRecipe('+j[c]+')"/>' + j[c].nome + '</h3>'
+                        
+                        //article.innerText = + j[c]._id.$oid + j[c].grau_de_dificuldade +
+
                         document.getElementById('result_count').insertAdjacentElement('afterend', article)
                         countRecipe += 1
 

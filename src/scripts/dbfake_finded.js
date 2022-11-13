@@ -1,12 +1,10 @@
 
 
-//Odair: trouxe uma cópia do arquivo para trabalhar a busca dos detalhes de cada receita, adotando a orientação a objeto, comando this -> respostas stackoverflow:
-
-
 document.addEventListener("DOMContentLoaded", function(e) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = dataLoaded;
-    xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
+    //xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
+    xhr.open("GET", "/scripts/json_archives/recetias_bd_json", true);
     xhr.send(null);
 });
 
@@ -26,11 +24,14 @@ const dataLoaded = function(x) {
     
 };
 
+
+
 const renderData = function(findedData) {
     document.getElementById('recipeName').innerText = findedData.nome;
+
     const main_content_itens = document.getElementById("det_receita");
 
-    findedData.secao.forEach(secao => {
+    findedData.secao.forEach(s => {
         //alert(seção.nome);
         let h2 = document.createElement('h2');
         h2.innerText = secao.nome;
@@ -43,11 +44,23 @@ const renderData = function(findedData) {
             let li = document.createElement('li');
             li.innerText = conteudo;
             ul.appendChild(li);
-        })
-                
-        //let p = document.createElement('p');
-        //p.innerText = secao.nome;
-        //main_content_itens.appendChild(p);
-        //alert(conteudo)
-    });
-}
+        });
+    });   
+      
+    const infoRigth = document.getElementById("info_right");
+    let tempoPreparo = document.createElement(h4);
+    let serve = document.createElement(h4);
+    let grauDificuldade = document.createElement(h4);
+
+    tempoPreparo.innerHTML = findedData.tempo_de_preparo
+    tempoPreparo.innerHTML = findedData.serve
+    tempoPreparo.innerHTML = findedData.grau_de_difilcudade
+
+    infoRigth.appendChild(tempoPreparo)
+    infoRigth.appendChild(serve)
+    infoRigth.appendChild(grauDificuldade)
+
+};
+
+
+

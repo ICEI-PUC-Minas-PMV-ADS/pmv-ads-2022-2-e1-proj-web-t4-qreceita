@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>QReceita</title>
-        <!--Inclusão do script/dbfake_finder.jd-->
+        <!--Inclusão do script/dbfake_finder.js-->
         <script src="scripts/dbfake_finded.js"></script>
         <link rel="stylesheet" href="style/header_style.css">
         <link rel="stylesheet" href="style/content_style.css">
@@ -65,32 +65,35 @@
                 <div class="image-receita">
                     <h1 id="recipeName"> Bolo de Cenoura</h1>
                     <br>
-                    <img class="bolo" src="imgs/prato.png" alt="bolo de cenoura">
+                    <img id="bolo" src="imgs/prato.png" alt="bolo de cenoura">
                 </div>
-                <br>
-                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-                <div class="estrelas">
-                    <input type="radio" id="cm_star-empty" name="fb" value="" checked />
-                    <label for="cm_star-1"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-1" name="fb" value="1" />
-                    <label for="cm_star-2"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-2" name="fb" value="2" />
-                    <label for="cm_star-3"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-3" name="fb" value="3" />
-                    <label for="cm_star-4"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-4" name="fb" value="4" />
-                    <label for="cm_star-5"><i class="fa"></i></label>
-                    <input type="radio" id="cm_star-5" name="fb" value="5" />
+                
+                
+                <div id="info_right">
+                    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                    <div class="estrelas">
+                        <input type="radio" id="cm_star-empty" name="fb" value="" checked />
+                        <label for="cm_star-1"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-1" name="fb" value="1" />
+                        <label for="cm_star-2"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-2" name="fb" value="2" />
+                        <label for="cm_star-3"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-3" name="fb" value="3" />
+                        <label for="cm_star-4"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-4" name="fb" value="4" />
+                        <label for="cm_star-5"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-5" name="fb" value="5" />
+                    </div>
+                    <div id="inf_adicionais">
+                        <!--<div id="inf_adicionais">
+                                                            <p id="dificuldade">Fácil</p>
+                                                            <p id="tempo_preparo">40 minutos</p>
+                                                            <p id="serve">8 Porções</p>-->
+                        <a href="http://127.0.0.1:5500/compartilhamento-da-receita.html" target="_blank"><img id="botao-compartilhar"
+                                src="imgs/Very-Basic-Share-icon.png" alt="share-botton"></a>
+                    </div>
                 </div>
-                <div id="inf_adicionais">
-                    <!--<div id="inf_adicionais">
-                            <p id="dificuldade">Fácil</p>
-                            <p id="tempo_preparo">40 minutos</p>
-                            <p id="serve">8 Porções</p>-->
-                    <a href="http://127.0.0.1:5500/compartilhamento-da-receita.html" target="_blank"><img
-                            id="botao-compartilhar" src="imgs/Very-Basic-Share-icon.png" alt="share-botton"></a>
-    
-                </div>
+               
     
             </section>
     
