@@ -1,0 +1,213 @@
+
+body{
+	font-family: Arial;
+	line-height: 25px;
+}
+
+.escolhida{
+  background-color: #d9e4c7;
+  margin-left: 3cm;
+  margin-right: 3cm;
+  margin-top: 0px;
+}
+
+h2 {
+  font-size: x-large;
+  font-family: Arial;
+  color: black;
+ }
+
+section {
+  display: inline-block;
+  align-items: left;
+  margin-bottom: 1cm;
+  padding: 20px;
+  columns: 2;
+}
+
+.container-box1 {
+width: 49;
+height: 95%;
+line-height: 1cm;
+margin-top: 0cm;
+font-size: 18px;
+padding: 30px;
+min-width: 250px;
+display: inline-block;
+vertical-align: top;
+}
+
+.container-box2 {
+width: 45%;
+height: 95%;
+line-height: 1cm;
+margin-top: 0cm;
+font-size: 18px;
+padding: 30px;
+min-width: 250px;
+display: inline-block;
+vertical-align: top;
+margin-left: 1cm;
+text-align: justify;
+}
+
+.bolo{
+  width: 400px;
+}
+
+p, .estrelas{
+	padding-left: 15px;
+  margin-top: 20px;
+
+}
+
+.estrelas input[type=radio] {
+  display: none;
+}
+.estrelas label i.fa{
+  font-size: 2.5em
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #c0c0c0;
+}
+
+#container1 {
+  display: inline-block
+}
+
+#container2 {
+  display: inline-block;
+}
+
+#coment {
+  position: static;
+}
+
+.enviar {
+  padding-top: 10cm;
+}
+
+.enviar2 {
+  margin-top: 50px;
+  width: 70px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #9dab86;
+  border-color: #9dab86;
+  }
+
+#botao-compartilhar {
+  width: 40px;
+  position: relative;
+  top: 120px;
+  right: 90px;
+
+}
+
+footer {
+  margin-left: 3cm;
+  margin-right: 3cm;
+}
+
+.btn {
+padding: 10px;
+display: inline-block;
+cursor: pointer;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.modal {
+  width: 20cm;
+  height: 10cm;
+  background-color: rgb(221, 211, 169);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#icone-fechar {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(221, 211, 169);
+  border-radius: 50%;
+  float: right;
+  cursor: pointer;
+  
+}
+
+#title-share{
+  font-size: medium;
+  font-family: Arial;
+  color: black;
+  text-align: center;
+  margin-top: 1cm;
+ }
+
+img {
+  width: 50px;
+  }
+
+#section-2 {
+  position: relative;
+  left: 220px;
+}
+
+  .container1 {
+    display: inline-block;
+}
+
+.container2 {
+    display: inline-block;
+}
+
+.container3 {
+    display: inline-block;
+}
+
+.container4 {
+    display: inline-block;
+}
+
+.container5 {
+    display: inline-block;
+}
+
+.container6 {
+    display: inline-block;
+}
+
+.container7 {
+    display: inline-block;
+}
+
+
+.url-copiar{
+  text-align: center;
+}
+
+.copiar2 {
+  width: 90px;
+  height: 25px;
+  border-radius: 3px;
+  background-color: #9dab86;
+  border-color: #9dab86;
+}
+
+input {
+  width: 10cm;
+  height: 1cm;
+}
+
+::placeholder {
+  text-align: center;
+  font-size: large;
+}
