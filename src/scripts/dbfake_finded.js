@@ -31,7 +31,7 @@ const renderData = function(findedData) {
 
     const main_content_itens = document.getElementById("det_receita");
 
-    findedData.secao.forEach(s => {
+    findedData.secao.forEach(secao => {
         //alert(seção.nome);
         let h2 = document.createElement('h2');
         h2.innerText = secao.nome;
@@ -47,7 +47,7 @@ const renderData = function(findedData) {
         });
     });   
       
-    const infoRigth = document.getElementById("info_right");
+    /*const infoRigth = document.getElementById("info_right");
     let tempoPreparo = document.createElement(h4);
     let serve = document.createElement(h4);
     let grauDificuldade = document.createElement(h4);
@@ -58,7 +58,7 @@ const renderData = function(findedData) {
 
     infoRigth.appendChild(tempoPreparo)
     infoRigth.appendChild(serve)
-    infoRigth.appendChild(grauDificuldade)
+    infoRigth.appendChild(grauDificuldade)*/
 
 };
 
