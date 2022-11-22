@@ -1,50 +1,47 @@
 
-
-body{
-	font-family: Arial;
-	line-height: 25px;
-}
-
-main {
+#main-recipe {
   background-color: #d9e4c7;
-  margin-left: 3cm;
-  margin-right: 3cm;
   margin-top: 0px;
 }
 
-section {
-  display: inline-block;
-  align-items: left;
-  margin-bottom: 1cm;
-  padding: 20px;
-  columns: 2;
-  
+#main-recipe-div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  padding-right: 150px;
+  height: 100%;
+}
+
+#main-recipe-section {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
 }
 
 .container-box1 {
-width: 49;
-height: 95%;
-line-height: 1cm;
-margin-top: 0cm;
-font-size: 18px;
-padding: 30px;
-min-width: 250px;
-display: inline-block;
-vertical-align: top;
+  width: 49;
+  height: 95%;
+  line-height: 1cm;
+  margin-top: 0cm;
+  font-size: 18px;
+  padding: 30px;
+  min-width: 250px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .container-box2 {
-width: 45%;
-height: 95%;
-line-height: 1cm;
-margin-top: 0cm;
-font-size: 18px;
-padding: 30px;
-min-width: 250px;
-display: inline-block;
-vertical-align: top;
-margin-left: 1cm;
-text-align: justify;
+  width: 45%;
+  height: 95%;
+  line-height: 1cm;
+  margin-top: 0cm;
+  font-size: 18px;
+  padding: 30px;
+  min-width: 250px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 1cm;
+  text-align: justify;
 }
 
 img{
@@ -53,8 +50,6 @@ img{
 
 p, .estrelas{
 	padding-left: 0px;
-  margin-top: 20px;
-
 }
 
 .estrelas input[type=radio] {
@@ -71,10 +66,6 @@ p, .estrelas{
   color: #c0c0c0;
 }
 
-#container1 {
-  display: inline-block
-}
-
 #container2 {
   display: inline-block;
 }
@@ -83,41 +74,134 @@ p, .estrelas{
   position: static;
 }
 
-.enviar {
-  padding-top: 10cm;
-}
-
-.enviar2 {
-  margin-top: 50px;
+#enviar {
   width: 70px;
-  height: 30px;
-  border-radius: 3px;
-  background-color: #9dab86;
-  border-color: #9dab86;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: #E08F62;
+  padding: 0;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 
 #botao-compartilhar {
   width: 40px;
-  padding-top: 10px;
-  padding-right: 320px;
+  padding-right: 90%;
 }
 
-footer {
-  margin-left: 3cm;
-  margin-right: 3cm;
-}
-
-.info_right {
+#info_right {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-
+  justify-content: center;
+  padding-left: 20px;
 }
 
-#det_receita {
-  margin-left: 20px;
+#info_right div {
+  padding-bottom: 10px;
 }
 
-#det_receita ul li {
+.image-receita {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+.main-containers {
+  padding-top: 40px;
+}
+
+#section-bottom {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
+}
+
+#botao-enviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+#det_receita .det_receita_child ul li {
   list-style: none;
+  font-size: 20px;
+  padding-top: 5px;
 }
+
+.det_receita_child {
+  padding-top: 20px;
+}
+
+#imgPrato {
+  padding-top: 10px;
+  height: 300px;
+  width: 350px;
+}
+
+#container1 form textarea {
+  min-height: 40px;
+  max-height: 240px;
+  max-width: 1000px;
+  min-width: 500px;
+  height: 120px;
+  font-size: 15px;
+
+}
+
+.btn {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  .modal {
+    width: 20cm;
+    height: 10cm;
+    background-color: rgb(221, 211, 169);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  #icone-fechar {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(221, 211, 169);
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+    
+  }
+  
+  #title-share{
+    font-size: medium;
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    margin-top: 1cm;
+   }
+  
+  .rede-social {
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+  }
+  
+  .sectionclass {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }

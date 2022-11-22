@@ -76,14 +76,11 @@
 }
 
 #leia {
-    background-color: #E08F62;
-    width: 1.5cm;
-    border: none;
-    color: white;
     font-size: 16px;
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.16);
+    display: inline;
+}
+#leia:hover {
+    color: #E08F62;
 }
 
 #close {
@@ -96,4 +93,10 @@
     text-align: center;
     border-radius: 4px;
     box-shadow: 0 0 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.16);
+}
+
+#verification-span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

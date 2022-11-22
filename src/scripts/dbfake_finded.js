@@ -1,11 +1,11 @@
 
-
 document.addEventListener("DOMContentLoaded", function(e) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = dataLoaded;
     //xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
-    xhr.open("GET", "/scripts/json_archives/recetias_bd_json", true);
+    xhr.open("GET", "/scripts/json_archives/receitas_bd.json", true);
     xhr.send(null);
+
 });
 
 const dataLoaded = function(x) {
@@ -21,24 +21,28 @@ const dataLoaded = function(x) {
             renderData(findedData);
         } 
     }
-    
 };
 
 
 
 const renderData = function(findedData) {
+
     document.getElementById('recipeName').innerText = findedData.nome;
+    document.getElementById('imgPrato').src = findedData.link_imagem;
 
     const main_content_itens = document.getElementById("det_receita");
 
     findedData.secao.forEach(secao => {
-        //alert(seção.nome);
+
+        let divs = document.createElement('div')
+        divs.className = 'det_receita_child'
         let h2 = document.createElement('h2');
         h2.innerText = secao.nome;
-        main_content_itens.appendChild(h2);
+        main_content_itens.appendChild(divs);
+        divs.appendChild(h2);
         
         let ul = document.createElement('ul');
-        main_content_itens.appendChild(ul);
+        divs.appendChild(ul);
         secao.conteudo.forEach(conteudo => {
             //alert(conteudo)
             let li = document.createElement('li');
@@ -46,21 +50,21 @@ const renderData = function(findedData) {
             ul.appendChild(li);
         });
     });   
-      
-    /*const infoRigth = document.getElementById("info_right");
-    let tempoPreparo = document.createElement(h4);
-    let serve = document.createElement(h4);
-    let grauDificuldade = document.createElement(h4);
+
+    const infoRigth = document.getElementById("recipe-info-right");
+
+    let tempoPreparo = document.createElement('h4');
+    let serve = document.createElement('h4');
+    let grauDificuldade = document.createElement('h4');
 
     tempoPreparo.innerHTML = findedData.tempo_de_preparo
-    tempoPreparo.innerHTML = findedData.serve
-    tempoPreparo.innerHTML = findedData.grau_de_difilcudade
+    serve.innerHTML = findedData.serve
+    grauDificuldade.innerHTML = findedData.grau_de_dificuldade
 
     infoRigth.appendChild(tempoPreparo)
     infoRigth.appendChild(serve)
-    infoRigth.appendChild(grauDificuldade)*/
+    infoRigth.appendChild(grauDificuldade)
 
 };
-
 
 

@@ -8,25 +8,29 @@ function clear_content(id) {
         main_child = main.firstElementChild;
     }
 }
-const search_obj = {
+class SearchClass {
+    constructor(main_id, event_id, flag_log = false){
+        this.main_id = main_id
+        this.event_id = event_id
+        this.flag_log = flag_log
+    }
 
-    search_bar_top:function(main_id, form_id){
+    search_bar_top(){
 
-        const xhr = new XMLHttpRequest();
-        //xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
-        xhr.open("GET", "/scripts/json_archives/recetias_bd_json", true);
-        xhr.send(null);
+        /*const xhr = new XMLHttpRequest();
+        xhr.open("GET", "/scripts/json_archives/receitas_bd.json", true);
+        xhr.send(null);*/
         //console.log('xhr')
-        const main_content_search = document.getElementById(main_id);
+        const main_content_search = document.getElementById(this.main_id);
 
-        document.getElementById(form_id).addEventListener('submit', (e) => {
+        document.getElementById(this.event_id).addEventListener('submit', (e) => {
             //console.log('addevent')
             const input_user = document.getElementById("search-top")
             e.preventDefault();
 
-            clear_content(main_id)
+            clear_content(this.main_id)
 
-            const j = JSON.parse(xhr.responseText);
+            const j = JSON.parse(localStorage.recipes);
 
             main_content_search.classList.add('show-recipe')
             let count = 0
@@ -43,20 +47,12 @@ const search_obj = {
                     let article = document.createElement('article')
                     article.className = "result_recipe"
 
-                    //Odair: link direto no "article.innerHTML considerando a inclusão da string '+j[c]._id.$oid +'" target="blank"/>' antes do objeto j[c].nome +"                
-                    //article.innerHTML = '<h1><a href="./receita-escolhida.html?id=' + j[c]._id.$oid + '" target="_self"/>' + j[c].nome + + j[c].link_imagem +'</a></h1>'
+                    if(this.flag_log) {
+                        article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida-logado.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">"Postado por: ${j[c].postado_por}"</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
+                    } else {
+                        article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">"Postado por: ${j[c].postado_por}"</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
+                    }
 
-                    article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">"Postado por: ${j[c].postado_por}"</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
-
-
-                    
-                    //article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3></div><div class="hating"></div>`
-                    
-                    //article.innerHTML = `<h3><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><div class="img_div"><img src="${j[c].link_imagem}"></div>`
-
-
-
-                    //article.innerHTML = '<h3><a href onClick="openRecipe('+j[c]+')"/>' + j[c].nome + '</h3>'
                     document.getElementById('result_count').insertAdjacentElement('afterend', article)
                 }
 
@@ -65,18 +61,17 @@ const search_obj = {
 
         });
 
-    },
+    }
 
-    search_bars_bottom:function(main_id, buttom_id){
+    search_bars_bottom(){
 
-        const xhr = new XMLHttpRequest();
-        //xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
-        xhr.open("GET", "/scripts/json_archives/recetias_bd_json", true);
-            xhr.send(null);
+        /*const xhr = new XMLHttpRequest();
+        xhr.open("GET", "/scripts/json_archives/receitas_bd.json", true);
+        xhr.send(null);*/
 
-        const main_content_search = document.getElementById(main_id);
+        const main_content_search = document.getElementById(this.main_id);
 
-        document.getElementById(buttom_id).addEventListener('click', (e) => {
+        document.getElementById(this.event_id).addEventListener('click', (e) => {
 
             e.preventDefault();
             let inputs_recipe = document.getElementsByClassName('input-ingrediente')
@@ -93,9 +88,9 @@ const search_obj = {
             }
 
             if (flag) {
-                clear_content(main_id)
+                clear_content(this.main_id)
 
-                const j = JSON.parse(xhr.responseText);
+                const j = JSON.parse(localStorage.recipes);
 
                 main_content_search.classList.add('show-recipe')
 
@@ -114,16 +109,14 @@ const search_obj = {
                     }
                     if (countIngredients >= 3 && inputs.length > 3 || inputs.length === countIngredients) {
                         //carrega os dados no DOM
-
-                        //Odair: link direto no "article.innerHTML considerando a inclusão da string '+j[c]._id.$oid +'" target="_self"/>' antes do objeto j[c].nome +"
-
                         let article = document.createElement('article')
                         article.className = "result_recipe"
-                        //article.innerHTML = '<h3>' + j[c].nome + '</h3>'
-                        article.innerHTML = '<h3><a href="./receita-escolhida.html?id=' + j[c]._id.$oid + '" target="_self"/>' + j[c].nome + '</h3>'
-                        //article.innerHTML = '<h3><a href onClick="openRecipe('+j[c]+')"/>' + j[c].nome + '</h3>'
-                        
-                        //article.innerText = + j[c]._id.$oid + j[c].grau_de_dificuldade +
+
+                        if(this.flag_log) {
+                            article.innerHTML = '<h3><a href="./receita-escolhida-logado.html?id=' + j[c]._id.$oid + '" target="_self"/>' + j[c].nome + '</h3>'
+                        } else {
+                            article.innerHTML = '<h3><a href="./receita-escolhida.html?id=' + j[c]._id.$oid + '" target="_self"/>' + j[c].nome + '</h3>'
+                        }
 
                         document.getElementById('result_count').insertAdjacentElement('afterend', article)
                         countRecipe += 1
@@ -137,21 +130,12 @@ const search_obj = {
                 });
 
                 h2.innerText = `Encontramos ${countRecipe} resultados de receitas que se enquadram na sua busca por: ${ingredients}.`
+
             }
 
         });
 
     }
-
 }
-export default search_obj
-/*document.addEventListener("DOMContentLoaded", function (e) {
+export default SearchClass
 
-        teste.teste1("site-content22", "form-search2");
-
-        teste.teste2("site-content22", "recipes_search_login2");
-
-
-    //Odair incluir a funcionalidade de apresentação dos dados da receita ao clicar em uma receita encontrada
-
-});*/

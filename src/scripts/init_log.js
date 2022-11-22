@@ -1,10 +1,14 @@
-import search_obj from './dbfake_search.js'
+import SearchClass from './dbfake_search.js'
+import SuperJson from './superJson.js';
+
+const bar_top = new SearchClass('site-content22', 'form-search2', true)
+const bar_bottom = new SearchClass('site-content22', 'recipes_search_login2', true)
 
 function initPagLogado(){
 
     const name_user = document.querySelectorAll('.userName');
     const salut = document.querySelector('#main-text-id h1');
-    let user = JSON.parse(sessionStorage.usuarioCorrente).nome;
+    let user = JSON.parse(sessionStorage.currentUser).nome;
     let formatedUser = user[0].toUpperCase() + user.slice(1, user.length).toLowerCase()
 
     name_user.forEach((i) => {
@@ -28,12 +32,18 @@ function myprofile_events(){
         location.assign('meu_perfil.html')
     })
 
-    search_obj.search_bar_top('site-content22', 'form-search2')
+    bar_top.search_bar_top()
 
-    search_obj.search_bars_bottom('site-content22', 'recipes_search_login2')
+    bar_bottom.search_bars_bottom()
 
     document.getElementById('profile-container').addEventListener('click', () => {
         location.assign('meu_perfil.html')
+    })
+
+    document.getElementById("button_logout_logado").addEventListener('click', () => {
+
+        location.assign('index.html')
+
     })
 
 }

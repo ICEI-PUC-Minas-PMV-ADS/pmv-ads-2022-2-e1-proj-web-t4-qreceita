@@ -7,7 +7,7 @@
 }
 
 #profile-left {
-    width: 40%;
+    width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,8 +110,100 @@
 
 .nav-options {
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-options:hover {
     background-color: #E08F62;
+}
+
+.profile {
+    background-color: #E08F62;
+}
+
+.enviarReceitas {
+    background-color: #E08F62;
+}
+
+.postRecipe {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+#top-enviarReceitas, #middle-enviarReceitas {
+    height: 40%; 
+}
+
+#grid5-botao-enviar {
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#grid1-foto-da-receita {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid2-enviar-receita {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#enviar-receita li {
+    list-style: none;
+    width: 100%;
+    padding-top: 3px;
+}
+
+.div-middle {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ol-info {
+    padding-top: 20px;
+}
+
+.div-middle .ol-info li {
+    padding-top: 10px;
+}
+
+.div-middle .ol-info li input {
+    height: 30px;
+    width: 200px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #1c1d1f;
+}
+
+#grid2-enviar-receita ul li label input {
+    width: 90%;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #1c1d1f;
+    height: 20px;
+}
+
+#grid4-modo-preparo {
+    padding-left: 70px;
+}
+
+#medidas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
