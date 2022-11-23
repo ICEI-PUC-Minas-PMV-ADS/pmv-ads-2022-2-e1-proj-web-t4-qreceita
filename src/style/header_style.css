@@ -10,9 +10,10 @@ body {
 }
 
 /*layout*/
+
 #cabecalho {
     background-color: #9dab86;
-    height: 150px;
+
 }
 #logo {
     color: #4e4e4e;
@@ -106,8 +107,13 @@ body {
     list-style: none;
     width: 125px;
 }
+/*
 #first-nav {
     padding-left: 175px;
+}*/
+
+#first-nav {
+    padding-left: 10%;
 }
 
 #page_log {
@@ -141,7 +147,91 @@ a {
     border-radius: 4px;
     box-shadow: 0 0 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
 .login2:hover {
     background-color: #CC7351;
     border: #1c1d1f;
 }
+
+
+/*Tentativas de inclusão da responsividade*/
+
+@media screen and (max-width: 600px) {
+    .flex-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        
+        }   
+    }
+
+@media screen and (max-width: 600px) {
+    list-navs {
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+
+       
+     
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #first-nav {
+        padding-left: 0%;
+       
+    }  
+}  
+
+@media screen and (max-width: 600px) {
+    .title {
+        align-items: center;
+        margin: 0.5%;
+     
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search-form {
+        width: 90%;
+        align-items: center;
+        margin: 0.5%;
+    
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #button-login, #button-sign {
+        align-items: center;
+        margin: 1%;
+        padding:0;
+     
+    }
+}
+
+
+/*
+@media screen and (max-600px) {
+    #site-content22 {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-itens: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #cabecalho {
+        width: 100%;
+        height: 100%;
+    }   
+}   
+
+*/
