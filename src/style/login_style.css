@@ -1,3 +1,4 @@
+
 .login {
     display: flex;
     justify-content: center;
@@ -17,6 +18,7 @@
     justify-content: space-around;
     text-align: center;
 }
+
 
 .button_login {
     margin-top: 11px;
@@ -43,4 +45,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+
+@media screen and (max-width: 600px) {
+    .site-content.login_sign {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .flex_container {
+        height: 400px;
+        width: 350px;
+        padding: 3%;
+    }
 }
