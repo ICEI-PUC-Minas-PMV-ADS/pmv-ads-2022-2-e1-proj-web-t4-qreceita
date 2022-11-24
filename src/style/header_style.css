@@ -223,3 +223,15 @@ a {
     padding-left: 10%;
     }
 }
+
+/*
+@media screen and (max-600px) {
+    #site-content22 {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-itens: center;
+    }
+}
+*/
+

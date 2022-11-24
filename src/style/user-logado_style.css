@@ -28,4 +28,11 @@
 
 .button-out {
     padding-right: 20px;
+    margin-top: 15%;
 }
+
+
+#realinhamento_avatar_out {
+    display: flex;
+}
+ 

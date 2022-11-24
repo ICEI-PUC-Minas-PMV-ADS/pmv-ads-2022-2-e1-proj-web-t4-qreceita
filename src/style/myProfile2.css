@@ -7,7 +7,7 @@
 }
 
 #profile-left {
-    width: 800px;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
 }
 
 #aside_my_prof {
-    width: 10%;
+    width: 120px;
     border-top: 1px solid #8a8a8d;
     border-bottom: 1px solid #8a8a8d;
     border-right: 1px solid #8a8a8d;
@@ -105,7 +105,9 @@
 }
 
 #options {
-    margin-top: 15px;
+    margin-top: 10px;
+    
+
 }
 
 .nav-options {
@@ -206,4 +208,48 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    #profile-left {
+        width: 100%;
+}   
+}
+    
+
+@media screen and (max-width: 600px) {
+    #site-content22 {
+        flex-direction: column;
+        border: none;  
+        
+   }
+}
+ 
+
+@media screen and (max-width: 600px) {
+    #container-perf-log {
+        display: none;    
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    #aside_my_prof, .nav-options {    
+        display: flex;
+        
+        border: none;
+
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    #cabecalho-menu-perfil {
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    #options {
+        width: 100%;
+        
+    }
 }

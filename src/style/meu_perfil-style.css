@@ -101,3 +101,8 @@ div.foto-perfil-logado{
     flex-direction: row;
     vertical-align: middle;
 }
+
+.button-out {
+   display: flex;
+  
+}
