@@ -32,14 +32,16 @@
                 <div id="space">
                 </div>
                 <!--Início entrada de dados Odair-->
-                <div id="profile-container" class="avatar-container">
-                    <img class="avatar" src="imgs/avatar-padrao2.jpg" alt="">
-                    <p class="userName" id="nome_usuario_logado"></p>
-                </div>
-                <div class="button-out">
-                    <button id="button_logout_logado" type="button-out">
-                        <img src="imgs/button-out.png" alt="">
-                    </button>
+                <div id="realinhamento_avatar_out">
+                    <div id="profile-container" class="avatar-container">
+                        <img class="avatar" src="imgs/avatar-padrao2.jpg" alt="">
+                        <p class="userName" id="nome_usuario_logado"></p>
+                    </div>
+                    <div class="button-out">
+                        <button id="button_logout_logado" type="button-out">
+                            <img src="imgs/button-out.png" alt="">
+                        </button>
+                    </div>
                 </div>
                 <!--Fim entrada de dados Odair-->
             </div>
@@ -82,25 +84,59 @@
                             <input type="radio" id="cm_star-5" name="fb" value="5" />
                         </div>
                         <div id="recipe-info-right"></div>
-                        <div id="inf_adicionais">
-                            <a href="http://127.0.0.1:5500/compartilhamento-da-receita.html"
-                            target="_blank"><img id="botao-compartilhar"
-                            src="imgs/Very-Basic-Share-icon.png" 
-                            alt="share-botton"></a>
-                        </div>
+                            <!--<div id="inf_adicionais">
+                                    <p id="dificuldade">Fácil</p>
+                                    <p id="tempo_preparo">40 minutos</p>
+                                    <p id="serve">8 Porções</p>--> 
+                        <div onclick="acao()" class="btn"><img id="botao-compartilhar"
+                                    src="imgs\Very-Basic-Share-icon.png" alt="share-botton"></div>
                     </div>
-                </section>   
-                <div id="det_receita" class="main-containers"></div>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div class="modal">
+    
+                        <main>
+                            <h2 id="title-share">Gostou da receita? Então compartilhe com alguém!</h2>
+                            <section>
+                                <div class="container1"><a href="https://www.facebook.com/" target="_blank"><img
+                                            src="imgs\facebook-icon.png" alt="facebook"></a></div>
+                                <div class="container2"><a href="https://mail.google.com/mail/u/example@gmail.com"
+                                        target="_blank"><img src="imgs\Gmail-icon.png" alt="gmail"></a></div>
+                                <div class="container3"><a href="https://twitter.com/i/flow/login" target="_blank"><img
+                                            src="imgs\social-twitter-box-blue-icon.png" alt="twitter"></a></div>
+                                <div class="container4"><a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img
+                                            src="imgs\Whatsapp-icon.png" alt="whatsapp"></a></div>
+                                <div class="container5"><a href="https://www.instagram.com/" target="_blank"><img
+                                            src="imgs\Social-Networks-Instagram-icon.png" alt="instagram"></a></div>
+                            </section>
+                            <section class="sectionclass">
+                                <div class="container6"><input type="url-site"
+                                        placeholder="http://Qreceita.com/bolo-de-cenoura/share"></div>
+                                <div id="botao-copiar"         class="container7">
+                                    <button class="copiar2">Copiar</button>
+                                </div>
+                            </section>
+                        </main>
+                        <div onclick="fechar()" class="fechar"> <img id="icone-fechar" src="imgs/close.png"
+                                alt="close-icone"></div>
+    
+                    </div>
+                </section>
+            </div>
+            <div id="det_receita" class="main-containers"></div>
                 <section class="main-containers" id="section-bottom">
                     <div id="container1">
                         <form>
-                            <textarea name="Comentário" id="coment" cols="120" rows="10"
+                            <textarea name="Comentário" id="coment" cols="40" rows="10"
                                 placeholder="Digite aqui o seu comentário (até 500 caracteres)" maxlength="500"></textarea>
                         </form>
+                        <div id="botao-enviar" id="container2">
+                            <button id="enviar">Enviar</button>
+                        </div>
                     </div>
-                    <div id="botao-enviar" id="container2">
-                        <button id="enviar">Enviar</button>
-                    </div>
+    
                 </section>
             </div>
         </main>
@@ -115,5 +151,6 @@
         </footer>
         <script src="scripts/receitaEscolhida.js" type="module"></script>
         <script src="scripts/dbfake_finded.js"></script>
+        <script src="scripts/receita-escolhida-btn-compart.js"></script>
     </body>
 </html>
