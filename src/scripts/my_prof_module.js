@@ -92,11 +92,13 @@ class MeuPefil {
 
         let nav1 = document.getElementsByClassName(this.classOptions)[0]
         let nav2 = document.getElementsByClassName(this.classOptions)[1]
+        let nav3 = document.getElementsByClassName(this.classOptions)[2]
 
         nav1.addEventListener('click', () => {
 
             remove_class_list(nav1)
             remove_class_list(nav2)
+            remove_class_list(nav3)
             nav1.classList.add('profile')
 
             let div = document.getElementById('profile-left')
@@ -114,6 +116,7 @@ class MeuPefil {
             
             remove_class_list(nav1)
             remove_class_list(nav2)
+            remove_class_list(nav3)
             nav2.classList.add('enviarReceitas')
 
             let div = document.getElementById('profile-left')
@@ -127,7 +130,6 @@ class MeuPefil {
 
             document.getElementById('sendRecDbfake').addEventListener('click', (e) => {
                 
-                //fazer as validações de entrada aqui
                 let recipeName = document.getElementById('nome-receita').value
                 let nPorcoes = document.getElementById('numero-porcoes').value
                 let gDificult = document.getElementById('dificult').value
@@ -141,6 +143,34 @@ class MeuPefil {
 
             })
 
+        })
+
+        nav3.addEventListener('click', () => {
+
+            remove_class_list(nav1)
+            remove_class_list(nav2)
+            remove_class_list(nav3)
+            nav3.classList.add('my-recipes')
+
+            let main_div = document.getElementById('profile-left')
+            let main_child = main_div.firstElementChild;
+            while (main_child) {
+                main_div.removeChild(main_child);
+                main_child = main_div.firstElementChild;
+            }
+
+            let myRecipes = sessionStorage.recipesCurrentUser
+
+            if(myRecipes){
+
+                JSON.parse(myRecipes).forEach(el => {
+
+                    let divs = document.createElement('div')
+                    divs.className = 'recipesSaved'
+                    divs.innerHTML = `<div class="my-sf-recipe"><div class="imgMyRecipe"><img src="${el.link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida-logado.html?id=${el._id.$oid}" target="_self"/>${el.nome}</h3><h4 class="info">Postado por: ${el.postado_por[0]}</h4><h4 class="info">${el.grau_de_dificuldade}</h4></div><div class="hating">${el.avaliacao}</div></div>`
+                    main_div.appendChild(divs)
+                })
+            }
         })
 
         document.getElementById('button_logout_logado').addEventListener('click', () => {
@@ -159,7 +189,6 @@ class MeuPefil {
 
         document.getElementById('saveProfileData').addEventListener('click', () => {
 
-            //trazer SuperJason updatelogin
             let name = document.getElementById('user_name').value
             let prof = document.getElementById('profissao').value
             let bio = document.getElementById('user-info').value

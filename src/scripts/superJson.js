@@ -6,28 +6,50 @@ class SuperJson {
 
     validateLogin() {
 
-        let current = sessionStorage.currentUser
         let dataBWarn = document.getElementById('dbFalse')
         let void_true = document.getElementById('VoidTrue')
 
-        if(typeof this.list_data == "object" && this.list_data.length == 2 && current != undefined) {
+        if(typeof this.list_data == "object" && this.list_data.length == 2) {
 
             console.log('primeiro if')
             if(this.list_data[0] == "" || this.list_data[1] == ""){
-                console.log('segundo if')
+
                 void_true.style.visibility = 'visible'
 
             } else {
                 console.log('else segundo if')
                 void_true.style.visibility = 'hidden'
-                if(JSON.parse(current).email === this.list_data[0] && JSON.parse(current).senha === this.list_data[1]) {
-                    console.log('terceiro if')
-                    dataBWarn.style.visibility = 'hidden'
-                    location.assign('user-logado.html')
+                if(localStorage.db_fake != undefined) {
+
+                    let current = JSON.parse(localStorage.db_fake).usuarios
+                    let flag = false
+
+                    current.forEach((el, i) => {
+
+                        if(el.email === this.list_data[0] && el.senha === this.list_data[1]){
+
+                            console.log('terceiro if')
+                            dataBWarn.style.visibility = 'hidden'
+                            sessionStorage.setItem('currentUser', JSON.stringify(current[i]))
+                            flag = true
+                        
+                        } 
+
+                    })
+
+                    if(!flag) {
+
+                        dataBWarn.style.visibility = 'visible'
+
+                    } else {
+
+                        location.assign('user-logado.html')
+
+                    }
     
                 } else {
     
-                    dataBWarn.style.visibility = 'visible'
+                    alert('não há usuários cadastrados, faça o cadastro')
     
                 }
 
@@ -142,11 +164,13 @@ class SuperJson {
 
     sendRecipe() {
 
-        updateStorage = JSON.parse(localStorage.recipes)
-        nameUser = JSON.parse(sessionStorage.currentUser).nome
+        let updateStorage = JSON.parse(localStorage.recipes)
+        let nameUser = JSON.parse(sessionStorage.currentUser).nome
+        let emUser = JSON.parse(sessionStorage.currentUser).email
 
-        arrayFlagContent = []
-        arrayflagIngred = []
+        let arrayFlagContent = []
+        let arrayflagIngred = []
+        let userBasicInfo = [nameUser, emUser]
         this.list_data[4].forEach(i => {
 
             if(i.value != ""){
@@ -154,8 +178,8 @@ class SuperJson {
             }
 
         })
-        console.log(arrayFlagContent)
-        recipeContent = ""
+        
+        let recipeContent = ""
 
         arrayFlagContent.forEach(el => {
             recipeContent += `${el} `
@@ -168,7 +192,7 @@ class SuperJson {
             }
 
         })
-        recipeIngred = ""
+        let recipeIngred = ""
 
         arrayflagIngred.forEach(el => {
             recipeIngred += `${el} `
@@ -184,7 +208,7 @@ class SuperJson {
             "avaliacao": 0,
             "tempo_de_preparo": this.list_data[3],
             "serve": this.list_data[1],
-            "postado_por": nameUser,
+            "postado_por": userBasicInfo,
     
     
             "secao": [
@@ -206,39 +230,52 @@ class SuperJson {
         updateStorage.push(newRecipe)
         localStorage.setItem('recipes', JSON.stringify(updateStorage))
 
+        let recipesUser = []
+        recipesUser.push(newRecipe)
+
+        if(sessionStorage.recipesCurrentUser){
+            let storageRecipe = JSON.parse(sessionStorage.recipesCurrentUser)
+            storageRecipe.push(newRecipe)
+            sessionStorage.setItem('recipesCurrentUser', JSON.stringify(storageRecipe))
+        } else{
+            sessionStorage.setItem('recipesCurrentUser', JSON.stringify(recipesUser))
+        }
+
     }
 
     dataValSR(){
-        
-        let warnIng = document.getElementById('warnMedida').style.visibility
-        let warnPrep = document.getElementById('modo-preparo').style.visibility
-        let warnNmae = document.getElementById('nome-receita').style.visibility
-        let warnPrc = document.getElementById('numero-porcoes').style.visibility
-        let warnDif = document.getElementById('dificult').style.visibility
-        let warnTPrep = document.getElementById('tempo-preparo').style.visibility
+
+        let warnName = document.getElementById('recipeNamesp')
+        let warnPrc = document.getElementById('nPorcoes')
+        let warnDif = document.getElementById('gDificult')
+        let warnTPrep = document.getElementById('tPrep')
+        let warnIng = document.getElementById('warnMedida')
+        let warnPrep = document.getElementById('warnModPrep')
 
         if(this.list_data[0] != "" && this.list_data[1] != "" && this.list_data[2] != "" && this.list_data[3] != ""){
-            console.log('entrou no if')
-            warnPrep = 'hidden'
-            warnNmae = 'hidden'
-            warnPrc = 'hidden'
-            warnDif = 'hidden'
-            warnTPrep = 'hidden'
+            
+            warnName.style.visibility = 'hidden'
+            warnPrc.style.visibility = 'hidden'
+            warnDif.style.visibility = 'hidden'
+            warnTPrep.style.visibility = 'hidden'
 
             let flag = false
             let flag2 = false
-            this.list_data[4].forEach(el => {
 
-                if(el != ""){
+            this.list_data[4].forEach((_, i) => {
+
+                if(this.list_data[4][i].value.length > 0){
                     flag = true
+                    warnIng.style.visibility = 'hidden'
                 }
 
             })
 
-            this.list_data[5].forEach(el => {
+            this.list_data[5].forEach((_, i) => {
 
-                if(el != ""){
+                if(this.list_data[5][i].value.length > 0){
                     flag2 = true
+                    warnPrep.style.visibility = 'hidden'
                 }
 
             })
@@ -249,81 +286,74 @@ class SuperJson {
 
             } else {
 
-                if(flag === false){
+                if(flag == false){
 
-                    warnIng = 'visible'
+                    warnIng.style.visibility = 'visible'
 
                 }
 
-                if(flag2 === false){
+                if(flag2 == false){
 
-                    warnPrep = 'visible'
+                    warnPrep.style.visibility = 'visible'
 
                 }
 
             }
 
         } else {
-
+            
             if(this.list_data[0] == ""){
-                
-                warnNmae = 'visible'
-
+                warnName.style.visibility = 'visible'
+            } else {
+                warnName.style.visibility = 'hidden'
             }
 
             if(this.list_data[1] == ""){
-
-                warnPrc = 'visible'
-
+                warnPrc.style.visibility = 'visible'
+            } else {
+                warnPrc.style.visibility = 'hidden'
             }
 
-            if(this.list_data[2] == ""){
-
-                warnDif = 'visible'
-
+            if(this.list_data[2].length == 0){
+                warnDif.style.visibility = 'visible'
+            } else {
+                warnDif.style.visibility = 'hidden'
             }
 
             if(this.list_data[3] == ""){
-
-                warnTPrep = 'visible'
-
+                warnTPrep.style.visibility = 'visible'
+            } else {
+                warnTPrep.style.visibility = 'hidden'
             }
 
-            let flag = false
-            let flag2 = false
-            this.list_data[4].forEach(el => {
+            let flag3 = false
+            let flag4 = false
+            this.list_data[4].forEach((_, i) => {
 
-                if(el != ""){
-                    flag = true
+                if(this.list_data[4][i].value.length > 0){
+                    flag3 = true
+                    warnIng.style.visibility = 'hidden'
                 }
-
             })
 
-            this.list_data[5].forEach(el => {
+            this.list_data[5].forEach((_, i) => {
 
-                if(el != ""){
-                    flag2 = true
+                if(this.list_data[5][i].value.length > 0){
+                    flag4 = true
+                    warnPrep.style.visibility = 'hidden'
                 }
-
             })
 
-            if(!flag && !flag2){
+            if(!flag3){
+                console.log(flag3)
+                warnIng.style.visibility = 'visible'
+            }
 
-                if(flag === false){
-
-                    warnIng = 'visible'
-
-                }
-
-                if(flag2 === false){
-
-                    warnPrep = 'visible'
-
-                }
+            if(!flag4){
+                warnPrep.style.visibility = 'visible'
             }
         }
     }
-
 }
 
 export default SuperJson

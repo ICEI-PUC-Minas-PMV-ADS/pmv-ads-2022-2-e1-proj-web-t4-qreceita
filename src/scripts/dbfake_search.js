@@ -48,9 +48,17 @@ class SearchClass {
                     article.className = "result_recipe"
 
                     if(this.flag_log) {
-                        article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida-logado.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">"Postado por: ${j[c].postado_por}"</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
+                        if(typeof j[c].postado_por == 'object'){
+                            article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida-logado.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">Postado por: ${j[c].postado_por[0]}</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
+                        } else{
+                            article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida-logado.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">Postado por: ${j[c].postado_por}</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
+                        }
                     } else {
-                        article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">"Postado por: ${j[c].postado_por}"</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
+                        if(typeof j[c].postado_por == 'object'){
+                            article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">Postado por: ${j[c].postado_por[0]}</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
+                        } else{
+                            article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">Postado por: ${j[c].postado_por}</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
+                        }
                     }
 
                     document.getElementById('result_count').insertAdjacentElement('afterend', article)
@@ -112,11 +120,11 @@ class SearchClass {
                         let article = document.createElement('article')
                         article.className = "result_recipe"
 
-                         if(this.flag_log) {
-                        article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida-logado.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">"Postado por: ${j[c].postado_por}"</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
-                    } else {
-                        article.innerHTML = `<div class="img_div"><img src="${j[c].link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida.html?id=${j[c]._id.$oid}" target="_self"/>${j[c].nome}</h3><h4 class="info">"Postado por: ${j[c].postado_por}"</h4><h4 class="info">${j[c].grau_de_dificuldade}</h4></div><div class="hating">${j[c].avaliacao}</div>`
-                    }
+                        if(this.flag_log) {
+                            article.innerHTML = '<h3><a href="./receita-escolhida-logado.html?id=' + j[c]._id.$oid + '" target="_self"/>' + j[c].nome + '</h3>'
+                        } else {
+                            article.innerHTML = '<h3><a href="./receita-escolhida.html?id=' + j[c]._id.$oid + '" target="_self"/>' + j[c].nome + '</h3>'
+                        }
 
                         document.getElementById('result_count').insertAdjacentElement('afterend', article)
                         countRecipe += 1
@@ -135,6 +143,10 @@ class SearchClass {
 
         });
 
+    }
+
+    returnFlagLog(){
+        return this.flag_log
     }
 }
 export default SearchClass
