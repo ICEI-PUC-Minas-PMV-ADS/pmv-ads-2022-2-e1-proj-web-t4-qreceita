@@ -1,7 +1,9 @@
+
 * {
   margin: 0;
   padding: 0;
 }
+
 
 #main-recipe {
   background-color: #d9e4c7;
@@ -14,7 +16,6 @@
   padding-right: 5%;
   height: 50%;
 }
-
 
 #main-recipe-section {
   display: flex;
@@ -57,7 +58,6 @@ p, .estrelas{
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
-
 
 #container1 {
   display: inline-block;
@@ -113,8 +113,8 @@ p, .estrelas{
 
 .det_receita_child {
   padding-top: 20px;
+  margin-left: 5%;
   margin-right: 5%;
-  
 }
 
 #imgPrato {
@@ -123,14 +123,13 @@ p, .estrelas{
 }
 
 .main-containers {
-  padding-top: 0%;
-  text-align: justify;
   width: 100%;  
   display: inline;
   flex-direction: row;
   margin-left: 5%;
   margin-top: 2%;
-
+  padding-top: 0px;
+  text-align: justify
 }
 
 form taxtarea {
@@ -159,12 +158,15 @@ form taxtarea {
   position: fixed;
   top: 50%;
   left: 50%;
-  bottom: 40%;
   transform: translate(-50%, -50%);
   display: none;
-
 }
-      
+
+.fechar {
+  display: flex;
+  flex-direction: row-reverse;
+}
+     
 #icone-fechar {
   width: 30px;
   height: 30px;
@@ -197,7 +199,7 @@ img {
   display: inline-block;
 }
       
-.container3 {
+  .container3 {
   display: inline-block;
 }
       
@@ -216,8 +218,7 @@ img {
 .container7 {
 display: inline-block;
 }
-      
-      
+          
 .url-copiar {
   text-align: center;
 }
@@ -243,7 +244,7 @@ input {
 @media screen and (max-width: 600px) {
   #main-recipe-div {
     margin-left: 0%;
-    margin-right: 0%;
+    margin-right: 0%;   
   }
 }
 
@@ -251,31 +252,26 @@ input {
   #container1 {
     height: 50%;
     width: 80%;
-    font-size: 15px;
-  
+    font-size: 15px; 
   }
 }
 
 @media screen and (max-width: 600px) {
   .container6 {
-  display: flex;
+  display: flex; 
   margin-left: 2%;
   margin-right: 2%;
-}
+  } 
 }
 
 @media screen and (max-width: 600px) {
   .estrelas {
   width: 100%;
-}
+  }
 }
 
 @media screen and (max-width: 600px) {
-
-  #grid1-foto-da-receita {
-  
-    width: 50%;
-  
-    }
-  
+#grid1-foto-da-receita {
+  width: 50%;
   }
+}
