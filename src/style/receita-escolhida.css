@@ -1,27 +1,12 @@
-
 * {
   margin: 0;
   padding: 0;
-}
-
-boby {
-  width: 100%;
-  height: 100%;
-  display: flex;
 }
 
 #main-recipe {
   background-color: #d9e4c7;
   margin-top: 0px;
 }
-/*
-#main-recipe-div {
-  display: flex;
-  flex-direction: column;
-  padding-left: 150px;
-  padding-right: 150px;
-  height: 100%;
-}*/
 
 #main-recipe-div {
   display: flex;
@@ -37,33 +22,6 @@ boby {
   width: 100%;
   margin-left: 5%;
 }
-/*
-.container-box1 {
-  width: 49;
-  height: 95%;
-  line-height: 1cm;
-  margin-top: 0cm;
-  font-size: 18px;
-  padding: 30px;
-  min-width: 250px;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.container-box2 {
-  width: 45%;
-  height: 95%;
-  line-height: 1cm;
-  margin-top: 0cm;
-  font-size: 18px;
-  padding: 30px;
-  min-width: 250px;
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 1cm;
-  text-align: justify;
-}
-*/
 
 img{
   width: 80%;
@@ -86,14 +44,6 @@ p, .estrelas{
 .estrelas input[type=radio]:checked ~ label i.fa:before {
   color: #c0c0c0;
 }
-/*
-#container2 {
-  display: inline-block;
-}*/
-/*
-#coment {
-  position: static;
-}*/
 
 #enviar {
   width: 70px;
@@ -136,10 +86,6 @@ p, .estrelas{
   max-width: 350px;
 }
 
-.main-containers {
-  padding-top: 0px;
-}
-
 #section-bottom {
   display: flex;
   flex-direction: row;
@@ -167,41 +113,18 @@ p, .estrelas{
 
 .det_receita_child {
   padding-top: 20px;
-  margin-left: 5%;
   margin-right: 5%;
   
 }
 
 #imgPrato {
- 
   height: 300px;
   width: 350px;
 }
-/*
-#container1 form textarea {
-  min-height: 40px;
-  max-height: 240px;
-  max-width: 1000px;
-  min-width: 500px;
-  height: 120px;
-  font-size: 15px;
 
-}*/
-
-
-
-/*
-.btn {
-  padding: 10px;
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  }
-*/
 .main-containers {
+  padding-top: 0%;
+  text-align: justify;
   width: 100%;  
   display: inline;
   flex-direction: row;
@@ -209,7 +132,6 @@ p, .estrelas{
   margin-top: 2%;
 
 }
-
 
 form taxtarea {
   width: 80%;
@@ -229,15 +151,18 @@ form taxtarea {
 }
    
 .modal {
-  width: 60%;
-  height: 30%;
+  width: 70%;
+  height: 200px;
+  border-radius: 8px;
+  text-align: center;
   background-color: rgb(221, 211, 169);
   position: fixed;
   top: 50%;
   left: 50%;
-  bottom: 50%;
+  bottom: 40%;
   transform: translate(-50%, -50%);
   display: none;
+
 }
       
 #icone-fechar {
@@ -245,7 +170,6 @@ form taxtarea {
   height: 30px;
   background-color: rgb(221, 211, 169);
   border-radius: 50%;
-  
   cursor: pointer;   
 }
       
@@ -254,7 +178,6 @@ form taxtarea {
   font-family: Arial;
   color: black;
   text-align: center;
-  margin-top: 1cm;
 }
       
 img {
@@ -274,7 +197,7 @@ img {
   display: inline-block;
 }
       
-  .container3 {
+.container3 {
   display: inline-block;
 }
       
@@ -321,7 +244,6 @@ input {
   #main-recipe-div {
     margin-left: 0%;
     margin-right: 0%;
-    padding-top: 5%;
   }
 }
 
@@ -337,7 +259,8 @@ input {
 @media screen and (max-width: 600px) {
   .container6 {
   display: flex;
-  width: 95%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 }
 
@@ -346,3 +269,13 @@ input {
   width: 100%;
 }
 }
+
+@media screen and (max-width: 600px) {
+
+  #grid1-foto-da-receita {
+  
+    width: 50%;
+  
+    }
+  
+  }

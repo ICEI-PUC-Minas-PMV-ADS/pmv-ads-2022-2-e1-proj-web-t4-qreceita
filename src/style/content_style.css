@@ -14,13 +14,12 @@
 
 
 .main-text {
+    width: 95%;
     justify-content: center;
     display: flex;
     height: 250px;
     width: 100%;
     flex-direction: column;
-    padding-left: 5%;
-    padding-left: 5%;
 
 }
 #space {
@@ -42,14 +41,7 @@
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: -.05rem;
-}
-
-
-#main-text-id {
-    width: 95%;
-    justify-content: left;
-    margin-right: 5%;
-    
+    padding-left: 30px;
 }
 
 #text2 {
@@ -141,4 +133,3 @@
         vertical-align: center;
     }
 }
-
