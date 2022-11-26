@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="style/content_style.css">
         <link rel="stylesheet" href="style/footer_style.css">
         <link rel="stylesheet" href="style/receita-escolhida.css">
+      
         <link rel="stylesheet" href="style/user-logado_style.css">
     </head> 
     <body>
@@ -89,16 +90,18 @@
                                     <p id="tempo_preparo">40 minutos</p>
                                     <p id="serve">8 Porções</p>--> 
                         <div onclick="acao()" class="btn"><img id="botao-compartilhar"
-                                    src="imgs\Very-Basic-Share-icon.png" alt="share-botton"></div>
+                                    src="imgs\Very-Basic-Share-icon.png" alt="share-botton">
+                        </div>
                     </div>
                 </section>
             </div>
             <div>
                 <section>
                     <div class="modal">
-    
-                        <main>
-                            <h2 id="title-share">Gostou da receita? Então compartilhe com alguém!</h2>
+                        <div onclick="fechar()" class="fechar"> <img id="icone-fechar" src="imgs/close.png"
+                                alt="close-icone"></div>
+                        <main id="compartilhamento">  
+                                <h2 id="title-share">Gostou da receita? Então compartilhe com alguém!</h2>
                             <section>
                                 <div class="container1"><a href="https://www.facebook.com/" target="_blank"><img
                                             src="imgs\facebook-icon.png" alt="facebook"></a></div>
@@ -117,11 +120,8 @@
                                 <div id="botao-copiar"         class="container7">
                                     <button class="copiar2">Copiar</button>
                                 </div>
-                            </section>
+                            </section>                  
                         </main>
-                        <div onclick="fechar()" class="fechar"> <img id="icone-fechar" src="imgs/close.png"
-                                alt="close-icone"></div>
-    
                     </div>
                 </section>
             </div>
