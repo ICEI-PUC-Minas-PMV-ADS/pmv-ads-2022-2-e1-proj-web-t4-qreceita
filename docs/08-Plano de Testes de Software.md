@@ -16,5 +16,13 @@ Os testes funcionais a serem realizados no aplicativo são descritos na seguinte
 </div>
 
 <div align="center">
-  <img src="">
+  <img src="img\Planilha Teste 2.png">
+</div>
+
+<div align="center">
+  <img src="img\Planilha Teste 3.png">
+</div>
+
+<div align="center">
+  <img src="img\Planilha Teste 4.png">
 </div>
