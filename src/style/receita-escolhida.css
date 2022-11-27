@@ -46,18 +46,7 @@ p, .estrelas{
   color: #c0c0c0;
 }
 
-#enviar {
-  width: 70px;
-  height: 40px;
-  border: none;
-  color: white;
-  background-color: #E08F62;
-  padding: 0;
-  font-size: 16px;
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: 0 0 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
+
 
 #container1 {
   display: inline-block;
@@ -86,10 +75,23 @@ p, .estrelas{
   max-width: 350px;
 }
 
-#section-bottom {
+form {
+  margin-left: 5% ;
+  margin-right: 5% ;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#coment {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  padding-bottom: 40px;
+  align-items: center;
+}
+
+
+textarea {
+  width: 88%;
 }
 
 #enviar {
@@ -103,8 +105,10 @@ p, .estrelas{
   text-align: center;
   border-radius: 4px;
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  text-align: center;
+  margin-left: 5%;
   }
-
+  
 #det_receita .det_receita_child ul li {
   list-style: none;
   font-size: 20px;
@@ -132,23 +136,6 @@ p, .estrelas{
   text-align: justify
 }
 
-form taxtarea {
-  width: 80%;
-  height: 50px;
-  height: 100%;
-  display: flexbox;
-  flex-direction: row;
-}
-
-#botao-enviar {
-  cursor: pointer;
-  top: 50%;
-  left: 50%;
-  width: 20%;
-  display: inline;
-  flex-direction: row
-}
-   
 .modal {
   width: 70%;
   height: 200px;
@@ -199,7 +186,7 @@ img {
   display: inline-block;
 }
       
-  .container3 {
+.container3 {
   display: inline-block;
 }
       
@@ -235,11 +222,7 @@ input {
   width: 10cm;
   height: 1cm;
 }
-      
-::placeholder {
-  text-align: center;
-  font-size: large;            
-}
+
 
 @media screen and (max-width: 600px) {
   #main-recipe-div {
@@ -273,5 +256,28 @@ input {
 @media screen and (max-width: 600px) {
 #grid1-foto-da-receita {
   width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #coment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media screen and (max-width: 600px) {
+  #botao-enviar {
+    margin-top: 2%;
+    margin-left: 0%;
+  
   }
 }
