@@ -12,7 +12,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos na seguinte
 
 
 <div align="center">
-  <img src="C:\Users\paula\Downloads\pmv-ads-2022-2-e1-proj-web-t4-qreceita-main\docs\img\Planilha Teste 1.png">
+  <img src="docs/img/Planilha Teste 1.png">
 </div>
 
 
