@@ -8,7 +8,9 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
   <img src="img\Teste-Tela-Inicial.png">
 </div>
 
-<p align="center">Figura 17: Teste Tela Inicial</p>
+<p align="center">Teste Tela Inicial</p>
+
+
 
 
 <div align="center">
@@ -18,11 +20,15 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 <p align="center">Teste Receitas Encontradas</p>
 
 
+
+
 <div align="center">
   <img src="img\Teste-receita-encontrada-insucesso.png">
 </div>
 
 <p align="center">Receitas Encontradas (insucesso)</p>
+
+
 
 
 <div align="center">
@@ -32,11 +38,15 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 <p align="center">Teste Receita Escolhida / Teste Avaliação por estrelas</p>
 
 
+
+
 <div align="center">
   <img src="img\Teste-Compartilhar.png">
 </div>
 
 <p align="center">Teste Compartilhar</p>
+
+
 
 
 <div align="center">
@@ -46,57 +56,73 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 <p align="center">Teste Comentários</p>
 
 
-<div align="center">
-  <img src="img/img_etapa3/index.png">
-</div>
-
-<p align="center">Figura 17: Pesquisa de Receitas</p>
 
 
 <div align="center">
-  <img src="img/img_etapa3/index.png">
+  <img src="img\Teste-Cadastro-sucesso.png">
 </div>
 
-<p align="center">Figura 17: Pesquisa de Receitas</p>
+<p align="center">Teste Cadastro (sucesso)</p>
+
+
 
 
 <div align="center">
-  <img src="img/img_etapa3/index.png">
+  <img src="img\Teste-Cadastro-insucesso.png">
 </div>
 
-<p align="center">Figura 17: Pesquisa de Receitas</p>
+<p align="center">Teste Cadastro (insucesso)</p>
+
+
 
 
 <div align="center">
-  <img src="img/img_etapa3/index.png">
+  <img src="img\Teste-Login-sucesso.png">
 </div>
 
-<p align="center">Figura 17: Pesquisa de Receitas</p>
+<p align="center">Teste Login (sucesso)</p>
+
+
 
 
 <div align="center">
-  <img src="img/img_etapa3/index.png">
+  <img src="img\Teste-Login-insucesso.png">
 </div>
 
-<p align="center">Figura 17: Pesquisa de Receitas</p>
+<p align="center">Teste Login (insucesso)</p>
+
+
 
 
 <div align="center">
-  <img src="img/img_etapa3/index.png">
+  <img src="img\Teste-Usuario-Logado.png">
 </div>
 
-<p align="center">Figura 17: Pesquisa de Receitas</p>
+<p align="center">Teste Usuário Logado</p>
+
+
 
 
 <div align="center">
-  <img src="img/img_etapa3/index.png">
+  <img src="img\Teste-Meu-Perfil.png">
 </div>
 
-<p align="center">Figura 17: Pesquisa de Receitas</p>
+<p align="center">Teste Meu Perfil</p>
+
+
 
 
 <div align="center">
-  <img src="img/img_etapa3/index.png">
+  <img src="img\Teste-Enviar-Receita.png">
 </div>
 
-<p align="center">Figura 17: Pesquisa de Receitas</p>
+<p align="center">Teste Enviar Receita</p>
+
+
+
+
+<div align="center">
+  <img src="\img\Teste-Minhas-Receitas.png">
+</div>
+
+<p align="center">Teste Minhas Receitas</p>
