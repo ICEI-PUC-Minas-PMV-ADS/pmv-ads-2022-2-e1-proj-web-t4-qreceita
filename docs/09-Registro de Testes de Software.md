@@ -5,7 +5,7 @@
 Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
 
 <div align="center">
-  <img src="\img\Teste-Tela-Inicial.png">
+  <img src="img\Teste-Tela-Inicial.png">
 </div>
 
 <p align="center">Figura 17: Teste Tela Inicial</p>
@@ -26,7 +26,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 
 <div align="center">
-  <img src="\img\Teste-Receita-Escolhida.png">
+  <img src="img\Teste-Receita-Escolhida.png">
 </div>
 
 <p align="center">Teste Receita Escolhida / Teste Avaliação por estrelas</p>
@@ -40,7 +40,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 
 <div align="center">
-  <img src="docs\img\Teste-Comentários.png">
+  <img src="img\Teste-Comentários.png">
 </div>
 
 <p align="center">Teste Comentários</p>
