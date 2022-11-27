@@ -122,7 +122,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 
 <div align="center">
-  <img src="\img\Teste-Minhas-Receitas.png">
+  <img src="img\Teste-Minhas-Receitas.png">
 </div>
 
 <p align="center">Teste Minhas Receitas</p>
