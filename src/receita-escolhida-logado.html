@@ -116,7 +116,7 @@
                             </section>
                             <section class="sectionclass">
                                 <div class="container6"><input type="url-site"
-                                        placeholder="http://Qreceita.com/bolo-de-cenoura/share"></div>
+                                        placeholder="http://Qreceita.com/link..."></div>
                                 <div id="botao-copiar"         class="container7">
                                     <button class="copiar2">Copiar</button>
                                 </div>
@@ -126,19 +126,26 @@
                 </section>
             </div>
             <div id="det_receita" class="main-containers"></div>
-                <section class="main-containers" id="section-bottom">
-                    <div id="container1">
-                        <form>
-                            <textarea name="Comentário" id="coment" cols="40" rows="10"
-                                placeholder="Digite aqui o seu comentário (até 500 caracteres)" maxlength="500"></textarea>
-                        </form>
-                        <div id="botao-enviar" id="container2">
-                            <button id="enviar">Enviar</button>
-                        </div>
+        <!--Ajuste Caixa de Comentários-->
+            <form>  
+                <div id="coment">
+                    <textarea name="Comentário" cols="40" rows="10" placeholder="Digite aqui o seu comentário (até 500 caracteres)" maxlength="500"></textarea>
+                <div id="botao-enviar" id="container2">
+                    <button id="enviar">Enviar</button>
                     </div>
-    
-                </section>
+                </div> 
+            </form>
+        <!--Ajuste Caixa de Comentários-->
             </div>
+            <!--caixa comentários API GOOGLE PLUS
+            <div class="g-comments"
+                data-href="http://127.0.0.1:5500/<?receita-escolhida-logado.html?id=[]; ?>"
+                data-width="auto"
+                data-first_party_property="BLOGGER"
+                data-view_type="FILTERED_POSTMOD">
+            </div>
+             caixa comentários API GOOGLE PLUS-->
+
         </main>
         <footer>
             <div>
@@ -149,8 +156,9 @@
                 <p>E-mail: contato@qreceita.com.br</p>
             </div>
         </footer>
-        <script src="scripts/receitaEscolhida.js" type="module"></script>
-        <script src="scripts/dbfake_finded.js"></script>
-        <script src="scripts/receita-escolhida-btn-compart.js"></script>
+        <script src="https://apis.google.com/js/plusone.js"></script>
+        <script src="/scripts/receitaEscolhida.js" type="module"></script>
+        <script src="/scripts/dbfake_finded.js"></script>
+        <script src="/scripts/receita-escolhida-btn-compart.js"></script>
     </body>
 </html>
