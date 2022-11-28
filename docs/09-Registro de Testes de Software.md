@@ -14,7 +14,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 
 <div align="center">
-  <img src="img\Teste-Receitas-Encontradas.png">
+  <img src="img\Teste-Receitas-Encontradas2.png">
 </div>
 
 <p align="center">Teste Receitas Encontradas</p>
@@ -32,7 +32,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 
 <div align="center">
-  <img src="img\Teste-Receita-Escolhida.png">
+  <img src="img\Teste-Receita-Escolhida2.png">
 </div>
 
 <p align="center">Teste Receita Escolhida / Teste Avaliação por estrelas</p>
