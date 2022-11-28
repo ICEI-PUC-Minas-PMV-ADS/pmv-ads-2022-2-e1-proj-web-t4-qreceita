@@ -88,10 +88,12 @@ A tela de efetuar cadastro permite ao usuário se cadastrar no site para que pos
 A tela de login permite ao usuário já cadastrado ter acesso a suas informações pessoais e a funcionalidades do site disponíveis apenas para os que já possuam login.
 
 <div align="center">
-  <img src="img/img_etapa3/login.png">
+  <img src="img\Teste-Login-sucesso.png">
 </div>
 
-<p align="center">Figura 19: Login</p>
+<p align="center">Login (sucesso)</p>
+
+
 
 ### Requisitos atendidos
 
@@ -117,10 +119,11 @@ A tela de login permite ao usuário já cadastrado ter acesso a suas informaçõ
 Após efetuar a busca na Página inicial o usuário será redirecionado para a Tela de Receitas Encontradas. Nela, ficará disponível todas as receitas localizadas pelo site de acordo com os ingredientes informados pelo usuário. Logo ao lado da primeira opção informada há um filtro, no qual ele poderá restringir suas opções de visualização de acordo com as opções: Receitas mais fáceis, Receitas mais difíceis, Receitas mais avaliadas e Receitas menos avaliadas.
 
 <div align="center">
-  <img src="img/img_etapa3/receitas-encontradas.png">
+  <img src="img\Teste-Receitas-Encontradas2.png">
 </div>
 
-<p align="center">Figura 20: Receitas Encontradas e Filtro de Receitas</p>
+<p align="center">Receitas Encontradas</p>
+
 
 ### Requisitos atendidos
 
@@ -149,10 +152,11 @@ Após efetuar a busca na Página inicial o usuário será redirecionado para a T
 Na tela Receita Escolhida, o usuário irá visualizar informações relevantes como o número de porções, tempo de preparo, grau de dificuldade e o detalhamento da receita escolhida, com ingredientes e o modo de preparo. Há também um ícone para o compartilhamento da receita, avaliá-la utilizando os ícones de estrelas e a opção de adicionar um comentário além de visualizar comentários de outros usuários.
 
 <div align="center">
-  <img src="img/img_etapa3/receita-escolhida.png">
+  <img src="img\Teste-Receita-Escolhida2.png">
 </div>
 
-<p align="center">Figura 21: Receita Escolhida</p>
+<p align="center">Receita Escolhida</p>
+
 
 ### Requisitos atendidos
 
@@ -186,10 +190,11 @@ Na tela Receita Escolhida, o usuário irá visualizar informações relevantes c
 Desejando o usuário compartilhar a receita escolhida, deverá clicar no ícone de compartilhamento localizado na tela da receita. O mesmo será redirecionado a uma nova tela, onde deverá copiar o link do site e selecionar uma das redes sociais informadas para finalizar o compartilhamento.
 
 <div align="center">
-  <img src="img/img_etapa3/compartilhamento-da-receita.png">
+  <img src="img\Teste-Compartilhar.png">
 </div>
 
-<p align="center">Figura 22: Compartilhamento de Receitas</p>
+<p align="center">Compartilhar</p>
+
 
 ### Requisitos atendidos
 
@@ -219,10 +224,11 @@ Desejando o usuário compartilhar a receita escolhida, deverá clicar no ícone 
 Ao efetuar o cadastro, o usuário deixará de visualizar a Tela Inicial original e passará a ter sua tela personalizada com sua foto no canto superior direito e seu nome logo acima das barras de pesquisa.
 
 <div align="center">
-  <img src="img/img_etapa3/user-logado.png">
+  <img src="img\Teste-Usuario-Logado.png">
 </div>
 
-<p align="center">Figura 23: Usuário Logado</p>
+<p align="center">Usuário Logado</p>
+
 
 ### Requisitos atendidos
 
@@ -263,10 +269,11 @@ Estrutura de Dados
 Na barra de navegação da Tela Inicial, a opção Perfil leva o usuário a uma tela com informações pessoais a serem preenchidas por ele como nome, sua profissão, informações relevantes e suas redes sociais.
 
 <div align="center">
-  <img src="img/img_etapa3/meu_perfil.png">
+  <img src="img\Teste-Meu-Perfil.png">
 </div>
 
-<p align="center">Figura 24: Meu Perfil</p>
+<p align="center">Meu Perfil</p>
+
 
 
 ### Requisitos atendidos
@@ -295,10 +302,11 @@ Na barra de navegação da Tela Inicial, a opção Perfil leva o usuário a uma 
 Logado ao site, o usuário poderá efetuar a inclusão de novas receitas, aumentando o banco de receitas da plataforma. Essa opção, fica disponível no Meu perfil na barra lateral direita.
 
 <div align="center">
-  <img src="img/img_etapa3/enviar_receitas.png">
+  <img src="img\Teste-Enviar-Receita.png">
 </div>
 
-<p align="center">Figura 25: Incluir Receitas</p>
+<p align="center">Incluir Receita</p>
+
 
 
 ### Requisitos atendidos
@@ -330,10 +338,11 @@ Logado ao site, o usuário poderá efetuar a inclusão de novas receitas, aument
 Logado ao site, o usuário poderá salvar suas receitas favoritas. Essa receitas ficaram disponíveis dentro do Perfil na opção Minhas Receitas.
 
 <div align="center">
-  <img src="img/img_etapa3/minhas-receitas.png">
+  <img src="img\Teste-Minhas-Receitas.png">
 </div>
 
-<p align="center">Figura 26: Receitas Favoritas</p>
+<p align="center">Receitas Favoritas</p>
+
 
 ### Requisitos atendidos
 
