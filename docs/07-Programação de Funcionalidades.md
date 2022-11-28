@@ -10,7 +10,7 @@ A tela principal do sistema apresenta as barras de pesquisa para que o usuário 
   <img src="img\Teste-Tela-Inicial.png">
 </div>
 
-<p align="center">Teste Tela Inicial</p>
+<p align="center">Tela Inicial</p>
 
 
 
@@ -42,10 +42,11 @@ A tela principal do sistema apresenta as barras de pesquisa para que o usuário 
 A tela de efetuar cadastro permite ao usuário se cadastrar no site para que possa ter acesso a outras funcionalidades como salvar suas receitas favoritas, incluir receitas e etc.
 
 <div align="center">
-  <img src="img/img_etapa3/cadastre-se.png">
+  <img src="img\Teste-Cadastro-sucesso.png">
 </div>
 
-<p align="center">Figura 18: Cadastra-se</p>
+<p align="center">Cadastro (sucesso)</p>
+
 
 ### Requisitos atendidos
 
