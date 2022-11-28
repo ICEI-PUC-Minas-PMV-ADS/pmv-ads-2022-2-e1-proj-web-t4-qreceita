@@ -126,7 +126,7 @@ class SearchClass {
                 div_content_search.appendChild(h2)
                 //contador de receitas encontradas
                 let countRecipe = 0
-
+                let listRecipesFinded = []
                 let countIngredients = 0
                 for (let c in j) {
                     for (e in inputs) {
@@ -136,6 +136,7 @@ class SearchClass {
                     }
                     if (countIngredients >= 3 && inputs.length > 3 || inputs.length === countIngredients) {
                         //carrega os dados no DOM
+                        listRecipesFinded.push(j[c])
                         let article = document.createElement('article')
                         article.className = "result_recipe"
 
@@ -165,7 +166,8 @@ class SearchClass {
                 });
 
                 h2.innerText = `Encontramos ${countRecipe} resultados de receitas que se enquadram na sua busca por: ${ingredients}.`
-
+                
+                this.filter(listRecipesFinded)
             }
 
         });

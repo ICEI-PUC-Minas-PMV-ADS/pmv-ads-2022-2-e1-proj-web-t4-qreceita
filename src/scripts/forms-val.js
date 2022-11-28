@@ -1,5 +1,4 @@
 import Forms from './app.js'
-import SuperJson from './superJson.js'
 
 let x = new Forms('site-content22', ['button_login1', 'button_sign1'])
 

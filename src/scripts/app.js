@@ -21,7 +21,7 @@ const ajaxModal = `<div class="modal">
     
     <p>Para a devida utilização dos denominados serviços fechados, o usuário deve apresentar dados e este declara desde já que todas as informações apresentadas são verdadeiras e corretas e declara estar ciente que responderá pelas falsas ou erros e informações apresentados.</p> 
     <p>Caso o usuário for menor de idade, deve abster-se de utilizar a nossa plataforma e pedir aos seus pais ou responsáveis para utilizarem a plataforma, serviços ou produtos.</p> 
-    <p>O usuário declara que concorda e compromete-se a usar a nossa plataforma, serviços ou produtos somente para os fins permitidos e de acordo com os termos constantes neste instrumento e que é o responsável integral pelo uso em desacordo com nossos Termos de Uso e Serviços, devendo assumir todas as consequências dessa atitude, reconhecendo que o Site QReceita não tem nenhuma responsabilidade por esses atos perante ele ou a terceiros. Responde ainda por todo e qualquer prejuízo causado ao Site QReceita.</p> 
+    <p>O usuário declara que concorda e compromete-se a usar a nossa plataforma, serviços ou produtos somente para os fins permitidos e de acordo com os termos constantes neste instrumento e que é o responsável integral pelo uso em desacordo com nossos Termos de Uso e Serviços, devendo assumir todas as consequências dessa atitude, reconhecendo que o Site QReceita não tem nenhuma responsabilidade por esses atos perante ele ou a terceiros. Responde ainda por todo e qualquer prejuízo causado a Guia da Culinária.</p> 
     <p>O acesso a nossa plataforma não lhe permite utilizar, copiar, reproduzir, modificar etc qualquer conteúdo, serviço ou produto. Fica permitido o compartilhamento junto às redes sociais, no entanto, o usuário que fizer isso está sujeito aos termos de uso e serviços e política de privacidade destes sites.</p> 
     <h4>3 Política de privacidade</h4> 
     <p>Todas as informações inerentes sobre a proteção de privacidade dos usuários encontram-se na Política de Privacidade do Site QReceita.</p> 
@@ -29,9 +29,9 @@ const ajaxModal = `<div class="modal">
     <p>O Site QReceita sempre busca oferecer o acesso a plataforma, serviços e produtos com a maior qualidade possível, por isso, pode haver casos que esta prestação pode ser momentaneamente interrompida para que sejam realizadas reparações técnicas e operacionais (marcadas ou não). Caso enfrente algum problema em nossa plataforma, entre em contato conosco o mais rápido possível.</p>
     <p>Nossa plataforma pode aceitar expor banner, botões, backlinks, ferramentas etc. de terceiros, com isso, o usuário deve estar ciente que ao clicar neles, serão redirecionados para outros locais fora da nossa responsabilidade, devendo buscar ler e aceitar os termos de uso e serviços desses terceiros.</p> 
     <p>Nas páginas da nossa plataforma podem haver espaços para comentário dos usuários, esses declaram que todo e qualquer conteúdo publicado será apenas de sua responsabilidade, respondendo sobre perdas e danos causados ao QReceita ou a terceiros. Caso veja algo ofensivo ou de alguma forma prejudicial, entre em contato conosco imediatamente.</p> 
-    <h4>5 Denúncia de violação aos termos de uso</h4>
+    <h4>6 Denúncia de violação aos termos de uso</h4>
     <p>Em seu comunicado, o usuário deve apresentar com a maior riqueza de detalhes possível o que lhe levou a reportar tal situação.</p>
-    <h4>6 Legislação aplicável<h4>
+    <h4>8 Legislação aplicável<h4>
     
     <p>Este Termo de Uso é regido dentro das legislações vigentes na República Federativa do Brasil.</p> 
     <h4>Fale conosco</h4>
@@ -82,11 +82,11 @@ class Forms extends Header {
                     main.removeChild(main_child);
                     main_child = main.firstElementChild;
                 }
-
+                main.id = 'site-content22'
+                main.className = 'site-content'
                 main.classList.add('login_sign')
                 const main_div = document.createElement("div");
                 const div_sec = document.createElement("div");
-                const div_ter = document.createElement("div");
                 const main_form = document.createElement("form");
                 const input_email = document.createElement("input");
                 const input_password = document.createElement("input");
@@ -95,9 +95,6 @@ class Forms extends Header {
                                     <p id="ni27" style="color: white">Faça o Login com sua conta QReceita</p>`;
                 div_sec.className = "button_login";
                 div_sec.innerHTML = `<button id="login-form" class="login2">Fazer Login</button>`;
-                div_ter.className = "esqueceu_sua_senha";
-                div_ter.innerHTML = `<a class="login_reset" href="#" style="color: white">Esqueceu sua senha?</a>
-                                    <p style="color: white">Não tem uma conta?<a class="Cadastre-se" href="#" style="color: white">Cadastre-se</a></p>`;
                 main_form.className = "login-form";
                 main_form.id = "formLogin";
                 input_email.className = "login_input"
@@ -112,7 +109,6 @@ class Forms extends Header {
                 main_form.insertAdjacentElement("beforeend", input_email);
                 main_form.insertAdjacentElement("beforeend", input_password);
                 main_form.insertAdjacentElement("beforeend", div_sec);
-                main_form.insertAdjacentElement("beforeend", div_ter);
 
                 let spanWarn = document.createElement('span')
                 spanWarn.id = "dbFalse"
@@ -159,6 +155,9 @@ class Forms extends Header {
                     main.removeChild(main_child);
                     main_child = main.firstElementChild;
                 }
+
+                main.id = 'site-content22'
+                main.className = 'site-content'
                 main.classList.add('login_sign')
                 const main_div = document.createElement("div");
                 const main_form = document.createElement("form");

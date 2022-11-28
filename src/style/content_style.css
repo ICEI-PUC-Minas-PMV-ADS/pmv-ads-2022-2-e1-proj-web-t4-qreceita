@@ -14,20 +14,21 @@
 
 
 .main-text {
+    width: 95%;
     justify-content: center;
     display: flex;
     height: 250px;
-    width: 95%;
+    width: 100%;
     flex-direction: column;
-}
 
+}
 #space {
     height: 225px;
 }
 
 .search-form2 {
     width: 100%;
-    height: 500px;
+    height: 1000px;
     background-color: #DED7B1;
     box-shadow: 2px 2px 2px 4px rgb(0 0 0 / 8%), 2px 2px 4px 12px rgb(0 0 0 / 8%);
     display: flex;
@@ -40,15 +41,7 @@
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: -.05rem;
-    padding: 10px;
-}
-
-
-#main-text-id {
-    width: 95%;
-    justify-content: left;
-    margin-right: 5%;
-    margin-left: 5%;  
+    padding-left: 30px;
 }
 
 #text2 {
@@ -69,7 +62,7 @@
     text-align: center;
     border-radius: 8px;
     border: 0;
-    margin: 0.7rem;
+    margin: 1rem;
     outline: none;
     font-size: 16px;
     color: #5c5959;
@@ -78,7 +71,7 @@
 
 .list-ul-inputs {
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,10 +83,7 @@
     list-style: none;
 }
 
-/*início carrossel*/
-
-#slider { 
-    /*padding-top: 10px;*/
+#slider {
     width: 100%;
     height: 14cm;
     position: relative;
@@ -113,20 +103,19 @@
     opacity: 2;
 }
 
-/*fim carrossel*/
-
 @media screen and (max-width: 600px) {
     .input-ingrediente {
         margin: 0.3rem;
         }
     }
+    
 
 @media screen and (max-width: 600px) {
     #search-form-id {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;      
+        align-items: center;
     }
 }
 
@@ -140,7 +129,8 @@
 @media screen and (max-width: 600px) {
     .main-text {
         height: 90%;
-        margin-bottom: 2%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         margin-left: 5%;
         width: 90%; 
     }
@@ -161,26 +151,5 @@
     .input-ingrediente-box {
         width: 40%;
         vertical-align: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #slider { 
-        /*padding-top: 10px;*/
-        width: 100%;
-        height: 4cm;
-        position: relative;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #slider img{
-        opacity: 0;
-        border-radius: 1%;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: opacity 2s;      
     }
 }

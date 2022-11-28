@@ -67,6 +67,7 @@ body {
 }
 .title {
     padding-left: 1%;
+    cursor: pointer;
 }
 .search-button {
     width: 45px;
