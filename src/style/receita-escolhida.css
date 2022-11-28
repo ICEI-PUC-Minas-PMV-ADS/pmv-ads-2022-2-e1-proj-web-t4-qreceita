@@ -57,6 +57,17 @@ p, .estrelas{
   padding-right: 90%;
 }
 
+#button-fav img {
+  width: 40px;
+  padding-right: 90%;
+}
+
+#button-fav {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 #info_right {
   width: 60%;
   display: flex;
