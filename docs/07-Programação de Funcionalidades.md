@@ -7,10 +7,12 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 A tela principal do sistema apresenta as barras de pesquisa para que o usuário possa informar quais os ingredientes tem disponível. A tela possui também a opção de login, para usuários já cadastrados, e cadastro, para usuários que ainda não estejam cadastrados. As receitas são armazenadas no LocalStorage com estruturas de dados baseada em JSON. Um exemplo da tela é apresentada na Figura 16.
 
 <div align="center">
-  <img src="img/img_etapa3/index.png">
+  <img src="img\Teste-Tela-Inicial.png">
 </div>
 
-<p align="center">Figura 17: Pesquisa de Receitas</p>
+<p align="center">Teste Tela Inicial</p>
+
+
 
 ### Requisitos atendidos
 
