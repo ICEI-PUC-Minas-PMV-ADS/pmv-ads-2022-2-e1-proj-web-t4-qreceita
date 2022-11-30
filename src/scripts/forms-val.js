@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } 
         }
     };
-    xhr.open("GET", "/scripts/json_archives/receitas_bd.json", true);
+    xhr.open("GET", "/json_archives/receitas_bd.json", true);
     xhr.send(null);
 
     document.getElementById('my_profile_login').addEventListener('click', (e) => {
