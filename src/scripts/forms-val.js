@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } 
         }
     };
-    xhr.open("GET", "/icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t4-qreceita/src/scripts/json_archives/receitas_bd.json", true);
+    xhr.open("GET", "scripts/json_archives/receitas_bd.json", true);
     xhr.send(null);
 
     document.getElementById('my_profile_login').addEventListener('click', (e) => {
