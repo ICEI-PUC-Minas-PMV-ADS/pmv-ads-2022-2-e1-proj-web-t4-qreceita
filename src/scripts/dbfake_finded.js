@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = dataLoaded;
     //xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
-    xhr.open("GET", "/icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t4-qreceita/src/scripts/json_archives/receitas_bd.json", true);
+    xhr.open("GET", "receitas_bd.json", true);
     xhr.send(null);
 
 });
