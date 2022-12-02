@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     x.createFormLogin()
     x.createFormSign()
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "/scripts/json_archives/receitas_bd.json", async);
+    xhr.open("GET", "pmv-ads-2022-2-e1-proj-web-t4-qreceita/blob/main/src/scripts/json_archives/receitas_bd.json", async);
     xhr.send(null);
     xhr.onreadystatechange = () => {
 
