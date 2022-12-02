@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let r = "/scripts/json_archives/receitas_bd.json"
     console.log(r)
     xhr.open("POST", r, true);
+    xhr.send('POST');
     xhr.onreadystatechange = () => {
 
         if (xhr.readyState === 4) {
@@ -20,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } 
         }
     };
-    xhr.send(null);
 
     document.getElementById('my_profile_login').addEventListener('click', (e) => {
 
