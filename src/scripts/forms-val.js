@@ -7,17 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
     x.createFormLogin()
     x.createFormSign()
     const xhr = new XMLHttpRequest();
-    let r = "/scripts/json_archives/receitas_bd.json"
-    xhr.open("GET", r, false);
-    console.log(xhr.open("GET", r, false))
+    let r = "/src/scripts/json_archives/receitas_bd.json"
+    xhr.open("GET", r, true);
     xhr.send(null);
     xhr.onreadystatechange = () => {
 
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
-                //const j = xhr.responseText;
+                const j = xhr.responseText;
                 console.log(xhr.responseText)
-                const j = 'xyz'
                 if(localStorage.recipes === undefined) localStorage.setItem('receitas', j)
 
             } 
