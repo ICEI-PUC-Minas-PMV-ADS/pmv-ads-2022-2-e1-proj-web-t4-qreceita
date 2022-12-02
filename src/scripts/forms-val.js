@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     x.createFormLogin()
     x.createFormSign()
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "/scripts/json_archives/receitas_bd.json", true);
+    xhr.open("GET", "/scripts/json_archives/receitas_bd.json", async);
     xhr.send(null);
     xhr.onreadystatechange = () => {
 
