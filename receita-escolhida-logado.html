@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QReceita</title>
+    <link rel="stylesheet" href="style/header_style.css">
+    <link rel="stylesheet" href="style/content_style.css">
+    <link rel="stylesheet" href="style/footer_style.css">
+    <link rel="stylesheet" href="style/receita-escolhida.css">
+    <link rel="stylesheet" href="style/user-logado_style.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="flex-container">
+            <div class="title">
+                <h1 id="logo" style="color: black;">Q<spam style="color: white;">Receita</spam>
+                </h1>
+            </div>
+            <div class="search-form">
+                <form id="form-search2" name="form-search" class="main-form" action="" method="get">
+                    <input id="search-top" class="main-input" type="text" aria-invalid="false" name="q"
+                        placeholder="Pesquise por qualquer receita, ingrediente..." autocomplete="off" value=""
+                        role="combobox" aria-autocomplete="both" aria-haspopup="true" aria-expanded="false" required>
+                    <button type="submit" id="search-dbfake" class="search-button">
+                        <img id="lupa" src="imgs\Lupa2.svg" alt="">
+                    </button>
+                </form>
+            </div>
+            <div id="space">
+            </div>
+            <!--Início entrada de dados Odair-->
+            <div id="realinhamento_avatar_out">
+                <div id="profile-container" class="avatar-container">
+                    <img class="avatar" src="imgs/avatar-padrao2.jpg" alt="">
+                    <p class="userName" id="nome_usuario_logado"></p>
+                </div>
+                <div class="button-out">
+                    <button id="button_logout_logado" type="button-out">
+                        <img src="imgs/button-out.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <!--Fim entrada de dados Odair-->
+        </div>
+        <nav class="nav-bar">
+            <ul class="list-navs">
+                <li id="first-nav" class="navs">
+                    <a class="nav-links" href="">
+                        Página Inicial
+                    </a>
+
+                </li>
+                <li class="navs">
+                    <a id="my-profile-nav" class="nav-links" href="">
+                        Meu Perfil
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-recipe">
+        <div id="main-recipe-div">
+            <section id="main-recipe-section" class="main-containers">
+                <div class="image-receita">
+                    <h1 id="recipeName"> Bolo de Cenoura</h1>
+                    <img id="imgPrato" src="imgs/prato.png" alt="bolo de cenoura">
+                </div>
+                <div id="info_right">
+                    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+                    <div class="estrelas">
+                        <input type="radio" id="cm_star-empty" name="fb" value="" checked />
+                        <label for="cm_star-1"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-1" name="fb" value="1" />
+                        <label for="cm_star-2"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-2" name="fb" value="2" />
+                        <label for="cm_star-3"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-3" name="fb" value="3" />
+                        <label for="cm_star-4"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-4" name="fb" value="4" />
+                        <label for="cm_star-5"><i class="fa"></i></label>
+                        <input type="radio" id="cm_star-5" name="fb" value="5" />
+                    </div>
+                    <div id="recipe-info-right"></div>
+                    <div onclick="acao()" class="btn"><img id="botao-compartilhar" src="imgs\Very-Basic-Share-icon.png"
+                            alt="share-botton">
+                    </div>
+                    <div id="div-button-fav">
+                        <button id="button-fav">
+                            <img src="imgs\fav_icon.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+            <section>
+                <div class="modal">
+                    <div onclick="fechar()" class="fechar"> <img id="icone-fechar" src="imgs/close.png"
+                            alt="close-icone"></div>
+                    <main id="compartilhamento">
+                        <h2 id="title-share">Gostou da receita? Então compartilhe com alguém!</h2>
+                        <section>
+                            <div class="container1"><a href="https://www.facebook.com/" target="_blank"><img
+                                        src="imgs\facebook-icon.png" alt="facebook"></a></div>
+                            <div class="container2"><a href="https://mail.google.com/mail/u/example@gmail.com"
+                                    target="_blank"><img src="imgs\Gmail-icon.png" alt="gmail"></a></div>
+                            <div class="container3"><a href="https://twitter.com/i/flow/login" target="_blank"><img
+                                        src="imgs\social-twitter-box-blue-icon.png" alt="twitter"></a></div>
+                            <div class="container4"><a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img
+                                        src="imgs\Whatsapp-icon.png" alt="whatsapp"></a></div>
+                            <div class="container5"><a href="https://www.instagram.com/" target="_blank"><img
+                                        src="imgs\Social-Networks-Instagram-icon.png" alt="instagram"></a></div>
+                        </section>
+                        <section class="sectionclass">
+                            <div class="container6"><input type="url-site" placeholder="http://Qreceita.com/link...">
+                            </div>
+                            <div id="botao-copiar" class="container7">
+                                <button class="copiar2">Copiar</button>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </section>
+        </div>
+        <div id="det_receita" class="main-containers"></div>
+        <!--Ajuste Caixa de Comentários-->
+            <form>
+                <div id="coment">
+                    <textarea name="Comentário" cols="40" rows="10"
+                        placeholder="Digite aqui o seu comentário (até 500 caracteres)" maxlength="500"></textarea>
+                    <div id="botao-enviar" id="container2">
+                        <button id="enviar">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        <!--Ajuste Caixa de Comentários-->
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h4>Entre em contato conosco:</h4>
+            <p>Site QReceita</p>
+            <p>Fone: (31) 3333-1111</p>
+            <p>WhatsApp: (31) 99999-1111</p>
+            <p>E-mail: contato@qreceita.com.br</p>
+        </div>
+    </footer>
+    <script src="https://apis.google.com/js/plusone.js"></script>
+    <script src="scripts/receitaEscolhida.js" type="module"></script>
+    <script src="scripts/dbfake_finded.js"></script>
+    <script src="scripts/receita-escolhida-btn-compart.js"></script>
+</body>
+
+</html>

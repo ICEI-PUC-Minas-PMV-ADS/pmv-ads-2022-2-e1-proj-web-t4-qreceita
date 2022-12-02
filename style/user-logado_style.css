@@ -1,0 +1,36 @@
+#username {
+    margin-left: -5px;
+    
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    
+}
+.avatar-container{
+    text-align: center;
+}
+
+#button_logout_logado img {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.button-out {
+    padding-right: 20px;
+    margin-top: 15%;
+}
+
+
+#realinhamento_avatar_out {
+    display: flex;
+}
