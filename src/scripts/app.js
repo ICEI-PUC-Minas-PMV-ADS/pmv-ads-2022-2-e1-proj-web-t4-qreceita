@@ -75,6 +75,7 @@ class Forms extends Header {
         if(!this.log) {
             document.getElementById(this.arrayButton[0]).addEventListener('click', () => {
 
+                document.querySelector('#first-nav a').style.backgroundColor = 'DED7B1'
                 const main = document.getElementById(this.main_id)
                 remove_class_list(main)
                 let main_child = main.firstElementChild;

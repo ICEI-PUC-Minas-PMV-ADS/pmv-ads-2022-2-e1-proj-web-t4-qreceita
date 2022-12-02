@@ -54,18 +54,22 @@ p, .estrelas{
 
 #botao-compartilhar {
   width: 40px;
+  height: 40px;
   padding-right: 90%;
 }
 
 #button-fav img {
-  width: 40px;
   padding-right: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 #button-fav {
   background-color: transparent;
   border: none;
   box-shadow: none;
+  width: 40px;
+  height: 40px;
 }
 
 #info_right {

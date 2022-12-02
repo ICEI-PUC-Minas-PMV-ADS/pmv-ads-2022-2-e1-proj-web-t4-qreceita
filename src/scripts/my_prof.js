@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     nav2.color = 'white'
 
     document.getElementsByClassName('nav-options')[0].classList.add('profile')
+    const divAlertContainer = document.createElement('div')
+    divAlertContainer.id = 'alertContainer'
+    divAlertContainer.className = 'popup'
+    let divAlert = document.createElement('div')
+    divAlert.className = 'divAlert'
+    divAlertContainer.appendChild(divAlert)
+    document.getElementById('site-content22').appendChild(divAlertContainer)
 
     x.PerfilEventos()
 

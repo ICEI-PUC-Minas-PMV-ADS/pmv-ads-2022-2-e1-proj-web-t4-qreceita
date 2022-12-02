@@ -15,7 +15,3 @@ if(!search_bottom.returnFlagLog() && !search_top.returnFlagLog()){
         login.createFormLogin()
 
 }
-
-var pageInit = document.getElementsByClassName('nav-links')[0].style
-pageInit.backgroundColor = '#9dab86'
-pageInit.color = 'white'

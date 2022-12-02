@@ -20,7 +20,7 @@
 
 
 .button_login {
-    margin-top: 11px;
+    padding-top: 50px;
 }
 
 .esqueceu_sua_senha {
@@ -46,6 +46,9 @@
     flex-direction: column;
 }
 
+#formLogin {
+    padding-bottom: 40px;
+}
 
 @media screen and (max-width: 600px) {
     .site-content.login_sign {

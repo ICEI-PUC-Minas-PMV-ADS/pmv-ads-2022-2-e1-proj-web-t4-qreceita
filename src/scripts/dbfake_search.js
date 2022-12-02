@@ -17,18 +17,19 @@ class SearchClass {
 
     search_bar_top(){
 
-        const main_content_search = document.getElementById(this.main_id);
-        const div_content_search = document.createElement('div')
-        div_content_search.id = 'show-recipe'
-        const div_filter = document.createElement('div')
-        const filtro_and_clear_container = document.createElement('div')
-        const filter = document.createElement('div')
-        const filter_clear = document.createElement('div')
-        filtro_and_clear_container.id = 'div-filter-clear'
-        filter.id = 'filter'
-        filter_clear.id = 'filter_clear'
-
         document.getElementById(this.event_id).addEventListener('submit', (e) => {
+
+            const main_content_search = document.getElementById(this.main_id);
+            const div_content_search = document.createElement('div')
+            div_content_search.id = 'show-recipe'
+            const div_filter = document.createElement('div')
+            const filtro_and_clear_container = document.createElement('div')
+            const filter = document.createElement('div')
+            const filter_clear = document.createElement('div')
+            filtro_and_clear_container.id = 'div-filter-clear'
+            filter.id = 'filter'
+            filter_clear.id = 'filter_clear'
+
             //console.log('addevent')
             const input_user = document.getElementById("search-top")
             e.preventDefault();
@@ -37,7 +38,8 @@ class SearchClass {
 
             const j = JSON.parse(localStorage.recipes);
 
-            main_content_search.classList.add('show-result-recipe')
+            main_content_search.classList.add(`show-result-recipe`)
+            main_content_search.classList.add(`${input_user.value}`)
             main_content_search.appendChild(div_content_search)
             div_content_search.insertAdjacentElement('afterend', div_filter)
             div_filter.appendChild(filtro_and_clear_container)
@@ -96,6 +98,13 @@ class SearchClass {
         const main_content_search = document.getElementById(this.main_id);
         const div_content_search = document.createElement('div')
         div_content_search.id = 'show-recipe'
+        const div_filter = document.createElement('div')
+        const filtro_and_clear_container = document.createElement('div')
+        const filter = document.createElement('div')
+        const filter_clear = document.createElement('div')
+        filtro_and_clear_container.id = 'div-filter-clear'
+        filter.id = 'filter'
+        filter_clear.id = 'filter_clear'
 
         document.getElementById(this.event_id).addEventListener('click', (e) => {
 
@@ -118,12 +127,23 @@ class SearchClass {
 
                 const j = JSON.parse(localStorage.recipes);
 
-                main_content_search.classList.add('show-result-recipe')
+                main_content_search.classList.add(`show-result-recipe`)
                 main_content_search.appendChild(div_content_search)
+                div_content_search.insertAdjacentElement('afterend', div_filter)
+                div_filter.appendChild(filtro_and_clear_container)
+                filtro_and_clear_container.appendChild(filter)
+                filter.insertAdjacentElement('afterend', filter_clear)
+                filter.innerHTML = `<div class="div-sec-filter"><select required="" aria-invalid="false" form="filter-form" id="u5-form-group--23" class="ud-select"><option value="most-evaluated">Classificação mais alta</option><option value="less-evaluated">Classificação mais baixa</option><option value="hard">Difíceis</option><option value="middle">Médias</option><option value="easy">Fáceis</option></select></div></div>`    
 
+                const div_recipes_articles = document.createElement('div')
+                div_recipes_articles.id = 'div_recipes_articles'
+                const divH2 = document.createElement('div')
+                divH2.id = 'result-count-div'
                 let h2 = document.createElement('h2')
                 h2.id = 'result_count'
-                div_content_search.appendChild(h2)
+                divH2.appendChild(h2)
+                div_content_search.appendChild(divH2)
+                divH2.insertAdjacentElement('afterend', div_recipes_articles)
                 //contador de receitas encontradas
                 let countRecipe = 0
                 let listRecipesFinded = []
@@ -154,7 +174,7 @@ class SearchClass {
                             }
                         }
 
-                        document.getElementById('result_count').insertAdjacentElement('afterend', article)
+                        document.getElementById('div_recipes_articles').appendChild(article)
                         countRecipe += 1
 
                     }

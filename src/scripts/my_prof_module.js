@@ -93,12 +93,16 @@ class MeuPefil {
         let nav1 = document.getElementsByClassName(this.classOptions)[0]
         let nav2 = document.getElementsByClassName(this.classOptions)[1]
         let nav3 = document.getElementsByClassName(this.classOptions)[2]
+        let nav4 = document.getElementsByClassName(this.classOptions)[3]
+        let main_div_right = document.getElementById('profile-left')
 
         nav1.addEventListener('click', () => {
 
             remove_class_list(nav1)
             remove_class_list(nav2)
             remove_class_list(nav3)
+            remove_class_list(nav4)
+            remove_class_list(main_div_right)
             nav1.classList.add('profile')
 
             let div = document.getElementById('profile-left')
@@ -110,6 +114,21 @@ class MeuPefil {
 
             div.innerHTML = meuPerfil
 
+            const bd_session = JSON.parse(sessionStorage.currentUser)
+            let name = document.getElementById('user_name').value
+            let prof = document.getElementById('profissao').value
+            let bio = document.getElementById('user-info').value
+            let linkedin = document.getElementById('Linkedin').value
+            let insta = document.getElementById('Instagram').value
+            let twitter = document.getElementById('Twitter').value
+
+            name = bd_session.nome
+            prof = bd_session.profissao
+            bio = bd_session.bio
+            linkedin = bd_session.linkedin
+            insta = bd_session.instagram
+            twitter = bd_session.twitter
+
         })
 
         nav2.addEventListener('click', () => {
@@ -117,6 +136,8 @@ class MeuPefil {
             remove_class_list(nav1)
             remove_class_list(nav2)
             remove_class_list(nav3)
+            remove_class_list(nav4)
+            remove_class_list(main_div_right)
             nav2.classList.add('enviarReceitas')
 
             let div = document.getElementById('profile-left')
@@ -150,6 +171,8 @@ class MeuPefil {
             remove_class_list(nav1)
             remove_class_list(nav2)
             remove_class_list(nav3)
+            remove_class_list(nav4)
+            remove_class_list(main_div_right)
             nav3.classList.add('my-recipes')
 
             let main_div = document.getElementById('profile-left')
@@ -163,6 +186,7 @@ class MeuPefil {
 
             if(myRecipes){
 
+                nav3.classList.add('my-recipes')
                 JSON.parse(myRecipes).forEach(el => {
 
                     let divs = document.createElement('div')
@@ -170,6 +194,58 @@ class MeuPefil {
                     divs.innerHTML = `<div class="my-sf-recipe"><div class="imgMyRecipe"><img src="${el.link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida-logado.html?id=${el._id.$oid}" target="_self"/>${el.nome}</h3><h4 class="info">Postado por: ${el.postado_por[0]}</h4><h4 class="info">${el.grau_de_dificuldade}</h4></div><div class="hating">${el.avaliacao}</div></div>`
                     main_div.appendChild(divs)
                 })
+            } else {
+
+                main_div.classList.add('recipeNotFound')
+                let i = document.createElement('img')
+                let h3 = document.createElement('h3')
+                h3.innerText = 'Você ainda não incluiu uma receita.'
+                i.id = 'recipeNF'
+                i.src = 'imgs/recipes_nf.png'
+
+                main_div.appendChild(i)
+                main_div.appendChild(h3)
+            }
+        })
+
+        nav4.addEventListener('click', () => {
+
+            remove_class_list(nav1)
+            remove_class_list(nav2)
+            remove_class_list(nav3)
+            remove_class_list(nav4)
+            remove_class_list(main_div_right)
+            nav4.classList.add('my-favorite-recipes')
+
+            let main_div = document.getElementById('profile-left')
+            let main_child = main_div.firstElementChild;
+            while (main_child) {
+                main_div.removeChild(main_child);
+                main_child = main_div.firstElementChild;
+            }
+
+            let myFavRecipes = sessionStorage.recipesFav
+
+            if(myFavRecipes){
+
+                JSON.parse(myFavRecipes).forEach(el => {
+
+                    let divs = document.createElement('div')
+                    divs.className = 'recipesSaved'
+                    divs.innerHTML = `<div class="my-sf-recipe"><div class="imgMyRecipe"><img src="${el.link_imagem}"></div><div class="recipe_info"><h3 class="info"><a href="./receita-escolhida-logado.html?id=${el._id.$oid}" target="_self"/>${el.nome}</h3><h4 class="info">Postado por: ${el.postado_por[0]}</h4><h4 class="info">${el.grau_de_dificuldade}</h4></div><div class="hating">${el.avaliacao}</div></div>`
+                    main_div.appendChild(divs)
+                })
+            } else {
+
+                main_div.classList.add('recipeNotFound')
+                let i = document.createElement('img')
+                let h3 = document.createElement('h3')
+                h3.innerText = 'Não há receitas favoritas.'
+                i.id = 'recipeNF'
+                i.src = 'imgs/recipes_nf.png'
+
+                main_div.appendChild(i)
+                main_div.appendChild(h3)
             }
         })
 
@@ -201,9 +277,14 @@ class MeuPefil {
             dataUp.updateLogin()
 
             const name_user = document.querySelectorAll('.userName');
-            let user = JSON.parse(sessionStorage.currentUser).nome;
-            let formatedUser = user[0].toUpperCase() + user.slice(1, user.length).toLowerCase()
-            document.getElementById('user_name').value = formatedUser
+            let user = JSON.parse(sessionStorage.currentUser);
+            let formatedUser = user.nome[0].toUpperCase() + user.nome.slice(1, user.nome.length).toLowerCase()
+            name = formatedUser
+            prof = user.profissao
+            bio = user.bio
+            linkedin = user.linkedin
+            insta = user.instagram
+            twitter = user.twitter
 
             name_user.forEach((i) => {
                 i.innerText = formatedUser

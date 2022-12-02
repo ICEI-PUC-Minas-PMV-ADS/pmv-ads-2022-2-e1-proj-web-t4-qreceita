@@ -1,3 +1,12 @@
+function remove_class_list(elem) {
+
+    let ecl = elem.classList
+    if(ecl.length > 1) {
+        for(let c = 1; c <= ecl.length; c++){
+            ecl.remove(ecl.item(c))
+        }
+    }
+}
 
 class SuperJson {
     constructor(list_data) {
@@ -159,6 +168,22 @@ class SuperJson {
             
             sessionStorage.setItem('currentUser', JSON.stringify(updateData))
 
+            const h3divs = '<div id="button-out-alert"><button id="buttonClose"></button></div><div id="textAlert"><h3>Informações do perfil alteradas!</h3></div>'
+            const imgClose = document.createElement('img')
+            imgClose.src = "imgs/close.png"
+            const divAlert = document.getElementsByClassName('divAlert')[0]
+            divAlert.innerHTML = h3divs
+
+            const buttonOut = document.getElementById('buttonClose')
+            buttonOut.appendChild(imgClose)
+            divAlert.classList.add('divAlertactive')
+            
+            buttonOut.addEventListener('click', () => {
+                divAlert.innerHTML = ''
+                remove_class_list(divAlert)
+            })
+
+
         }
     }
 
@@ -283,6 +308,21 @@ class SuperJson {
             if(flag && flag2){
 
                 this.sendRecipe()
+
+                const h3divs = '<div id="button-out-alert"><button id="buttonClose"></button></div><div id="textAlert"><h3>Receita adicionada com sucesso!</h3></div>'
+                const imgClose = document.createElement('img')
+                imgClose.src = "imgs/close.png"
+                const divAlert = document.getElementsByClassName('divAlert')[0]
+                divAlert.innerHTML = h3divs
+
+                const buttonOut = document.getElementById('buttonClose')
+                buttonOut.appendChild(imgClose)
+                divAlert.classList.add('divAlertactive')
+                
+                buttonOut.addEventListener('click', () => {
+                    divAlert.innerHTML = ''
+                    remove_class_list(divAlert)
+                })
 
             } else {
 

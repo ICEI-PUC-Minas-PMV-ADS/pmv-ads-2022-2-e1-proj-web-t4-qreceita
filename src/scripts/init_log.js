@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
     myprofile_events();
 
-    let nav1 = document.getElementsByClassName('nav-links')[0].style
-    nav1.backgroundColor = '#9dab86'
-    nav1.color = 'white'
+    //let nav1 = document.getElementsByClassName('nav-links')[0].style
+    //nav1.backgroundColor = '#9dab86'
+    //nav1.color = 'white'
 
 })

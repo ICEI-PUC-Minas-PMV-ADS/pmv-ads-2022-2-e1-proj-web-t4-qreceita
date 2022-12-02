@@ -1,9 +1,19 @@
 
+function remove_class_list(elem) {
+
+    let ecl = elem.classList
+    if(ecl.length >= 1) {
+        for(let c = 0; c < ecl.length; c++){
+            ecl.remove(ecl.item(c))
+        }
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function(e) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = dataLoaded;
     //xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
-    xhr.open("GET", "scripts/json_archives/receitas_bd.json", true);
+    xhr.open("GET", "/scripts/json_archives/receitas_bd.json", true);
     xhr.send(null);
 
 });
@@ -17,13 +27,25 @@ const dataLoaded = function(x) {
             const params = Object.fromEntries(urlSearchParams.entries());
 
             var findedData = j.find(element => element._id.$oid === params.id)
-            
+            console.log(findedData)
+
+            if(sessionStorage.recipesFav){
+
+                try {
+                    JSON.parse(sessionStorage.recipesFav).forEach((el,_) => {
+                        console.log(el._id.$oid)
+                        if(el._id.$oid == findedData._id.$oid){
+                            document.getElementById('button-fav').innerHTML = `<img src="imgs/fav_checked.png">`
+                        }
+                    })
+                } catch {
+                    document.getElementById('button-fav').innerHTML = `<img src="imgs/fav_icon.png">`
+                }
+            }   
             renderData(findedData);
         } 
     }
 };
-
-
 
 const renderData = function(findedData) {
 
@@ -64,6 +86,38 @@ const renderData = function(findedData) {
     infoRigth.appendChild(tempoPreparo)
     infoRigth.appendChild(serve)
     infoRigth.appendChild(grauDificuldade)
+
+    const buttonFav = document.getElementById('button-fav')
+
+    buttonFav.addEventListener('click', () => {
+
+        if(buttonFav.classList.length == 0){
+            buttonFav.classList.add('checked')
+            buttonFav.innerHTML = `<img src="imgs/fav_checked.png">`
+            if(sessionStorage.recipesFav) {
+
+                try {
+                    let myFav = JSON.parse(sessionStorage.recipesFav)
+                    myFav.push(findedData)
+                }
+                catch(err) {
+                    sessionStorage.setItem('recipesFav', JSON.stringify([findedData]))
+                }
+
+            } else {
+                let list = JSON.stringify([findedData])
+                sessionStorage.setItem('recipesFav', list)
+            }   
+        } else {
+
+            remove_class_list(buttonFav)
+            let myFavRecipes = sessionStorage.recipesFav
+            let myFav = JSON.parse(myFavRecipes)
+            myFav.splice(myFav.indexOf(findedData), 1)
+            sessionStorage.setItem('recipesFav', myFav)
+            buttonFav.innerHTML = `<img src="imgs/fav_icon.png">`
+        }
+    })
 
 };
 

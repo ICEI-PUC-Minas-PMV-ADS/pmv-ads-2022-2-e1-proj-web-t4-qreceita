@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     x.createFormLogin()
     x.createFormSign()
     const xhr = new XMLHttpRequest();
+    xhr.open("GET", "/scripts/json_archives/receitas_bd.json", true);
+    xhr.send(null);
     xhr.onreadystatechange = () => {
 
         if (xhr.readyState === 4) {
@@ -17,8 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } 
         }
     };
-    xhr.open("GET", "scripts/json_archives/receitas_bd.json", true);
-    xhr.send(null);
 
     document.getElementById('my_profile_login').addEventListener('click', (e) => {
 
@@ -26,6 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     x.createFormLogin();
 
     });
+
+    document.getElementsByClassName('title')[0].addEventListener('click', () => {
+
+        location.assign('index.html')
+
+    })
+
     document.getElementById('first-nav').addEventListener('click', (e) => {
 
     if(document.getElementsByClassName('navs')[0].id === 'page_log') {
