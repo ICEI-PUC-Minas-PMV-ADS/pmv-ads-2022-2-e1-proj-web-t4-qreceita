@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const xhr = new XMLHttpRequest();
     let r = "https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t4-qreceita/src/scripts/json_archives/receitas_bd.json"
     console.log(r)
-    xhr.open("GET", r, true);
+    xhr.open("POST", r, true);
     xhr.onreadystatechange = () => {
 
         if (xhr.readyState === 4) {
