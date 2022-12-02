@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const xhr = new XMLHttpRequest();
     let r = "scripts/receitas_bd.json"
     xhr.open('GET', r, true);
-    xhr.send(null);
+    //xhr.send(null);
     xhr.onreadystatechange = () => {
 
         if (xhr.readyState === 4) {
@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
             } 
         }
     };
-
+    xhr.send(null);
+    
     document.getElementById('my_profile_login').addEventListener('click', (e) => {
 
     e.preventDefault();
