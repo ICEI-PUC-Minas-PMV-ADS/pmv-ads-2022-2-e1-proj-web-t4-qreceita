@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     x.createFormLogin()
     x.createFormSign()
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "pmv-ads-2022-2-e1-proj-web-t4-qreceita/blob/main/src/scripts/json_archives/receitas_bd.json", async);
-    xhr.send(null);
+    let x = "/scripts/json_archives/receitas_bd.json"
+    xhr.open("GET", x, true);
     xhr.onreadystatechange = () => {
 
         if (xhr.readyState === 4) {
@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } 
         }
     };
+    xhr.send(null);
 
     document.getElementById('my_profile_login').addEventListener('click', (e) => {
 
