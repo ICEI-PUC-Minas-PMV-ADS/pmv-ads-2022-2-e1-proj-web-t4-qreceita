@@ -36,7 +36,7 @@ class SearchClass {
 
             clear_content(this.main_id)
 
-            const j = JSON.parse(localStorage.recipes);
+            const j = JSON.parse(localStorage.receitas);
 
             main_content_search.classList.add(`show-result-recipe`)
             main_content_search.classList.add(`${input_user.value}`)
@@ -125,7 +125,7 @@ class SearchClass {
             if (flag) {
                 clear_content(this.main_id)
 
-                const j = JSON.parse(localStorage.recipes);
+                const j = JSON.parse(localStorage.receitas);
 
                 main_content_search.classList.add(`show-result-recipe`)
                 main_content_search.appendChild(div_content_search)
