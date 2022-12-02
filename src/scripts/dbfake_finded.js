@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = dataLoaded;
     //xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
-    xhr.open("GET", "src/scripts/receitas_bd.json", true);
+    xhr.open("GET", "scripts/receitas_bd.json", true);
     xhr.send(null);
 
 });
