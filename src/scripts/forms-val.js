@@ -8,16 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
     x.createFormSign()
     const xhr = new XMLHttpRequest();
     let r = "/scripts/json_archives/receitas_bd.json"
-    console.log(r)
-    xhr.open("POST", r, true);
-    xhr.send('POST');
+    xhr.open("GET", r, false);
+    console.log(xhr.open("GET", r, false))
+    xhr.send(null);
     xhr.onreadystatechange = () => {
 
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 //const j = xhr.responseText;
+                console.log(xhr.responseText)
                 const j = 'xyz'
-                if(localStorage.recipes === undefined) localStorage.setItem('recipes', j)
+                if(localStorage.recipes === undefined) localStorage.setItem('receitas', j)
 
             } 
         }
