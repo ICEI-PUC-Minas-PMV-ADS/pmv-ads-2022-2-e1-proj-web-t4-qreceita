@@ -119,7 +119,9 @@
             </section>
         </div>
         <div id="det_receita" class="main-containers"></div>
-        <!--Ajuste Caixa de Comentários-->
+        
+        
+        <!--Ajuste Caixa de Comentários
         <form>  
             <div id="coment">
                 <textarea name="Comentário" cols="40" rows="10" placeholder="Digite aqui o seu comentário (até 500 caracteres)" maxlength="500"></textarea>
@@ -127,9 +129,35 @@
                 <button id="enviar">Enviar</button>
                 </div>
             </div> 
-        </form>
+        </form>-->
 
         <!--Ajuste Caixa de Comentários-->
+
+        <!--<form>
+            <div id="comment">
+                <label for="newComment" name="newComment">Deixe seu comentário</label>
+                <textarea id="newComment"></textarea>
+                <button id="addComments">Inserir</button>
+                <div id="allComments"></div>
+            </div>
+        </form>-->
+
+        <div class="container_comentarios">
+            <h4>O que você achou dessa receita? Comente!</h4>
+            <div>
+                <form id="alinhamento-box-button">
+                    <textarea placeholder="Faça seu comentário com até 500 caracteres..." value=" "></textarea>
+                <input id="submit_comment" type="submit" value="Enviar">
+               </div> 
+                </form>
+            </div>            
+        </div>
+        <div class="comments">
+           <h4>Comentários:</h4>
+            <div id="comment-box"></div>
+            <button id="clear">&#128591;</button>
+        </div>
+        <br>
     </main>
     <footer>
         <div>
@@ -144,6 +172,7 @@
     <script src="scripts/receita-escolhida-btn-compart.js"></script>
     <script src="scripts/receitaEscolhida2.js" type="module"></script>
     <script src="scripts/cadastre-se_link.termo.priv.js"></script>
+    <script src="scripts/Comments.js"></script>
 </body>
 
 </html>

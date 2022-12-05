@@ -127,7 +127,7 @@
             </section>
         </div>
         <div id="det_receita" class="main-containers"></div>
-        <!--Ajuste Caixa de Comentários-->
+        <!--Ajuste Caixa de Comentários
             <form>
                 <div id="coment">
                     <textarea name="Comentário" cols="40" rows="10"
@@ -137,8 +137,25 @@
                     </div>
                 </div>
             </form>
-        <!--Ajuste Caixa de Comentários-->
+        Ajuste Caixa de Comentários-->
+        <div class="container_comentarios">
+            <h4>O que você achou dessa receita? Comente!</h4>
+            <div>
+                <form id="alinhamento-box-button">
+                    <textarea placeholder="Faça seu comentário com até 500 caracteres..." value=" "></textarea>
+                <input id="submit_comment" type="submit" value="Enviar">
+               </div> 
+                </form>
+            </div>            
         </div>
+        <div class="comments">
+           <h4>Comentários:</h4>
+            <div id="comment-box"></div>
+            <button id="clear">&#128591;</button>
+        </div>
+        <br>
+
+        
     </main>
     <footer>
         <div>
@@ -153,6 +170,7 @@
     <script src="scripts/receitaEscolhida.js" type="module"></script>
     <script src="scripts/dbfake_finded.js"></script>
     <script src="scripts/receita-escolhida-btn-compart.js"></script>
+    <script src="scripts/Comments.js"></script>
 </body>
 
 </html>
