@@ -1,0 +1,68 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_container {
+    min-height: 450px;
+    width: 400px;
+    background-color: #9dab86;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.button_login {
+    padding-top: 50px;
+}
+
+.esqueceu_sua_senha {
+    margin-top: 10px;
+}
+
+
+.login_input {
+    outline: none;
+    height: 20px;
+    width: 240px;
+    margin-top: 10px;
+    padding: 10px;  
+    border: 1px solid #b2b2b2;
+    border-radius: 8px;
+}
+
+.site-content.login_sign {
+    display: flex;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#formLogin {
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .site-content.login_sign {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .flex_container {
+        height: 400px;
+        width: 350px;
+        padding: 3%;
+    }
+}
