@@ -1,0 +1,491 @@
+[
+	{
+		"_id": {
+			"$oid": "10001"
+		},
+		"nome": "Mousse de limão",
+		"link_imagem": "https://www.sabornamesa.com.br/media/k2/items/cache/49d777cdd477e76dea7b279017b034de_XL.jpg",
+		"grau_de_dificuldade": "Fácil",
+		"avaliacao": 5,
+		"tempo_de_preparo": "30 min.",
+		"serve": "4 porções",
+		"postado_por": "Ana Furlan",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"1 lata de leite condensado, 1 lata de creme de leite, 1/2 xícara de limão espremido"
+				]
+			},
+			{
+				"nome": "Modo de Preparo",
+				"conteudo": [
+					"Coloque o creme de leite e o leite condensado no liquidificador, bata um pouco e acrescente o suco de limão aos poucos. Quando a massa ficar consistente, coloque em um recipiente de vidro e leva à geladeira."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10002"
+		},
+		"nome": "Pão de queijo",
+		"link_imagem": "https://territoriosgastronomicos.uai.com.br/wp-content/uploads/2020/03/whatsapp-image-2020-03-14-at-215548-1.jpeg",
+		"grau_de_dificuldade": "Médio",
+		"avaliacao": 4,
+		"tempo_de_preparo": "35 min.",
+		"serve": "6 porções",
+		"postado_por": "Christian Antunes",
+		"comentarios": [],
+
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"1 caixa de creme de leite, 1 copo de queijo parmesão ralado, 1 copo de polvilho doce"
+				]
+			},
+			{
+				"nome": "Modo de Preparo",
+				"conteudo": [
+					"Pré aqueça o forno enquanto amassa todos os ingredientes até eles formarem uma massa (que não grude nas mãos), faça bolinhas e coloque para assar em uma forma untada."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10003"
+		},
+		"nome": "Bolo para café da tarde",
+		"link_imagem": "http://re.i.uol.com.br/album/bolos_f_030.jpg",
+		"grau_de_dificuldade": "Fácil",
+		"avaliacao": 4,
+		"tempo_de_preparo": "45 min.",
+		"serve": "4 porções",
+		"postado_por": "Arnaldo Silva",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"3 ovos, 2/3 de xícara de farinha com fermento, 1/2 xícara de açúcar refinado"
+				]
+			},
+			{
+				"nome": "Modo de Preparo",
+				"conteudo": [
+					"Pré aqueça o forno a 190ºC. Em uma tigela, bata os ovos e o açúcar até que formem um creme, depois misture a farinha. Coloque a massa em uma forma untada e asse."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10004"
+		},
+		"nome": "Massa de pizza",
+		"link_imagem": "https://i.ytimg.com/vi/YsDOmKuuhCU/maxresdefault.jpg",
+		"grau_de_dificuldade": "Fácil",
+		"avaliacao": 5,
+		"tempo_de_preparo": "45 min.",
+		"serve": "4 porções",
+		"postado_por": "Márcia Nogueira",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"1 xícara de farinha pronta com fermento, 1 xícara de iogurte Grego ou natural"
+				]
+			},
+			{
+				"nome": "Modo de Preparo",
+				"conteudo": [
+					"Em uma tigela, misture a farinha e o iogurte; misture a massa até formar uma bola. Coloque a massa em uma superfície enfarinhada e deixe sovar por 5-8 minutos. Com um rolo de macarrão, deixe a massa em formato de pizza e depois adicione as coberturas. Pré-aqueça o forno. Coloque a pizza no forno em temperatura máxima por 12 minutos."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10005"
+		},
+		"nome": "Biscoito de banana com aveia",
+		"link_imagem": "http://2.bp.blogspot.com/-z76HK5d0XFg/Uc9-1u90OvI/AAAAAAAAGJA/bbNYTJIpUQc/s1600/DSCF5995.JPG",
+		"grau_de_dificuldade": "Médio",
+		"avaliacao": 4,
+		"tempo_de_preparo": "38 min.",
+		"serve": "2 porções",
+		"postado_por": "Jaqueline Rezende",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"2 bananas bem maduras, 1 xícara de aveia"
+				]
+			},
+			{
+				"nome": "Modo de preparo",
+				"conteudo": [
+					"Amasse as bananas e acrescente a aveia, misturando bem. Depois, faça bolinhas no formato de pequenos biscoitos e coloque para assar em uma forma untada por 15 minutos em forno pré-aquecido a 175 graus. Se você quiser, também pode adicionar uma pitada de canela em pó, um punhadinho de frutos secos — como nozes e amêndoas, por exemplo — ou gotinhas de chocolate para incrementar as bolachas."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10006"
+		},
+		"nome": "Pão de queijo (sem fermento)",
+		"link_imagem": "https://t1.rg.ltmcdn.com/pt/posts/1/3/1/pao_de_queijo_com_farinha_de_arroz_sem_gluten_2131_orig.jpg",
+		"grau_de_dificuldade": "Médio",
+		"avaliacao": 5,
+		"tempo_de_preparo": "30 min.",
+		"serve": "5 porções",
+		"postado_por": "Carlos Nobre",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"1 caixinha de creme de leite (200 ml), 1 copo (requeijão) de queijo ralado (misturei parmesão e mussarela ralada), 1 copo (requeijão) de polvilho (usei polvilho doce)"
+				]
+			},
+			{
+				"nome": "Modo de Preparo",
+				"conteudo": [
+					"Amasse até soltar das mãos (caso precise um pouquinho a mais de polvilho, coloque aos poucos até que chegue ao ponto de enrolar). Faça bolinhas, coloque em forma untada e asse em forno pré-aquecido bem quente. Se achar necessário, acrescente sal. Asse até ficarem douradinhos levemente."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10007"
+		},
+		"nome": "Frango Caramelizado",
+		"link_imagem": "https://www.receitasagora.com.br/wp-content/uploads/2020/08/receita-de-frango-caramelizado.jpg",
+		"grau_de_dificuldade": "Médio",
+		"avaliacao": 3,
+		"tempo_de_preparo": "65 min.",
+		"serve": "6 porções",
+		"postado_por": "Izabella Firmino",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"200 ml de Coca-Cola, 50ml de molho de soja, 10 coxas de frango"
+				]
+			},
+			{
+				"nome": "Modo de preparo",
+				"conteudo": [
+					"Escolher uma Coca-Cola normal e não light ou diet. Coloque a Coca e o molho de soja numa panela e as coxas de frango. Deixe cozinhar lentamente, por tempo suficiente para que a carne do frango comece a soltar do osso, umas 4 a 5 horas. Retire as coxas e deixe o molho reduzir até ter uma textura de cobertura, uma calda. Derrame sobre as coxas e sirva com arroz branco."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10008"
+		},
+		"nome": "Rosas do deserto",
+		"link_imagem": "http://2.bp.blogspot.com/-bpPL2Itopgw/UX8K9Ix4FzI/AAAAAAAAAwU/yjKEzLbDzwQ/s1600/IMG_2120.JPG",
+		"grau_de_dificuldade": "Difícil",
+		"avaliacao": 5,
+		"tempo_de_preparo": "35 min.",
+		"serve": "5 porções",
+		"postado_por": "Érica Fernandes",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"100 g de chocolate, 60g de corn-flakes, 20g de manteiga"
+				]
+			},
+			{
+				"nome": "Modo de preparo",
+				"conteudo": [
+					"Derreta o chocolate e a manteiga no micro-ondas ou no banho-maria. Uma vez derretidos, derrame esta mistura nos corn-flakes e envolva-os delicadamente com o chocolate. Faça a seguir pequenos montinhos com a ajuda de uma colher e coloque suas rosas do deserto sobre uma folha de papel manteiga ou em forminhas de papel. Deixe esfriar e endurecer na geladeira por mais ou menos uma hora, antes de se deliciar com elas…"
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10009"
+		},
+		"nome": "Bolo de caneca",
+		"link_imagem": "http://s.glbimg.com/po/rc/media/2015/04/20/11_58_24_10_bolo_caneca1.jpg",
+		"grau_de_dificuldade": "Fácil",
+		"avaliacao": 4,
+		"tempo_de_preparo": "60 min.",
+		"serve": "4 porções",
+		"postado_por": "João Alberto",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"1 ovo, 1 colher (de sopa) de cacau em pó, 50 g de açúcar"
+				]
+			},
+			{
+				"nome": "Modo de preparo",
+				"conteudo": [
+					"O bolo de caneca, é o bolo o mais rápido e simples do mundo! Um bolo com uma simples caneca como vasilha e alguns minutos de cozimento no micro-ondas… Misture o ovo e o açúcar na caneca, acrescente o cacau em pó e leve para assar no micro-ondas por 60 segundos, no máximo. Tire sua caneca do forno, espere alguns minutos e saboreie!"
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10010"
+		},
+		"nome": "Mingau de Aveia",
+		"link_imagem": "http://www.musculacao.net/wp-content/uploads/2014/10/Mingau-de-aveia-com-queijo-fresco.jpg",
+		"grau_de_dificuldade": "Fácil",
+		"avaliacao": 5,
+		"tempo_de_preparo": "45 min.",
+		"serve": "2 porções",
+		"postado_por": "Angela Guimarães",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"50 g de flocos de aveia, 300 ml de leite, 8 g de açúcar baunilhado"
+				]
+			},
+			{
+				"nome": "Modo de preparo",
+				"conteudo": [
+					"Aquecer o leite, o açúcar e os flocos de aveia numa panela. Deixar cozinhar em fogo baixo, mexendo sempre. Sirva em tigelinha e, se quiser, pode colocar uma pitada de canela em pó, frutas cristalizadas ou outro complemento. Você tem um porridge caseiro (mingau de aveia), para comer no café da manhã ou um lanchinho entre as refeições…"
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10011"
+		},
+		"nome": "Brigadeiro de Colher",
+		"link_imagem": "https://www.comidaereceitas.com.br/img/sizeswp/1200x675/2015/04/brigadeiro_colher.jpg",
+		"grau_de_dificuldade": "Fácil",
+		"avaliacao": 4,
+		"tempo_de_preparo": "25 min.",
+		"serve": "3 porções",
+		"postado_por": "Fellipe Oliveira",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"1 lata de leite condensado, 1 colher (sopa) manteiga e 2 colheres (sopa) chocolate em pó"
+				]
+			},
+			{
+				"nome": "Modo de Preparo",
+				"conteudo": [
+					"Misture o leite condensado, a manteiga, o creme de leite e o chocolate em pó em uma panela. Leve a panela ao fogo. Mexa bem até levantar um pouco de fervura e abaixe o fogo. Misture o chocolate meio amargo derretido no microondas. Espere esfriar, decore com confeitos coloridos ou chocolate granulado e está pronto."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10012"
+		},
+		"nome": "Frozen iogurte de morango",
+		"link_imagem": "https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-frozen-yogurt-01.jpg",
+		"grau_de_dificuldade": "Médio",
+		"avaliacao": 4,
+		"tempo_de_preparo": "20 min.",
+		"serve": "4 porções",
+		"postado_por": "Simone Simão",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"4 potes de iogurte natural desnatado 1, 1/2 xícaras de chá de morangos congelados, 6 envelopes de adoçante"
+				]
+			},
+			{
+				"nome": "modo_de_preparo",
+				"conteudo": [
+					"Deixe o iogurte dessorar por 1 hora colocando os 4 potes de iogurte em um filtro de papel para café Despeje em uma vasilha e leve ao freezer para congelar Junte o iogurte com o morango no liquidificador (ambos congelados) Bata até misturar, junte o adoçante e misture Coloque em um refratário, cubra com papel filme bem junto ao refratário e leve ao freezer até servir"
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10013"
+		},
+		"nome": "Baked potato (requeijao e parmesao)",
+		"link_imagem": "https://www.receitas-sem-fronteiras.com/media/receita_de_batata_assada_com_queijo_610x300_crop.jpg/rh/batata-assada-com-recheio-delicia.jpg",
+		"grau_de_dificuldade": "Difícil",
+		"avaliacao": 5,
+		"tempo_de_preparo": "47 min.",
+		"serve": "7 porções",
+		"postado_por": "Bruna Silveira",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"1 batata grande, requeijão, parmesão"
+				]
+			},
+			{
+				"nome": "Modo de Preparo",
+				"conteudo": [
+					"Lave bem a batata com casca e faça alguns furos com um garfo em toda a superfície. Coloque sobre um prato ou recipiente de vidro e leve ao microondas por 8 minutos. Vire e cozinhe por mais 8 minutos. Espete um palito de dente dos dois lados e se ainda não estiver macia, adicione alguns minutos. Retire e enrole em papel alumínio para não esfriar. Faça um corte em uma das laterais e pressione com cuidado as duas pontas para que ela se abra. Agora é hora de rechear com o requeijão e o parmesão."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10014"
+		},
+		"nome": "Ovos em nuvens",
+		"link_imagem": "http://1.bp.blogspot.com/-6npMz3pTa4M/T3ISyNopJKI/AAAAAAAABBM/oZ4CC6C1oQ8/s1600/ovos+2.JPG",
+		"grau_de_dificuldade": "Difícil",
+		"avaliacao": 5,
+		"tempo_de_preparo": "26 min.",
+		"serve": "3 porções",
+		"postado_por": "Augusta Silva",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"2 ovos, 1/4 copo de queijo minas meia cura ralado (mas pode trocar para parmesão, mas diminua um pouco a quantidade), 1/4 copo de salame picado(mas pode trocar para bacon já frito até ficar crocante)"
+				]
+			},
+			{
+				"nome": "Modo de preparo",
+				"conteudo": [
+					"Ligue o forno em 230 graus. Separa as claras das gemas, mas guarda as gemas intactas. Eu guardei na própria casca. Bate as claras até ficar neve bem firme. Pique salami e cebola e rala o queijo e misture levemente com as claras em neve, junto com uma pitadinha de sal. Faz dois nuvens da mistura em cima de uma forma para forno e faz um buraquinho no meio de cada. Leva ao forno por mais ou menos 4 minutos. Tira e adicione as gemas nos buraquinhos. Espalhe um pouquinho de pimenta do reino e sal em cima. Retorna para o forno por mais 3 minutos, ou até as gemas se estabilizem, mas sem ficarem duros. Pronto!"
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10015"
+		},
+		"nome": "Smoothie",
+		"link_imagem": "http://www.dicasdemulher.com.br/wp-content/uploads/2014/05/10-smoothies-mais-saudaveis-de-todos-os-tempos.jpg",
+		"grau_de_dificuldade": "Difícil",
+		"avaliacao": 4,
+		"tempo_de_preparo": "40 min.",
+		"serve": "6 porções",
+		"postado_por": "Janaina Mansur",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"abacate, amora, leite de coco"
+				]
+			},
+			{
+				"nome": "Modo de preparo",
+				"conteudo": [
+					"Coloque suas frutas congeladas de preferência no liquidificador. Adiciona um pouco de liquido e bate. Começa com pouco a adicione mais se for necessário. Para não precisar adicionar muito liquido e perder a textura de sorvete, para de bater frequentemente e mistura com uma colher de pao para ajudar antes de voltar bater de novo. Experimenta e adicione adoçante se achar necessário. Serve já já! Se sobrar você pode colocar a mistura em moldes para picolé e guardar para um outro dia com calor"
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10016"
+		},
+		"nome": "Peixe assado no forno",
+		"link_imagem": "https://s2.glbimg.com/pqdHeTsFSjfpyCLO_KjhJmT6S18=/0x0:1280x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/A/f/HcRMf3Qbe8eFZqYGYwVg/peixe-assado-no-forno.jpg",
+		"grau_de_dificuldade": "Difícil",
+		"avaliacao": 4,
+		"tempo_de_preparo": "50 min.",
+		"serve": "4 porções",
+		"postado_por": "Ester Ferreira",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"1 quilo e meio de peixe inteiro e limpo, 300 mililitros de vinho branco seco, 1 vidro de leite de coco, 1 xícara de chá de azeite, 1 colher de chá de sal, 1 cebola, 5 dentes de alho, 2 tomates, 1 pimentão, Pimenta-do-reino a gosto, Cominho a gosto, Meio maço de cebolinha, Meio maço de coentro."
+				]
+			},
+			{
+				"nome": "Modo de preparo",
+				"conteudo": [
+					"No liquidificador, coloque 300 mililitros de vinho branco seco, 1 vidro de leite de coco, 1 xícara de chá de azeite, 1 colher de chá de sal, 1 cebola, 5 dentes de alho, 1 pimentão sem sementes, 2 tomates, pimenta-do-reino a gosto, cominho em pó a gosto, meio maço de cebolinha e meio maço de coentro. Bata até misturar os ingredientes, Coloque o peixe em uma assadeira e faça cortes para absorver o molho. Espalhe o molho no peixe e deixe marinar em refrigeração por 2 horas. Cubra a assadeira com papel-alumínio e leve ao forno por 20 minutos. Retire o papel-alumínio e leve novamente ao forno para dourar. Se quiser, decore com rodelas de limão e fatias de pimentão. Sirva em seguida."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10017"
+		},
+		"nome": "Peito de frango recheado",
+		"link_imagem": "https://www.sabornamesa.com.br/images/receitas/pins_image/r165-receitas-com-peito-de-frango-pin.jpg",
+		"grau_de_dificuldade": "Fácil",
+		"avaliacao": 3,
+		"tempo_de_preparo": "30 min.",
+		"serve": "2 porções",
+		"postado_por": "Sílvia Araujo",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": "Ingredientes",
+				"conteudo": [
+					"2 peitos de frango, 2 xícaras (chá) de muçarela ralada, 1 xícara (chá) de farinha de trigo, Queijo parmesão a gosto, 1 pitadinha de sal, 2 sachês de molho de tomate pronto, 1 xícara (chá) de farinha de rosca, 2 ovos, Queijo parmesão à gosto."
+				]
+			},
+			{
+				"nome": "Modo de preparo",
+				"conteudo": [
+					"Com os peitos de frango já limpos, faça um pequeno corte bem no meio deles, entretanto não separe as partes. Deixe as partes do frango unidas, afinal você quer rechear. Nesse corte que você fez, coloque bastante muçarela ralada e feche o peito. Depois, salpique um pouco de sal nos dois lados do frango. Em um recipiente coloque os ovos e o leite e misture. Em outro coloque as farinhas separadas. Pegue o peito de frango recheado e passe na farinha de trigo, depois no ovo com leite e por fim na farinha de rosca. Em uma panela com óleo bem quente, coloque os peitos de frango para fritar em fogo baixo até ficar dourado. Retire do fogo, deixe secar em um papel toalha. Em uma travessa coloque metade do molho de tomate, o peito de frango já frito e muçarela picada por cima. Depois, coloque o restante do molho por cima. Finalize com queijo parmesão ralado e leve ao forno à 180ºC por 10 minutos ou até derreter o queijo. Está pronto essa delícia."
+				]
+			}
+		]
+	},
+	{
+		"_id": {
+			"$oid": "10018"
+		},
+		"nome": "Lasanha de tapioca, Chocolate e Creme de Avelã",
+		"link_imagem": "https://img.itdg.com.br/tdg/images/recipes/000/055/304/5475/5475_original.jpg?w=1200",
+		"grau_de_dificuldade": "Difícil",
+		"avaliacao": 4,
+		"tempo_de_preparo": "33 min.",
+		"serve": "4 porções",
+		"postado_por": "Jairo Mourão",
+		"comentarios": [],
+		"secao": [
+			{
+				"nome": " Ingredientes",
+				"conteudo": [
+					"300g massa de tapioca1 pote de creme de avelã200g de chocolate meio amargo em barra3 bananas maduras100ml de espumante200g de açúcar granulado100g de chocolate em pó meio amargo"
+				]
+			},
+			{
+				"nome": " Modo de Preparo",
+				"conteudo": [
+					"Faça as lâminas da tapioca (1 para cada porção). Reserve., Derreta o chocolate e o creme de avelã até que fiquem cremosos. Reserve., Faça a banana caramelizada: corte em rodelas e levar ao fogo médio com 1 copo de espumante até ferver. Após fervura, coloque o açúcar aos poucos até ponto de calda., Montagem do prato: para cada lâmina de tapioca, corte em cruz, fazendo assim 4 pedaços. Coloque o primeiro pedaço, em seguida, coloque o chocolate cremoso. Depois vai o segundo pedaço e logo depois o creme de avelã., Coloque o terceiro pedaço e sobre ele novamente o chocolate. Coloque o último pedaço da tapioca. Sobre ele, a banana caramelizada em calda de champanhe. Finalize com chocolate em pó no prato para decorar."
+				]
+			}					
+		]
+	}
+]
+
+
