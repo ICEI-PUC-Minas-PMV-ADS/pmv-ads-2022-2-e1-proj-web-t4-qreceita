@@ -27,7 +27,6 @@ const dataLoaded = function(x) {
             const params = Object.fromEntries(urlSearchParams.entries());
 
             var findedData = j.find(element => element._id.$oid === params.id)
-            console.log(findedData)
 
             if(sessionStorage.recipesFav){
 

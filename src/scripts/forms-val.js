@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 const j = xhr.responseText;
-                console.log(xhr.responseText)
                 if(localStorage.receitas === undefined) localStorage.setItem('receitas', j)
 
             } 
