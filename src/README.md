@@ -1,30 +1,25 @@
 # Instruções de utilização
 
-- Acesse a página inicial pelo link: [AgriCont](https://agricont.azurewebsites.net/).
+- Acesse a página inicial pelo link: (https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t4-qreceita/src/).
 
-- Clique no ícone de Login no canto direito do cabeçalho.
+- Inclua no mínimo um ingrediente na barra de pesquisa superior e click na lupa ou utilize as barras inferiores para pesquisar por receitas com mais ingredientes e click em buscar.
 
-- Informe as credenciais de login de usuário teste (Login: emauelythiemy@gmail.com   / Senha: 12345).
+- O usuário tem a opção de acessar a área privativa, para tanto deverá fazer o cadastro completo e o login utilizando os botões localizados no lado direito superior.
 
-- As credenciais serão validadas, a sessão será iniciada e o usuário será redirecionado para a página inicial do usuário.
+- Informe as credenciais de login de usuário teste (Login: "coloque um e-mail válido"  / Senha: "com números apenas").
 
-- Caso prefira, pode fazer seu própio cadastro clicando no link Cadastre-se no cabeçalho. 
+- As credenciais serão validadas, a sessão será iniciada e o usuário será redirecionado para a página inicial do usuário logado.
 
-- Ao clicar no link Cadastre-se, você será redirecionado para a página de Cadastro de Usuário. Para realizar o cadastro de usuário é necessário que sua empresa também esteja cadastrada. 
-
-- Caso sua empresa ainda não esteja cadastrada, clique no link embaixo do Cadastro de Usuário para ser redirecionado para o Cadastro de Empresa.  
-
-- Após realizar Cadastro de Usuário, você será redirecionado para a página de Login. 
-
-- Informe as credenciais cadastradas. Elas serão validadas e a sessão será iniciada.
+- No ambiente logado o usuário terá acesso a todos os recursos do site aberto além de poder: comentar, salvar e incluir novas receitas e também personalizar seu perfil.
 
 
 ## Instalação do Site
 
-O site em HTML/CSS/JS pode ser visualizado nos navegadores mais usuais, como Chrome e Mozilla.
+O site foi desenvolvido em HTML/CSS/JS e pode ser visualizado nos navegadores mais usuais, como Chrome, Mozilla e Edge.
 
 ## Histórico de versões
 
-### [0.1.0] - 24/11/2022
+### [0.1.0] - 10/12/2022
+
 #### Publicação 
 - Data da primeira versão de publicação.
