@@ -109,7 +109,7 @@ class SuperJson {
                     //se o localstorage está vazio
                     if(localStorage.getItem('db_fake') === null) {
                         localStorage.setItem('db_fake', JSON.stringify(dataS))
-                        sessionStorage.getItem('currentUser') = JSON.stringify(dataS.usuarios[0])
+                        sessionStorage.setItem('currentUser', JSON.stringify(dataS.usuarios[0]))
                         location.assign('user-logado.html')
                     } else {
 
