@@ -14,6 +14,72 @@ document.addEventListener('DOMContentLoaded', () => {
         i.innerText = formatedUser
     });
 
+    let rFav = sessionStorage.getItem('recipesFav')
+    let bdRecipes = localStorage.getItem('receitas')
+    const buttonFav = document.getElementById('button-fav')
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+
+    if(rFav && bdRecipes){
+
+        const fav = JSON.parse(rFav)
+        const buttonFav = document.getElementById('button-fav')
+        var findedDataFav = fav.find(element => element._id.$oid === params.id)
+
+        if(findedDataFav){
+            buttonFav.classList.add('checked')
+            document.getElementById('button-fav').innerHTML = `<img src="imgs/fav_checked.png">`
+        }
+        
+    } 
+
+    buttonFav.addEventListener('click', () => {
+
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+        let rJFav2 = sessionStorage.getItem('recipesFav')
+        let rJFav = JSON.parse(rJFav2);
+
+        if(rJFav === null){
+
+            let list = []
+            const j = JSON.parse(localStorage.getItem('receitas'))
+            var findRFav = j.find(el => el._id.$oid === params.id)
+            list.push(findRFav)
+            buttonFav.classList.add('checked');
+            buttonFav.innerHTML = `<img src="imgs/fav_checked.png">`
+            sessionStorage.setItem('recipesFav', JSON.stringify(list))
+
+        } else {
+
+            if (typeof rJFav === 'object') {
+                
+                var findRFav = rJFav.find(el => el._id.$oid === params.id)
+
+                if (findRFav === undefined) {
+
+                    const j = JSON.parse(localStorage.getItem('receitas'))
+                    var findRFav = j.find(el => el._id.$oid === params.id)
+                    buttonFav.classList.add('checked');
+                    buttonFav.innerHTML = `<img src="imgs/fav_checked.png">`
+                    rJFav.push(findRFav)
+                    sessionStorage.setItem('recipesFav', JSON.stringify(rJFav))
+
+                } else {
+                    remove_class_list(buttonFav)
+                    rJFav.forEach((el, i) => {
+                        if (el._id.$oid === params.id) {
+                            rJFav.splice(i, 1)
+                        }
+                    })
+
+                    sessionStorage.setItem('recipesFav', JSON.stringify(rJFav))
+                    buttonFav.innerHTML = `<img src="imgs/fav_icon.png">`
+                }
+            }
+        }
+    })
+
     document.getElementById("button_logout_logado").addEventListener('click', () => {
         location.assign('index.html')
     })

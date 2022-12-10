@@ -28,9 +28,9 @@ class SuperJson {
             } else {
                 console.log('else segundo if')
                 void_true.style.visibility = 'hidden'
-                if(localStorage.db_fake != undefined) {
+                if(localStorage.db_fake) {
 
-                    let current = JSON.parse(localStorage.db_fake).usuarios
+                    let current = JSON.parse(localStorage.getItem('db_fake')).usuarios
                     let flag = false
 
                     current.forEach((el, i) => {
@@ -107,13 +107,13 @@ class SuperJson {
                 if(dataS.usuarios[0].senha === dataS.usuarios[0].confirm_senha) {
                     warnPassword.style.visibility = 'hidden'
                     //se o localstorage está vazio
-                    if(localStorage.db_fake === undefined) {
+                    if(localStorage.getItem('db_fake') === null) {
                         localStorage.setItem('db_fake', JSON.stringify(dataS))
-                        sessionStorage.currentUser = JSON.stringify(dataS.usuarios[0])
+                        sessionStorage.getItem('currentUser') = JSON.stringify(dataS.usuarios[0])
                         location.assign('user-logado.html')
                     } else {
 
-                        let newData = JSON.parse(localStorage.db_fake)
+                        let newData = JSON.parse(localStorage.getItem('db_fake'))
                         let flag = true
 
                         //verifica se o usuário já está cadastrado
@@ -129,7 +129,7 @@ class SuperJson {
                             warnEmail.style.visibility = 'hidden'
                             newData.usuarios.push(dataS.usuarios[0])
                             localStorage.setItem('db_fake', JSON.stringify(newData))
-                            sessionStorage.currentUser = JSON.stringify(dataS.usuarios[0])
+                            sessionStorage.getItem('currentUser') = JSON.stringify(dataS.usuarios[0])
                             location.assign('user-logado.html')
 
                         } else {
@@ -146,13 +146,13 @@ class SuperJson {
 
     updateLogin() {
 
-        let current = sessionStorage.currentUser
+        let current = sessionStorage.getItem('currentUser')
 
         if(typeof this.list_data == "object" && this.list_data.length <= 6 && current != undefined) {
 
-            let email = JSON.parse(sessionStorage.currentUser).email
-            let senha = JSON.parse(sessionStorage.currentUser).senha
-            let confirmSenha = JSON.parse(sessionStorage.currentUser).confirm_senha
+            let email = JSON.parse(current).email
+            let senha = JSON.parse(current).senha
+            let confirmSenha = JSON.parse(current).confirm_senha
 
             let updateData = {
                 nome: this.list_data[0],
@@ -189,9 +189,9 @@ class SuperJson {
 
     sendRecipe() {
 
-        let updateStorage = JSON.parse(localStorage.recipes)
-        let nameUser = JSON.parse(sessionStorage.currentUser).nome
-        let emUser = JSON.parse(sessionStorage.currentUser).email
+        let updateStorage = JSON.parse(localStorage.getItem('receitas'))
+        let nameUser = JSON.parse(sessionStorage.getItem('currentUser')).nome
+        let emUser = JSON.parse(sessionStorage.getItem('currentUser')).email
 
         let arrayFlagContent = []
         let arrayflagIngred = []
@@ -225,7 +225,7 @@ class SuperJson {
 
         let newRecipe = {
             "_id": {
-                "$oid": updateStorage.length
+                "$oid": updateStorage.length.toString()
             },
             "nome": this.list_data[0],
             "link_imagem": "imgs/foto_padrao.png",
@@ -234,8 +234,7 @@ class SuperJson {
             "tempo_de_preparo": this.list_data[3],
             "serve": this.list_data[1],
             "postado_por": userBasicInfo,
-    
-    
+            "comentarios": [],
             "secao": [
                 {
                     "nome": "Ingredientes",
@@ -253,13 +252,13 @@ class SuperJson {
         }
 
         updateStorage.push(newRecipe)
-        localStorage.setItem('recipes', JSON.stringify(updateStorage))
+        localStorage.setItem('receitas', JSON.stringify(updateStorage))
 
         let recipesUser = []
         recipesUser.push(newRecipe)
 
         if(sessionStorage.recipesCurrentUser){
-            let storageRecipe = JSON.parse(sessionStorage.recipesCurrentUser)
+            let storageRecipe = JSON.parse(sessionStorage.getItem('recipesCurrentUser'))
             storageRecipe.push(newRecipe)
             sessionStorage.setItem('recipesCurrentUser', JSON.stringify(storageRecipe))
         } else{

@@ -73,8 +73,9 @@ class Forms extends Header {
     createFormLogin() {
 
         if(!this.log) {
-            document.getElementById(this.arrayButton[0]).addEventListener('click', () => {
-
+            document.getElementById(this.arrayButton[0]).addEventListener('click', (e) => {
+                
+                e.preventDefault()
                 document.querySelector('#first-nav a').style.backgroundColor = 'DED7B1'
                 const main = document.getElementById(this.main_id)
                 remove_class_list(main)

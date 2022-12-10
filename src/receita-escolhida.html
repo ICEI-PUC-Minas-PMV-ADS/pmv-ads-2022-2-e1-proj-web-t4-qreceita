@@ -109,9 +109,11 @@
                                         src="imgs\Social-Networks-Instagram-icon.png" alt="instagram"></a></div>
                         </section>
                         <section class="sectionclass">
-                            <div class="container6"><input type="url-site" placeholder="http://Qreceita.com/link"></div>
-                            <div id="botao-copiar"         class="container7">
-                                <button class="copiar2">Copiar</button>
+                            <div class="container6">
+                                <input id="cont6input" type="url-site" placeholder="http://Qreceita.com/link">
+                            </div>
+                            <div id="botao-copiar" class="container7">
+                                <button id="copyBtn" class="copiar2">Copiar</button>
                             </div>
                         </section>                  
                     </main>
@@ -120,14 +122,20 @@
         </div>
         <div id="det_receita" class="main-containers"></div>
         <!--Ajuste Caixa de Comentários-->
-        <form>  
-            <div id="coment">
-                <textarea name="Comentário" cols="40" rows="10" placeholder="Digite aqui o seu comentário (até 500 caracteres)" maxlength="500"></textarea>
-            <div id="botao-enviar" id="container2">
-                <button id="enviar">Enviar</button>
-                </div>
-            </div> 
-        </form>
+        <div class="container_comentarios">
+            <h4>O que você achou dessa receita? Comente!</h4>
+            <div>
+                <form id="alinhamento-box-button">
+                    <textarea placeholder="Faça seu comentário com até 500 caracteres..." value=" "></textarea>
+                    <input id="submit_comment" type="submit" value="Enviar">
+                </form>
+            </div>            
+        </div>
+        <div class="comments">
+           <h4 id="countComment">Comentários:</h4>
+            <div id="comment-box"></div>
+        </div>
+        <br>
 
         <!--Ajuste Caixa de Comentários-->
     </main>
@@ -140,10 +148,9 @@
             <p>E-mail: contato@qreceita.com.br</p>
         </div>
     </footer>
-    <script src="scripts/dbfake_finded.js"></script>
+    <script src="scripts/dbfake_finded.js" type="module"></script>
     <script src="scripts/receita-escolhida-btn-compart.js"></script>
     <script src="scripts/receitaEscolhida2.js" type="module"></script>
-    <script src="scripts/cadastre-se_link.termo.priv.js"></script>
 </body>
 
 </html>

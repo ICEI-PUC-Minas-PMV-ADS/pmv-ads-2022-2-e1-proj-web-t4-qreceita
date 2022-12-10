@@ -8,6 +8,17 @@ function clear_content(id) {
         main_child = main.firstElementChild;
     }
 }
+
+function remove_class_list(elem) {
+
+    let ecl = elem.classList
+    if(ecl.length >= 1) {
+        for(let c = 0; c < ecl.length; c++){
+            ecl.remove(ecl.item(c))
+        }
+    }
+}
+
 class SearchClass {
     constructor(main_id, event_id, flag_log = false){
         this.main_id = main_id
@@ -38,6 +49,7 @@ class SearchClass {
 
             const j = JSON.parse(localStorage.getItem('receitas'));
 
+            remove_class_list(main_content_search)
             main_content_search.classList.add(`show-result-recipe`)
             main_content_search.classList.add(`${input_user.value}`)
             main_content_search.appendChild(div_content_search)
@@ -127,6 +139,7 @@ class SearchClass {
 
                 const j = JSON.parse(localStorage.getItem('receitas'));
 
+                remove_class_list(main_content_search)
                 main_content_search.classList.add(`show-result-recipe`)
                 main_content_search.appendChild(div_content_search)
                 div_content_search.insertAdjacentElement('afterend', div_filter)

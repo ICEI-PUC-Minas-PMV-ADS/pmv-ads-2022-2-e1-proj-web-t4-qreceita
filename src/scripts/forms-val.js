@@ -7,20 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
     x.createFormLogin()
     x.createFormSign()
     const xhr = new XMLHttpRequest();
-    let r = "scripts/receitas_bd.json"
-    xhr.open('GET', r, true);
-    //xhr.send(null);
+    let r = "/scripts/json_archives/receitas_bd.json"
+    xhr.open("GET", r, true);
+    xhr.send(null);
     xhr.onreadystatechange = () => {
 
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 const j = xhr.responseText;
-                if(localStorage.receitas === undefined) localStorage.setItem('receitas', j)
+                if(!localStorage.getItem('receitas')) localStorage.setItem('receitas', j)
 
             } 
         }
     };
-    xhr.send(null);
     
     document.getElementById('my_profile_login').addEventListener('click', (e) => {
 

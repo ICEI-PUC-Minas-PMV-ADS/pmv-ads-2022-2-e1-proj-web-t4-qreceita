@@ -1,3 +1,4 @@
+import Forms from "./app.js";
 
 function remove_class_list(elem) {
 
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = dataLoaded;
     //xhr.open("GET", "https://raw.githubusercontent.com/adrianosferreira/afrodite.json/master/afrodite.json", true);
-    xhr.open("GET", "scripts/receitas_bd.json", true);
+    xhr.open("GET", "/scripts/json_archives/receitas_bd.json", true);
     xhr.send(null);
 
 });
@@ -21,28 +22,20 @@ document.addEventListener("DOMContentLoaded", function(e) {
 const dataLoaded = function(x) {
     if (this.readyState === 4) { //https://www.w3schools.com/xml/ajax_xmlhttprequest_response.asp
         if (this.status === 200) {
-            const j = JSON.parse(this.responseText);
-
+            const j = JSON.parse(localStorage.getItem('receitas'));
             const urlSearchParams = new URLSearchParams(window.location.search);
             const params = Object.fromEntries(urlSearchParams.entries());
 
             var findedData = j.find(element => element._id.$oid === params.id)
 
-            if(sessionStorage.recipesFav){
+            console.log(params)
+            console.log(findedData)
+            renderData(findedData)
+            renderComments()
+            appendComments()
 
-                try {
-                    JSON.parse(sessionStorage.recipesFav).forEach((el,_) => {
-                        console.log(el._id.$oid)
-                        if(el._id.$oid == findedData._id.$oid){
-                            document.getElementById('button-fav').innerHTML = `<img src="imgs/fav_checked.png">`
-                        }
-                    })
-                } catch {
-                    document.getElementById('button-fav').innerHTML = `<img src="imgs/fav_icon.png">`
-                }
-            }   
-            renderData(findedData);
-        } 
+
+        }
     }
 };
 
@@ -86,38 +79,74 @@ const renderData = function(findedData) {
     infoRigth.appendChild(serve)
     infoRigth.appendChild(grauDificuldade)
 
-    const buttonFav = document.getElementById('button-fav')
-
-    buttonFav.addEventListener('click', () => {
-
-        if(buttonFav.classList.length == 0){
-            buttonFav.classList.add('checked')
-            buttonFav.innerHTML = `<img src="imgs/fav_checked.png">`
-            if(sessionStorage.recipesFav) {
-
-                try {
-                    let myFav = JSON.parse(sessionStorage.recipesFav)
-                    myFav.push(findedData)
-                }
-                catch(err) {
-                    sessionStorage.setItem('recipesFav', JSON.stringify([findedData]))
-                }
-
-            } else {
-                let list = JSON.stringify([findedData])
-                sessionStorage.setItem('recipesFav', list)
-            }   
-        } else {
-
-            remove_class_list(buttonFav)
-            let myFavRecipes = sessionStorage.recipesFav
-            let myFav = JSON.parse(myFavRecipes)
-            myFav.splice(myFav.indexOf(findedData), 1)
-            sessionStorage.setItem('recipesFav', myFav)
-            buttonFav.innerHTML = `<img src="imgs/fav_icon.png">`
-        }
-    })
-
 };
 
+const renderComments = function(){
 
+    const comments = document.getElementById('comment-box');
+    const j = JSON.parse(localStorage.getItem('receitas'));
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    var commentsList = j.find(element => element._id.$oid === params.id)
+    var countComment = document.getElementById('countComment')
+
+    if(typeof commentsList.comentarios == 'object'){
+        countComment.innerText = `${commentsList.comentarios.length} comentários`
+    }
+
+    if(commentsList.comentarios.length > 0){ //continuar aqui
+        let list = '<ul>';
+        commentsList.comentarios.forEach((info, _) => {
+            list += `<li class="commentList"><div class="profilePhoto"><img class="photo" src="imgs/avatar-padrao2.jpg"></div><div class="containerComment"><div class="commentInfos"><div class="nameUser">${info.nomeUsuario}</div><div class="time"></div></div><div class="comment">${info.comentario}</div></div></li>`;
+          })
+        list += '</ul>';
+        comments.innerHTML = list;
+    }
+}
+
+const appendComments = function(){
+
+    const submit = document.querySelector('#submit_comment');
+    const field = document.querySelector('textarea');
+    submit.addEventListener('click', (e) => {
+
+        e.preventDefault();
+        try{
+
+            var userInfo = JSON.parse(sessionStorage.getItem('currentUser'))
+            const content = {"nomeUsuario": userInfo.nome,"comentario": field.value}
+            let recipes = JSON.parse(localStorage.getItem('receitas'))
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            const params = Object.fromEntries(urlSearchParams.entries());
+            let atualRec = recipes.find(element => element._id.$oid === params.id)
+
+            if(content.comentario.length > 0){ 
+
+                if(typeof atualRec.comentarios === 'object') {
+
+                    atualRec.comentarios.push(content)
+                    localStorage.setItem('receitas', JSON.stringify(recipes))
+                    // re-genrate the comment html list
+                    renderComments();
+                    // reset the textArea content 
+                    field.value = '';
+
+                } else {
+                    let voidList = []
+                    voidList.push(content)
+                    atualRec.comentarios = voidList
+
+                    localStorage.setItem('receitas', JSON.stringify(recipes))
+                    renderComments();
+                    field.value = '';
+                }
+            }
+        } catch{
+
+            let arrayButton = ['submit_comment'];
+            let login = new Forms('main-recipe', arrayButton);
+            login.createFormLogin();
+            document.getElementById('submit_comment').click()
+        }
+    })
+}

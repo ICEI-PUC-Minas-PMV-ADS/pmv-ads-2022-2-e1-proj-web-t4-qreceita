@@ -31,6 +31,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
 .show-result-recipe {
@@ -92,6 +94,11 @@
     flex-direction: column;
     height: 100%;
     padding-left: 50px;
+    padding-top: 60px;
+}
+
+.div-sec-filter select {
+    width: 180px;
 }
 
 .ud-form-label{
