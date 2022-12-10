@@ -26,4 +26,4 @@ O site foi desenvolvido em HTML/CSS/JS e pode ser visualizado nos navegadores ma
 
 ## Link do Código Fonte:
 
-<view-source:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t4-qreceita/src/>
+<a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-qreceita/tree/main/src">Código fonte</a>
