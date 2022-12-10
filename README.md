@@ -45,7 +45,7 @@ https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t4-qreceita/
 
 # Armazenamento do Código-Fonte
 
-<a href="view-source:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t4-qreceita/src/">Link Código Fonte</a>
+* <a href="view-source:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t4-qreceita/src/">Link Código Fonte</a>
 
 # Armazenamento da Apresentação
 
