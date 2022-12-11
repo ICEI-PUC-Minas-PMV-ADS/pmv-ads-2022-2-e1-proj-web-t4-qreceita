@@ -129,7 +129,7 @@ class SuperJson {
                             warnEmail.style.visibility = 'hidden'
                             newData.usuarios.push(dataS.usuarios[0])
                             localStorage.setItem('db_fake', JSON.stringify(newData))
-                            sessionStorage.getItem('currentUser') = JSON.stringify(dataS.usuarios[0])
+                            sessionStorage.setItem('currentUser', JSON.stringify(dataS.usuarios[0]))
                             location.assign('user-logado.html')
 
                         } else {
