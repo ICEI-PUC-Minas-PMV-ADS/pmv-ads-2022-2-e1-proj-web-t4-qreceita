@@ -1,7 +1,8 @@
 # Apresentação da Solução
 
-<a href="../docs/10-Apresentação do Projeto.md"> Orientações sobre os artefatos de apresentação do projeto</a>
+[Uploading apresentacao-qreceita-final.pdf…]()
 
-Faça uma apresentação resumida de todo o projeto, desde a contextualização até a solução final desenvolvida, usando um pequeno vídeo.
 
-Faça o upload do arquivo de vídeo e dos slides usados na apresentação no formato PDF (caso tenha feito uso de slides).
+
+https://user-images.githubusercontent.com/84052079/206884241-4f19da80-e900-4e7a-af34-93276daeec1c.mp4
+
