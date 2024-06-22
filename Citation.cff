@@ -1,0 +1,22 @@
+message: Please cite this software using these metadata.
+title: QReceita
+authors:
+  - family-names: Issamu Muramoto
+    given-names: Kevin
+  - family-names: Cordeiro Marra	
+    given-names: Odair
+  - family-names: Elizabeth Bessa Lucio Martins
+    given-names: Paula
+  - family-names: Menezes Alves de Souza
+    given-names: Thais
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Maria Silveira
+    given-names: Sandra
+keywords:
+  - Receitas
+  - Criatividade
+  - Alimentação Saudável
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t4-qreceita
+version: 1.0.0
+date-released: 2022-12-11
